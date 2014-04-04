@@ -3,4 +3,6 @@ thesis
 
 mongo thesis blob
 
-code for uav control and energy optimization
+paper and presentation.
+
+more than you ever wanted to know about path - energy optimization of a quad-rotor...
