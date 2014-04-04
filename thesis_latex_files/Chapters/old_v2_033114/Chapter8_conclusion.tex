@@ -1,0 +1,43 @@
+% Chapter Template
+
+\chapter{Conclusion} % Main chapter title
+
+\label{Chapter8} 
+
+\lhead{Chapter 8. \emph{Conclusion}} 
+
+\section{Results}
+
+In this final chapter we will discuss all of the mathematical results which we arrived at. Our first significant result was the dynamic model of the quad-rotor. The Euler-Lagrange formulation was used to derive the dynamic model. The resulting set of nonlinear differential equations formed the basis for both the control and optimization methods which were subsequently derived.
+
+Our first approach to the path-energy optimization problem which incorporated the dynamic model was classical optimal control. Using this formulation, we derived a set of differential and algebraic equations which form a complex boundary value problem. Our initial aim was to develop a method for achieving a path-energy optimization which would perform on a near real time schedule. The computational resources needed to solve the optimal control boundary value problem on this real time schedule invalidate it as a possible solution.
+
+The next method of optimization which was explored was a heuristic method. Control of the UAV was attained by way of a set of PID and PD controllers. Since the performance of the quad-rotor is defined by the controller tuning, the system can be optimized as a function of this tuning. Relevant criteria for evaluating the performance of the system are the total thrust integrated over the duration of the simulation, oscillations that the system experiences, overshoot of the desired location, and the total time of flight. It was determined experimentally that the relationship between these performance metrics and the controller tuning was not well behaved mathematically. Without a clean mathematical representation of our objective function, the viability of an efficient optimization method is questioned.
+
+Next, a brute force method was used to determine the optimal controller tuning. With limited time, the true optimality of the solution is not certain. Even with limited resources we were able to determine a controller tuning which is good enough to perform simulated fights in a relatively efficient manner. 
+
+\section{Further Work}
+
+In further work, there are several possible ways to proceed. Two possible mathematical modifications that could possibly allow for an efficient optimization algorithm are as follows. They both have design trade-offs. 
+
+One possibility is to linearize the model in some manner. The goal there would be to simplify the relationship between the controller tuning and the relevant performance metrics by simplifying the mathematical representation of the dynamic model. The danger in using a linear approximation is creating an over-simplified model that is divergent from reality to an extent that makes it unusable. 
+
+On the other hand, if instead of a linear PID controller, a nonlinear control method was used, the stability of the system could be increased. This would perhaps allow for a well behaved relationship between the parameters of the controller and the measurable dynamics of the system. The obvious caveat  here is the increase in complexity of the controller. The only real way to know if one of these options would allow for and efficient optimization procedure would be to try them both and characterize them in the context of the goal of the flight.
+
+Another area of research interest that would benefit from an energy optimization procedure is the control of swarms of UAV's. The distributed control of UAV's is a field which offers a wide range of engineering challenges such as collision avoidance, optimization of networked communication, and optimization of work load delegation toward a common goal. The contextual details of the cooperative aim of the swarm would inform the optimization of the system.
+
+        
+Yet another area of possible further research is in the sensor fusion and state estimation problem. For a physical implementation, knowledge of the state of the system is a critical component. Given that there are a very large variety of physical sensors that could contribute to this knowledge, this is an interesting problem. An aspect of this problem that adds richness to this situation is the fact that each type of sensor will have a different rate at which physical information is available. This rate is determined by the physical nature of the quantity being measured. A good example is the integration of GPS measurements and accelerometer measurements. Values from these sensors are available perhaps at rates of 1 Hz and 100 Hz respectively. The sensors are integrated with a Kalman filter to develop situational awareness which allows for effective control of the system.
+
+In general the control and optimization of UAV's is a rich and evolving field of research with many unsolved problems. There will be many commercial applications of this technology appearing in coming years which will be informed by this research.
+
+
+
+
+
+
+   
+
+
+
+         

@@ -1,0 +1,49 @@
+% Chapter 1
+
+\chapter{Introduction} % Main chapter title
+
+\label{Introduction} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+
+\lhead{Chapter 1. \emph{Introduction}} % This is for the header on each page - perhaps a shortened title
+
+%-------------------------------------------------------------- --------------------------
+
+The technology surrounding Unmanned Aerial Vehicles (UAVs) and in particular, quad-rotor devices has seen tremendous development in recent years. Likewise, the creative application of this technology has expanded into many contexts. Like many new technologies, the early development of UAVs was mostly in a military context. This is not the case any more. The private sector has taken a huge interest in this technology. There are a wide range of companies contributing to the development of UAV technology from open-source projects like DIY Drones \cite{diydrones} to start-up firms backed by Google, like Airware \cite{airware}.  The Federal Aviation Administration in the USA has plans to produce concrete policy regarding the regulation of commercial applications of UAVs by 2015 \cite{faa}. This will sow the seeds for the rapid growth of a multi-billion dollar industry. There are many applications for this technology which have the potential to save lives and collect scientific data that could inform state and federal legislation. Certainly, the range of potential applications will be further diversified as the technology sees more development. 
+
+
+\section{Motivation}
+
+With many private organizations making use of UAVs for a variety of applications, one pervasive engineering problem that still exists in general is that of managing the energy usage. Quad-rotors specifically are plagued by very high energy demand. There are two different kinds of UAVs - fixed wing, which have the ability to soar or glide, and multi-rotor systems, which are entirely thrust driven. It is the natural instability of multi-rotor UAVs which make them extremely maneuverable, but this comes at the cost of high energy expenditure. This provides the motivation for this thesis - to develop an optimal control technique that optimizes the path-energy of a quad-copter UAV.
+
+
+\section{Prior Work}
+
+There have been works published on the energy optimization and trajectory planning of fixed wing UAVs. Given the ability to soar and utilize thermal gradients in the atmosphere, it is suggested that fixed wing UAVs have the potential to stay aloft almost permanently \cite{langelaan2007long}, \cite{klesh2009solar}, and \cite{lawrance2009guidance}. Since fixed wing and multi-rotor UAVs are fundamentally different in their physical operation, procedures for managing their respective energy usage are also necessarily unique.
+
+In academic contexts, many advances in UAV and specifically quad-rotor research have provided the seeds for growth for this industry. The problem of basic stability and position control is solved in \cite{erginer2007modeling}, \cite{bouabdallah2004pid}, and \cite{Luukkonen}. 
+
+
+The background material for understanding the dynamical model of the quad-rotor as given by the Euler-Lagrange formulation are explained in \cite{marion1995classical} and  \cite{cornelius1970variational}. These references provided detailed derivations and discussion of the Euler-Lagrange equations of motion as well as related topics like Hamiltonian mechanics and the calculus of variations. Also, \cite{cornelius1970variational} provides an in depth review of the historical context surrounding the development of classical mechanics. The derivation of the quad-rotor dynamical model as well as attitude and position control via PD or PID controllers is discussed in \cite{erginer2007modeling}, \cite{bouabdallah2004pid}, \cite{Luukkonen}. These papers provide derivations of both the Euler-Lagrange and Newtonian formulations for the quad-rotor.
+
+Several books on optimal control (\cite{lewis2012optimal} , \cite{BrysonHo69}, \cite{locatelli2001optimal}, \cite{athans2006optimal}) were referenced for the derivations used in this thesis. In order to test the nonlinear optimization, numerical algorithms for the shooting method \cite{richard1988douglas}, \cite{rao2009engineering},and \cite{keller1992numerical} and the finite difference method \cite{rao2009engineering},and \cite{keller1992numerical} were used. 
+
+PID controllers are common in industrial applications \cite{o2006reducing} and there are various tuning techniques \cite{bequette2003process} such as the Ziegler-Nichols method which can be applied to other control problems.
+
+
+\section{Organization of the Thesis}
+
+This work is to develop an energy optimization technique that can operate on a near real-time schedule. Two different methods are discussed. We compare a classical optimal control technique with a simpler heuristic approach involving PID controller tuning. 
+
+Chapter 2 presents a detailed problem statement where the goal of the research is defined. In Chapter 3, a nonlinear dynamical model for the quad-rotor is developed. This mathematical model is the basis of the development of the control and energy optimization algorithms. In chapter 4, we formulate a generalized, classical optimal control scheme. In Chapter 5, the classical optimal control scheme is applied to the quad-rotor and the resulting boundary value problem is discussed. Chapter 6 deals with PID control of a quad-rotor. Results from testing the control algorithm in simulation are discussed. Chapter 7 outlines a heuristic approach to the path-energy optimization problem. Chapter 8 summarizes the results and proposes avenues for continued research.
+
+
+
+
+
+
+
+
+
+
+
+

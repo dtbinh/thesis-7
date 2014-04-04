@@ -1,0 +1,397 @@
+% Chapter Template
+
+\chapter{Quad-rotor Boundary Value Problem} % Main chapter title
+
+\label{Chapter4} 
+
+\lhead{Chapter 4. \emph{Quad-rotor Boundary Value Problem}} 
+
+In this chapter we use the expressions for the dynamic model of the quad-rotor (equations \ref{lineareq} and \ref{angulareq} ) and the optimal control formulation (equations \ref{costate} through \ref{initialcostateder}) to derive the optimality conditions for our specific problem. 
+
+Recall from chapter 4 that each of the optimality conditions is a mathematical result of setting the first variation of the objective function equal to zero. To maintain algebraic continuity, each additive term must then be zero. Using this logic, each of the optimality conditions are obtained. Given the general form of the optimality conditions, we can introduce the quad-rotor dynamic model. The resulting expressions can be simplified to arrive at specific equations which form our quad-rotor boundary value problem. The optimal flight path and the optimal control input as a function of time form the solution to this boundary value problem.
+
+
+%========================================================================================================
+\section{The Co-State equations}
+
+
+The Co-State equations are expressed as follows where $F$ is our set of system equations and $L$ is the Lagrangian defined in our performance index. Since the Lagrangian does not depend on the state, the co-state differential equation simplifies. Recall that the Lagrangian for our optimization is $ L[q(t),u(t),t] = u^T I u $ .
+\begin{equation}
+    \ddot{\lambda} = -\left(\frac{\p F}{\p q}\right)^T \lambda - \left(\frac{\p L}{\p q}\right)^T
+\end{equation}
+
+\begin{equation}
+    \ddot{\lambda} = -\left(\frac{\p F}{\p q}\right)^T \lambda
+\end{equation}
+
+The state transition matrix, $\left(\frac{\p F}{\p q}\right)$  is tremendous, but there are some simplifications to be made as some of the partials are zero.\\
+
+\begin{equation}
+    \frac{\p F}{\p q} = \left(
+    \begin{array}{c c c c c c}
+    \frac{\p F_{(1)}}{\p x} & \frac{\p F_{(1)}}{\p y} & \frac{\p F_{(1)}}{\p z} & \frac{\p F_{(1)}}{\p \phi} & \frac{\p F_{(1)}}{\p \theta} & \frac{\p F_{(1)}}{\p \psi}\\
+
+    \frac{\p F_{(2)}}{\p x} & \frac{\p F_{(2)}}{\p y} & \frac{\p F_{(2)}}{\p z} & \frac{\p F_{(2)}}{\p \phi} & \frac{\p F_{(2)}}{\p \theta} & \frac{\p F_{(2)}}{\p \psi}\\
+
+    .\\
+    .\\
+    .\\
+
+    \frac{\p F_{(6)}}{\p x} & \frac{\p F_{(6)}}{\p y} & \frac{\p F_{(6)}}{\p z} & \frac{\p F_{(6)}}{\p \phi} & \frac{\p F_{(6)}}{\p \theta} & \frac{\p F_{(6)}}{\p \psi}\\
+
+    \end{array}\right)
+\end{equation}
+
+
+\begin{equation}
+    \frac{\p F}{\p q} = \left(
+    \begin{array}{c c c c c c}
+    0 & 0 & 0 & \frac{\p F_{(1)}}{\p \phi} & \frac{\p F_{(1)}}{\p \theta} & \frac{\p F_{(1)}}{\p \psi}\\\\
+
+    0 & 0 & 0 & \frac{\p F_{(2)}}{\p \phi} & \frac{\p F_{(2)}}{\p \theta} & \frac{\p F_{(2)}}{\p \psi}\\\\
+
+    0 & 0 & 0 & \frac{\p F_{(3)}}{\p \phi} & \frac{\p F_{(3)}}{\p \theta} & 0\\\\
+
+    0 & 0 & 0 & \frac{\p F_{(4)}}{\p \phi} & \frac{\p F_{(4)}}{\p \theta} & \frac{\p F_{(4)}}{\p \psi}\\\\
+
+    0 & 0 & 0 & \frac{\p F_{(5)}}{\p \phi} & \frac{\p F_{(5)}}{\p \theta} & \frac{\p F_{(5)}}{\p \psi}\\\\
+
+    0 & 0 & 0 & \frac{\p F_{(6)}}{\p \phi} & \frac{\p F_{(6)}}{\p \theta} & \frac{\p F_{(6)}}{\p \psi}\\\\
+
+    \end{array}\right)
+\end{equation}
+
+Each of the elements must be computed numerically. An analytical representation of all the partials in $\left(\frac{\p F}{\p q}\right)$ is possible but the task of computing them all would push the limits of human endurance and patience. For our simulations, a simple backward finite difference is much easier.
+
+\begin{equation}
+    \frac{\p F_i}{\p q_j} \approx \frac{ f_i(q_j + \alpha) - f_i(q_j)  }{\alpha}
+\end{equation}
+
+
+The simplified result is
+
+\begin{equation}
+    \ddot \lambda = \left(
+    \begin{array}{c c c c c c}
+    \frac{\p F_{(1)}}{\p \phi} & \frac{\p F_{(1)}}{\p \theta} & \frac{\p F_{(1)}}{\p \psi}\\\\
+
+    \frac{\p F_{(2)}}{\p \phi} & \frac{\p F_{(2)}}{\p \theta} & \frac{\p F_{(2)}}{\p \psi}\\\\
+
+    \frac{\p F_{(3)}}{\p \phi} & \frac{\p F_{(3)}}{\p \theta} & 0\\\\
+
+    \frac{\p F_{(4)}}{\p \phi} & \frac{\p F_{(4)}}{\p \theta} & \frac{\p F_{(4)}}{\p \psi}\\\\
+
+    \frac{\p F_{(5)}}{\p \phi} & \frac{\p F_{(5)}}{\p \theta} & \frac{\p F_{(5)}}{\p \psi}\\\\
+
+    \frac{\p F_{(6)}}{\p \phi} & \frac{\p F_{(6)}}{\p \theta} & \frac{\p F_{(6)}}{\p \psi}\\\\
+
+    \end{array}\right)\left(\begin{array}{c} \lambda_4\\  \lambda_5\\ \lambda_6\\ \end{array}\right)
+\end{equation}.
+
+
+
+%========================================================================================================
+\section{Secondary Algebraic Co-state Equations}
+
+These algebraic conditions are a result of setting the variation of $J$ equal to zero. They are unique to the derivation in Chapter 4, which involves a second order rather than first order representation of the system equations.
+
+\begin{equation}
+    \frac{\p H}{\p \dot q} = 0
+\end{equation}
+
+\begin{equation}
+0 = (\frac{\p F}{\p \dot q})^T \lambda + (\frac{\p L}{\p \dot q})^T
+\end{equation}
+
+\begin{equation}
+    0 = (\frac{\p F}{\p \dot q})^T \lambda
+\end{equation}
+
+\begin{equation}
+    0 = \left(
+    \begin{array}{c c c c c c}
+    \frac{\p F_{(1)}}{\p \dot x} & \frac{\p F_{(1)}}{\p \dot y} & \frac{\p F_{(1)}}{\p \dot z} & \frac{\p F_{(1)}}{\p \dot \phi} & \frac{\p F_{(1)}}{\p \dot \theta} & \frac{\p F_{(1)}}{\p \dot \psi}\\\\
+
+    \frac{\p F_{(2)}}{\p \dot x} & \frac{\p F_{(2)}}{\p \dot y} & \frac{\p F_{(2)}}{\p \dot z} & \frac{\p F_{(2)}}{\p \dot \phi} & \frac{\p F_{(2)}}{\p \dot \theta} & \frac{\p F_{(2)}}{\p \dot \psi}\\\\
+
+    \frac{\p F_{(3)}}{\p \dot x} & \frac{\p F_{(3)}}{\p \dot y} & \frac{\p F_{(3)}}{\p \dot z} & \frac{\p F_{(3)}}{\p \dot \phi} & \frac{\p F_{(3)}}{\p \dot \theta} & \frac{\p F_{(3)}}{\p \dot \psi}\\\\
+
+    \frac{\p F_{(4)}}{\p \dot x} & \frac{\p F_{(4)}}{\p \dot y} & \frac{\p F_{(4)}}{\p \dot z} & \frac{\p F_{(4)}}{\p \dot \phi} & \frac{\p F_{(4)}}{\p \dot \theta} & \frac{\p F_{(4)}}{\p \dot \psi}\\\\
+
+    \frac{\p F_{(5)}}{\p \dot x} & \frac{\p F_{(5)}}{\p \dot y} & \frac{\p F_{(5)}}{\p \dot z} & \frac{\p F_{(5)}}{\p \dot \phi} & \frac{\p F_{(5)}}{\p \dot \theta} & \frac{\p F_{(5)}}{\p \dot \psi}\\\\
+
+    \frac{\p F_{(6)}}{\p \dot x} & \frac{\p F_{(6)}}{\p \dot y} & \frac{\p F_{(6)}}{\p \dot z} & \frac{\p F_{(6)}}{\p \dot \phi} & \frac{\p F_{(6)}}{\p \dot \theta} & \frac{\p F_{(6)}}{\p \dot \psi}\\\\
+
+    \end{array}\right)^T\left(
+    \begin{array}{c}
+    \lambda_1\\\\
+    \lambda_2\\\\
+    \lambda_3\\\\
+    \lambda_4\\\\
+    \lambda_5\\\\
+    \lambda_6\\\\
+    \end{array}\right)
+\end{equation}
+
+
+
+Again this matrix can simplify considerably because the state equations don't depend on all of the state variable time-derivatives.
+
+\begin{equation}
+    0 = \left(
+    \begin{array}{c c c c c c}
+    0&0&0&0&0&0\\\\
+    0&0&0&0&0&0\\\\
+    0&0&0&0&0&0\\\\
+
+    0&0&0 & \frac{\p F_{(4)}}{\p \dot \phi} & \frac{\p F_{(4)}}{\p \dot \theta} & \frac{\p F_{(4)}}{\p \dot \psi}\\\\
+
+    0&0&0 & \frac{\p F_{(5)}}{\p \dot \phi} & \frac{\p F_{(5)}}{\p \dot \theta} & \frac{\p F_{(5)}}{\p \dot \psi}\\\\
+
+    0&0&0 & \frac{\p F_{(6)}}{\p \dot \phi} & \frac{\p F_{(6)}}{\p \dot \theta} & \frac{\p F_{(6)}}{\p \dot \psi}\\\\
+
+    \end{array}\right)^T\left(
+    \begin{array}{c}
+    \lambda_1\\\\
+    \lambda_2\\\\
+    \lambda_3\\\\
+    \lambda_4\\\\
+    \lambda_5\\\\
+    \lambda_6\\\\
+    \end{array}\right)
+\end{equation}
+
+\begin{equation}
+    0 = \left(
+    \begin{array}{c c c }
+
+    \frac{\p F_{(4)}}{\p \dot \phi} & \frac{\p F_{(4)}}{\p \dot \theta} & \frac{\p F_{(4)}}{\p \dot \psi}\\\\
+
+    \frac{\p F_{(5)}}{\p \dot \phi} & \frac{\p F_{(5)}}{\p \dot \theta} & \frac{\p F_{(5)}}{\p \dot \psi}\\\\
+
+     \frac{\p F_{(6)}}{\p \dot \phi} & \frac{\p F_{(6)}}{\p \dot \theta} & \frac{\p F_{(6)}}{\p \dot \psi}\\\\
+
+    \end{array}\right)^T\left(
+    \begin{array}{c}
+    \lambda_4\\\\
+    \lambda_5\\\\
+    \lambda_6\\\\
+    \end{array}\right)
+\end{equation}
+
+Like with the other optimality conditions, the partials in this matrix must be computed numerically
+
+\begin{equation}
+    \frac{\p F_i}{\p \dot q_j} \approx \frac{ F_i(\dot q_j + \alpha) - F_i(\dot q_j)  }{\alpha}
+\end{equation}
+
+
+
+%========================================================================================================
+\section{Stationarity Conditions}
+
+The stationarity conditions express the relationship between the derivatives of the system equation with respect to the input $u$, the costate variable $\lambda(t)$, and the derivative of the Lagrangian with respect to the input. 
+
+\begin{equation}
+    (\frac{\p H}{\p u})^T = (\frac{\p F}{\p u})^T \lambda + (\frac{\p L}{\p u})^T = 0
+\end{equation}
+
+
+\begin{equation}
+    \frac{\p F}{\p q} = \left(
+    \begin{array}{c c c c c c}
+    \frac{\p F_{(1)}}{\p u_1} & \frac{\p F_{(1)}}{\p u_2} & \frac{\p F_{(1)}}{\p u_3} & \frac{\p F_{(1)}}{\p u_4} \\\\
+
+    \frac{\p F_{(2)}}{\p u_1} & \frac{\p F_{(2)}}{\p u_2} & \frac{\p F_{(2)}}{\p u_3} & \frac{\p F_{(2)}}{\p u_4} \\\\
+
+    \frac{\p F_{(3)}}{\p u_1} & \frac{\p F_{(3)}}{\p u_2} & \frac{\p F_{(3)}}{\p u_3} & \frac{\p F_{(3)}}{\p u_4} \\\\
+    .\\
+    .\\
+    .\\
+    \frac{\p F_{(6)}}{\p u_1} & \frac{\p F_{(6)}}{\p u_2} & \frac{\p F_{(6)}}{\p u_3} & \frac{\p F_{(6)}}{\p u_4} \\\\
+
+    \end{array}\right)
+\end{equation}
+
+\begin{equation}
+    \frac{\p L}{\p u} = 2 (u_1 , u_2 , u_3 , u_4)
+\end{equation}
+
+
+\begin{equation}
+    0  = \left(
+    \begin{array}{c c c c c c}
+    \frac{\p F_{(1)}}{\p u_1} & \frac{\p F_{(2)}}{\p u_1} & \frac{\p F_{(3)}}{\p u_1} & \frac{\p F_{(4)}}{\p u_1} & \frac{\p F_{(5)}}{\p u_1} & \frac{\p F_{(6)}}{\p u_1} \\\\
+    \frac{\p F_{(1)}}{\p u_2} & \frac{\p F_{(2)}}{\p u_2} & \frac{\p F_{(3)}}{\p u_2} & \frac{\p F_{(4)}}{\p u_2} & \frac{\p F_{(5)}}{\p u_2} & \frac{\p F_{(6)}}{\p u_2} \\\\
+    \frac{\p F_{(1)}}{\p u_3} & \frac{\p F_{(2)}}{\p u_3} & \frac{\p F_{(3)}}{\p u_3} & \frac{\p F_{(4)}}{\p u_3} & \frac{\p F_{(5)}}{\p u_3} & \frac{\p F_{(6)}}{\p u_3} \\\\
+    \frac{\p F_{(1)}}{\p u_4} & \frac{\p F_{(2)}}{\p u_4} & \frac{\p F_{(3)}}{\p u_4} & \frac{\p F_{(4)}}{\p u_4} & \frac{\p F_{(5)}}{\p u_4} & \frac{\p F_{(6)}}{\p u_4} \\\\
+    \end{array}\right)
+    \left(
+    \begin{array}{c}
+    \lambda_1\\
+    \lambda_2\\
+    \lambda_3\\
+    \lambda_4\\
+    \lambda_5\\
+    \lambda_6\\
+    \end{array}\right) + 2 
+    \left(\begin{array}{c} u_1 \\ u_2 \\ u_3 \\ u_4\end{array}\right)
+\end{equation}
+
+Again, the partials are computed with a finite difference.
+
+\begin{equation}
+    \frac{\p F_i}{\p u_j} \approx \frac{ F_i( u_j + \alpha) - F_i( u_j)  }{\alpha}
+\end{equation}
+
+
+%========================================================================================================
+
+\section{Discretization}
+
+The continuous system equations are given as follows.
+
+\begin{equation}
+    \left(
+        \begin{array}{c}
+           \ddot{x}\\
+           \ddot{y}\\
+           \ddot{z}\\
+        \end{array}
+    \right)
+    = \left(
+       \begin{array}{c}
+        0\\
+        0\\
+        g  
+      \end{array}
+    \right)
+    +\frac{T}{m}
+     \left(
+        \begin{array}{c}
+             C_{\psi}S_{\theta}C_{\phi} + S_{\psi}S_{\phi} \\
+             S_{\psi}S_{\theta}C_{\phi} - C_{\psi}S_{\phi} \\
+             C_{\theta} C_{\phi} \\
+        \end{array}
+    \right)
+\end{equation}
+
+\begin{equation}
+    \left(
+        \begin{array}{c}
+           \ddot{\phi}\\
+           \ddot{\theta}\\
+           \ddot{\psi}\\
+        \end{array}
+    \right) = J^{-1}
+    \left[ \left(
+        \begin{array}{c}
+            l s (-\omega_2^2 + \omega_4^2)\\
+            l s (-\omega_1^2 + \omega_3^2)\\ 
+            \sum \limits_{i=1}^4 b \omega_i^2\\
+        \end{array}
+    \right) -
+    \cc
+    \left(
+        \begin{array}{c}
+           \dot{\phi}\\
+           \dot{\theta}\\
+           \dot{\psi}\\
+        \end{array}
+    \right)
+    \right]
+\end{equation}
+
+In order to code a simulation and evaluate the behavior of this system of equations, it is necessary that they be represented in a discrete-time form. First order derivatives are approximated as a first backward finite difference.
+
+$\frac{\p\phi}{\p t } \approx \frac{\phi[k] - \phi[k-1]}{h}$
+
+The second order time derivatives are approximated as a second order central finite difference.
+
+$\frac{\p^2 x }{\p t^2 } \approx \frac{x[k+1] -2 x[k] + x[k-1]}{h^2}$
+
+
+The discrete-time system equations are 
+
+\begin{equation}
+    \left(
+        \begin{array}{c}
+           \frac{x[k+1] -2 x[k] + x[k-1]}{h^2} \\\\
+           \frac{y[k+1] -2 y[k] + y[k-1]}{h^2} \\\\
+           \frac{z[k+1] -2 z[k] + z[k-1]}{h^2}\\\\
+        \end{array}
+    \right)
+    = \left(
+       \begin{array}{c}
+        0\\
+        0\\
+        g  
+      \end{array}
+    \right)
+    +\frac{T[k]}{m}
+     \left(
+        \begin{array}{c}
+             C_{\psi[k]}S_{\theta[k]}C_{\phi[k]} + S_{\psi[k]}S_{\phi[k]} \\\\
+             S_{\psi[k]}S_{\theta[k]}C_{\phi[k]} - C_{\psi[k]}S_{\phi[k]} \\\\
+             C_{\theta[k]} C_{\phi[k]} \\\\
+        \end{array}
+    \right)
+\end{equation}
+
+
+\begin{equation}
+    \left(
+        \begin{array}{c}
+           \frac{\phi[k+1] -2 \phi[k] + \phi[k-1]}{h^2}\\\\
+           \frac{\theta[k+1] -2 \theta[k] + \theta[k-1]}{h^2}\\\\
+           \frac{\psi[k+1] -2 \psi[k] + \psi[k-1]}{h^2}\\\\
+        \end{array}
+    \right) = J^{-1}[k]
+    \left[ \left(
+        \begin{array}{c}
+            l s (-\omega_2[k]^2 + \omega_4[k]^2)\\\\
+            l s (-\omega_1[k]^2 + \omega_3[k]^2)\\\\
+            \sum \limits_{i=1}^4 b \omega_i[k]^2\\\\
+        \end{array}
+    \right) -
+    \cc[k]
+    \left(
+        \begin{array}{c}
+           \frac{\phi[k] - \phi[k-1]}{h} \\\\
+           \frac{\theta[k] - \theta[k-1]}{h} \\\\
+           \frac{\psi[k] - \psi[k-1]}{h} \\\\
+        \end{array}
+    \right)
+    \right]
+\end{equation} .
+
+The reason for computing all the partial derivatives numerically is now apparent. To compute the partials analytically, one would have to deal with the products between the rows of the Coriolis matrix (\ref{cor}) and the columns of the inverse of the Jacobian matrix (\ref{J}). This sort of computation is the very reason computers were invented in the first place.
+
+
+\section{A Finite Difference Solution to the Quad-rotor Boundary Value Problem}
+
+The finite difference method for solving boundary value problems was introduced at the end of Chapter 4. This method reduces our optimal control problem to solving a system of nonlinear algebraic equations. This is a reduction in theoretical complexity but a dramatic increase in computational complexity. 
+
+The script 'finiteDiffSolution.py' (\ref{AppendixF}) implements the finite difference method in an attempt to solve the quad-rotor boundary value problem. Recall that the computational problem is posed as solving a system of nonlinear algebraic equations. This system of equations is composed of the state equations, the co-state equations, the stationarity conditions, the secondary algebraic conditions, and the boundary conditions. Each of these expressions are possibly functions of the state variables, the co-state variables and the control input. Solving this system becomes a tremendous task since the state, co-state, and control variables become the unknowns for each instance in time for which a solution to the boundary value problem is desired! In order to sufficiently represent the dynamics of the quadrotor, on the order of thousands of time steps are necessary.
+
+To solve this nonlinear system, a straightforward steepest descent technique was used:  
+
+\begin{itemize}
+    \item{An objective function is formed out of the sum of the squared residuals of each equation in the system.}
+    \item{The gradient is computed as the list of partials of the objective function with respect to every unknown (every variable defined at each time instance). These partials are approximated as finite differences.}
+    \item{The vector of unknowns is 'moved' in the direction of the negative of the gradient.}
+    \item{The new value of the objective function as well as the gradient are evaluated with the new vector of unknowns. }
+    \item{The state of the minimization process is checked against appropriate convergence criteria.}
+\end{itemize} 
+
+Conceptually, this algorithm is relatively straightforward. Computationally, it is pretty overbearing. The debug cycle was terribly slow even with only ten defined time steps. The potential of this type of solution to provide realistic results is overshadowed by the exorbitant time requirement. There would be no realistic way to implement this algorithm in this form on an embedded system, which was loosely included as one of our research objectives. 
+
+Instead, in the next chapter we turn to different methods of control and optimization. Control of the system will be achieved with PID expressions. The optimization problem will be approached by appropriately manipulating the gains of the PID control laws in order to change the system behavior.   
+
+
+
+
+
+
+
+
