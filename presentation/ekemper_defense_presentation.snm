@@ -4,11 +4,11 @@
 \beamer@slide {eq:angularacc}{17}
 \beamer@slide {lineareq}{18}
 \beamer@slide {angulareq}{18}
-\beamer@slide {fig:typical run 3D path}{33}
-\beamer@slide {fig:typical run time domain}{34}
-\beamer@slide {fig:Cube Edges 3D}{35}
-\beamer@slide {fig:Cube Edges Time Domain}{36}
-\beamer@slide {fig:largeSetpointDifferencesTest3D path}{37}
-\beamer@slide {fig:ku vs thrust}{43}
-\beamer@slide {table:optimalrun}{44}
-\beamer@slide {fig:optimal run 3D path}{45}
+\beamer@slide {fig:typical run 3D path}{32}
+\beamer@slide {fig:typical run time domain}{33}
+\beamer@slide {fig:Cube Edges 3D}{34}
+\beamer@slide {fig:Cube Edges Time Domain}{35}
+\beamer@slide {fig:largeSetpointDifferencesTest3D path}{36}
+\beamer@slide {fig:ku vs thrust}{42}
+\beamer@slide {table:optimalrun}{43}
+\beamer@slide {fig:optimal run 3D path}{44}

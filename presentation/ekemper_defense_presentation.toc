@@ -2,6 +2,6 @@
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
 \beamer@sectionintoc {2}{Dynamic Model}{10}{0}{2}
 \beamer@sectionintoc {3}{Classical Optimal Control}{19}{0}{3}
-\beamer@sectionintoc {4}{PID Control}{30}{0}{4}
-\beamer@sectionintoc {5}{PID Gain Optimization}{39}{0}{5}
-\beamer@sectionintoc {6}{Conclusions}{46}{0}{6}
+\beamer@sectionintoc {4}{PID Control}{29}{0}{4}
+\beamer@sectionintoc {5}{PID Gain Optimization}{38}{0}{5}
+\beamer@sectionintoc {6}{Conclusions}{45}{0}{6}

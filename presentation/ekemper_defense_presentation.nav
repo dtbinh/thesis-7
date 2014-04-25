@@ -64,11 +64,11 @@
 \headcommand {\beamer@framepages {27}{27}}
 \headcommand {\slideentry {3}{0}{28}{28/28}{}{0}}
 \headcommand {\beamer@framepages {28}{28}}
-\headcommand {\slideentry {3}{0}{29}{29/29}{}{0}}
+\headcommand {\sectionentry {4}{PID Control}{29}{PID Control}{0}}
+\headcommand {\beamer@sectionpages {19}{28}}
+\headcommand {\beamer@subsectionpages {19}{28}}
+\headcommand {\slideentry {4}{0}{29}{29/29}{}{0}}
 \headcommand {\beamer@framepages {29}{29}}
-\headcommand {\sectionentry {4}{PID Control}{30}{PID Control}{0}}
-\headcommand {\beamer@sectionpages {19}{29}}
-\headcommand {\beamer@subsectionpages {19}{29}}
 \headcommand {\slideentry {4}{0}{30}{30/30}{}{0}}
 \headcommand {\beamer@framepages {30}{30}}
 \headcommand {\slideentry {4}{0}{31}{31/31}{}{0}}
@@ -85,11 +85,11 @@
 \headcommand {\beamer@framepages {36}{36}}
 \headcommand {\slideentry {4}{0}{37}{37/37}{}{0}}
 \headcommand {\beamer@framepages {37}{37}}
-\headcommand {\slideentry {4}{0}{38}{38/38}{}{0}}
+\headcommand {\sectionentry {5}{PID Gain Optimization}{38}{PID Gain Optimization}{0}}
+\headcommand {\beamer@sectionpages {29}{37}}
+\headcommand {\beamer@subsectionpages {29}{37}}
+\headcommand {\slideentry {5}{0}{38}{38/38}{}{0}}
 \headcommand {\beamer@framepages {38}{38}}
-\headcommand {\sectionentry {5}{PID Gain Optimization}{39}{PID Gain Optimization}{0}}
-\headcommand {\beamer@sectionpages {30}{38}}
-\headcommand {\beamer@subsectionpages {30}{38}}
 \headcommand {\slideentry {5}{0}{39}{39/39}{}{0}}
 \headcommand {\beamer@framepages {39}{39}}
 \headcommand {\slideentry {5}{0}{40}{40/40}{}{0}}
@@ -102,21 +102,19 @@
 \headcommand {\beamer@framepages {43}{43}}
 \headcommand {\slideentry {5}{0}{44}{44/44}{}{0}}
 \headcommand {\beamer@framepages {44}{44}}
-\headcommand {\slideentry {5}{0}{45}{45/45}{}{0}}
+\headcommand {\sectionentry {6}{Conclusions}{45}{Conclusions}{0}}
+\headcommand {\beamer@sectionpages {38}{44}}
+\headcommand {\beamer@subsectionpages {38}{44}}
+\headcommand {\slideentry {6}{0}{45}{45/45}{}{0}}
 \headcommand {\beamer@framepages {45}{45}}
-\headcommand {\sectionentry {6}{Conclusions}{46}{Conclusions}{0}}
-\headcommand {\beamer@sectionpages {39}{45}}
-\headcommand {\beamer@subsectionpages {39}{45}}
 \headcommand {\slideentry {6}{0}{46}{46/46}{}{0}}
 \headcommand {\beamer@framepages {46}{46}}
 \headcommand {\slideentry {6}{0}{47}{47/47}{}{0}}
 \headcommand {\beamer@framepages {47}{47}}
 \headcommand {\slideentry {6}{0}{48}{48/48}{}{0}}
 \headcommand {\beamer@framepages {48}{48}}
-\headcommand {\slideentry {6}{0}{49}{49/49}{}{0}}
-\headcommand {\beamer@framepages {49}{49}}
-\headcommand {\beamer@partpages {1}{49}}
-\headcommand {\beamer@subsectionpages {46}{49}}
-\headcommand {\beamer@sectionpages {46}{49}}
-\headcommand {\beamer@documentpages {49}}
-\headcommand {\def \inserttotalframenumber {49}}
+\headcommand {\beamer@partpages {1}{48}}
+\headcommand {\beamer@subsectionpages {45}{48}}
+\headcommand {\beamer@sectionpages {45}{48}}
+\headcommand {\beamer@documentpages {48}}
+\headcommand {\def \inserttotalframenumber {48}}
