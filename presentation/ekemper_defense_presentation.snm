@@ -9,6 +9,7 @@
 \beamer@slide {fig:Cube Edges 3D}{34}
 \beamer@slide {fig:Cube Edges Time Domain}{35}
 \beamer@slide {fig:largeSetpointDifferencesTest3D path}{36}
-\beamer@slide {fig:ku vs thrust}{42}
-\beamer@slide {table:optimalrun}{43}
-\beamer@slide {fig:optimal run 3D path}{44}
+\beamer@slide {fig:ku vs thrust}{43}
+\beamer@slide {fig:block diagram}{44}
+\beamer@slide {table:optimalrun}{46}
+\beamer@slide {fig:optimal run 3D path}{47}

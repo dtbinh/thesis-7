@@ -18,7 +18,7 @@
 \documentclass{beamer}
 %\usepackage{setspace}
 %\doublespacing
-
+\useoutertheme{infolines}
 
 \mode<presentation> {
 
@@ -55,7 +55,7 @@
 \title[Path-Energy Optimization]{Quad-Rotor Flight Path Energy Optimization}
 
 
-\author{Edward Kemper\\Advisor : Niranajan Venkatraman} % Your name
+\author{Edward Kemper} % Your name
 
 
 % Your institution as it will appear on the bottom of every slide,
@@ -72,6 +72,13 @@ Northern Arizona University \\ % Your institution for the title page
 
 \date{April 29, 2014}
 
+% logo of my university
+\titlegraphic{
+   \includegraphics[width=2cm]{Figures/nau_logo.jpeg}
+}
+
+
+
 \begin{document}
 
 
@@ -79,7 +86,7 @@ Northern Arizona University \\ % Your institution for the title page
 \begin{frame}
 \titlepage % Print the title page as the first slide
 %\begin{centering}
-
+\begin{center}Advisor : Niranajan Venkatraman\end{center}
 %\end{centering}
 
 \end{frame}
@@ -147,7 +154,7 @@ Northern Arizona University \\ % Your institution for the title page
 \begin{frame}
 \frametitle{Problem Statement}
 
-We wish to find a set of control expressions for a quad-rotor UAV which minimizes the energy expended in flying between two known points in three dimensional space.
+We wish to find a set of control expressions for a quad-rotor UAV which minimizes the energy expended in flying between two known points by optimizing the path.
 \end{frame}
 
 %------------------------------------------------
@@ -170,6 +177,7 @@ We wish to find a set of control expressions for a quad-rotor UAV which minimize
 \begin{itemize}
 	\item control of the system and the optimization are represented in a single mathematical formulation
 	\item Solving the optimal control problem is achieved by solving a boundary value problem
+      \item Most literature deals with \textit{linear} systems
 \end{itemize}
 
 \end{frame}
@@ -258,7 +266,7 @@ In the quad-rotor frame of reference, the motors produce torques on the system.
 
 \begin{equation}
     \label{taub}
-    \boldsymbol \tau_B = \left[ \begin{array}{c} \tau_{\phi}\\\tau_{\theta}\\\tau_{\psi}\\ \end{array} \right] = \left[ \begin{array}{c} l s (-\omega_2^2 + \omega_4^2)\\l s (-\omega_1^2 + \omega_3^2)\\ \displaystyle \sum \limits_{i=1}^4 b \omega^2\\\end{array} \right]
+    \boldsymbol \tau_B = \left[ \begin{array}{c} \tau_{\phi}\\\tau_{\theta}\\\tau_{\psi}\\ \end{array} \right] = \left[ \begin{array}{c} l k (-\omega_2^2 + \omega_4^2)\\l k (-\omega_1^2 + \omega_3^2)\\ \displaystyle \sum \limits_{i=1}^4 b \omega^2\\\end{array} \right]
 \end{equation}
 
 \end{frame}
@@ -319,7 +327,7 @@ The Lagrangian is formed as the difference between kinetic and potential energy.
 \noindent The dynamics of the system are represented by the Euler - Lagrange differential equations of motion.
 
 \begin{equation}
-    \frac{d}{\text{dt}} \left( \frac{\delta  L} {\delta \dot{q}}\right) - \frac{\delta  L}{\delta q}=F
+    \frac{d}{dt} \left( \frac{\delta  L} {\delta \dot{q}}\right) - \frac{\delta  L}{\delta q}=F
 \end{equation}
 
 \begin{equation}
@@ -386,8 +394,8 @@ A complete mathematical representation of the quad-rotor is as follows.\\
     +\frac{T}{m}
      \left(
         \begin{array}{c}
-             c_{\psi}S_{\theta}c_{\phi} + s_{\psi}s_{\phi} \\
-             s_{\psi}S_{\theta}c_{\phi} - c_{\psi}s_{\phi} \\
+             c_{\psi}s_{\theta}c_{\phi} + s_{\psi}s_{\phi} \\
+             s_{\psi}s_{\theta}c_{\phi} - c_{\psi}s_{\phi} \\
              c_{\theta} c_{\phi} \\
         \end{array}
     \right)
@@ -404,8 +412,8 @@ A complete mathematical representation of the quad-rotor is as follows.\\
     \right) = J^{-1}
     \left[ \left(
         \begin{array}{c}
-            l s (-\omega_2^2 + \omega_4^2)\\
-            l s (-\omega_1^2 + \omega_3^2)\\
+            l k (-\omega_2^2 + \omega_4^2)\\
+            l k (-\omega_1^2 + \omega_3^2)\\
             \sum \limits_{i=1}^4 b \omega_i^2\\
         \end{array}
     \right) -
@@ -454,7 +462,7 @@ A complete mathematical representation of the quad-rotor is as follows.\\
 \begin{frame}
 \frametitle{Classical Optimal Control}
 
-The first variation in J is given by\\
+The first variation in  $\mathcal{J}$ is given by\\
 
 \begin{equation}
     \delta \mathcal{  J  } = \frac{\partial \mathcal{  J  }}{\partial q} \delta q + \frac{\partial \mathcal{  J  }}{\partial \dot q} \delta \dot q   +  \frac{\partial \mathcal{  J  }}{\partial u} \delta u = 0
@@ -470,9 +478,7 @@ The first variation in J is given by\\
 \begin{frame}
 \frametitle{Classical Optimal Control}
 
-By setting the variation of $J$ equal to zero we obtain:
-
-The Co-state equations:
+By setting the variation of $J$ equal to zero we obtain the Co-state equations:
 
 \begin{equation}
 \frac{\partial H}{ \partial q } = \ddot \lambda
@@ -481,6 +487,9 @@ The Co-state equations:
 \begin{equation}
 \ddot \lambda = ( \frac{\partial L}{\partial q}  )^T + ( \frac{\partial F}{\partial q} )^T \lambda
 \end{equation}
+
+\textit{Note : this is a second order system...}
+
 
 \end{frame}
 
@@ -565,7 +574,7 @@ The Co-state equations:
 \begin{frame}
 \frametitle{Classical Optimal Control}
 
-The optimality conditions form a two-point boundary value problem.
+The optimality conditions form a two-point boundary value problem in 18 coupled, nonlinear, partial differential equations!!
 
 \textit{to obtain a solution:}
 
@@ -574,6 +583,7 @@ The optimality conditions form a two-point boundary value problem.
 	\item finite difference method
 \end{itemize}
 
+Since there are six state variables
 
 \end{frame}
 
@@ -746,7 +756,7 @@ A Heuristic Method
 
 \begin{frame}
 \frametitle{Arbitrary Sub-optimal Paths}
-
+\vspace{-5mm}
 \begin{figure}[htbp]
     \centering
         \includegraphics[width=\textwidth]{Figures/typical_run_time_domain.png}
@@ -780,6 +790,7 @@ A Heuristic Method
 
 \begin{frame}
 \frametitle{Arbitrary Sub-optimal Paths}
+\vspace{-5mm}
 \begin{figure}[htbp]
     \centering
         \includegraphics[width=\textwidth]{Figures/CubeEdgesGraphs.png}
@@ -814,6 +825,7 @@ A Heuristic Method
 
 \begin{frame}
 \frametitle{Arbitrary Sub-optimal Paths}
+\vspace{-5mm}
 \begin{figure}[htbp]
     \centering
         \includegraphics[width=\textwidth]{Figures/largeSetpointDifferencesTest_timedomain.png}
@@ -849,7 +861,7 @@ A Heuristic Method
 
 \frametitle{Heuristic Method}
 
-\textit{In reality,there are other important performance criteria}
+\textit{In reality,  there are other important performance criteria}
 \begin{itemize}
 \item over-shoot of the desired location
 \item the time of flight
@@ -888,7 +900,8 @@ A Heuristic Method
 \begin{itemize}
 \item NO steepest descent
 \item Needed a deeper understanding of the relationship between PID gains and performance metrics
-\item Try brute force approach (?)
+\item Try brute force approach : manually create a look-up table of PID gains v.s. measured metrics
+
 \end{itemize}
 \end{frame}
 
@@ -901,22 +914,57 @@ A Heuristic Method
 
 \frametitle{Heuristic Method}
 
+\textit{first attempt at creating a lookup table:}
+
 \begin{itemize}
-\item Ziegler-Nichols PID tuning method
-\item PID gains expressed as a function of $k_u$
+\item Need to reduce the number of gain variables in the procedure
+\item Use the set point  $[0,0,1]$ so that x and y controllers are irrelevant
+\item Ziegler-Nichols PID tuning method allows for PID gains to be expressed as a function of $k_u$
 \end{itemize}
 
-\vspace{-7mm}
+\end{frame}
 
+%--------------------------------------------------
+\begin{frame}
+\textit{First look-up table results}
 \begin{figure}[htbp]
 	\centering
-		\includegraphics[scale=0.60]{Figures/kuvsthrust.png}
+		\includegraphics[width=\textwidth]{Figures/kuvsthrust.png}
 		%\rule{35em}{0.5pt}
 	%\caption[ku vs thrust]{The relationship between Ku and the measured total thrust.}
 	\label{fig:ku vs thrust}
 \end{figure}
 
 \end{frame}
+
+%--------------------------------------------------
+
+\begin{frame}
+\frametitle{Control Block Diagram}
+
+\begin{figure}[htbp]
+  \centering
+    \includegraphics[width=\textwidth]{Figures/block_diagram.pdf}
+    %\rule{35em}{0.5pt}
+  \caption[blockdiagram]{Control Block Diagram}
+  \label{fig:block diagram}
+\end{figure}
+\end{frame}
+
+
+%--------------------------------------------------
+\begin{frame}
+\frametitle{Brute-Force Implementation}
+
+\begin{itemize}
+\item perform roughly 6000 simulations
+\item limit range and granularity of gain variation
+\item parse results for optimal run according to performance metrics
+\end{itemize}
+
+\end{frame}
+
+
 
 
 %--------------------------------------------------
@@ -940,9 +988,7 @@ kdx                 & 10 \\
 kdy                 & 10 \\
 kdz                 & 50 \\
 ending iteration    & 987 \\
-discrete time step   & 0.01 (s)\\
 flight time         & 9.87 (s) \\
-cpu runtime         & 11.41 (s)\\
 return value        & 1 (great success)\\
 initial position    & [0, 0, 1] (m)\\
 set point           & [1, 1, 2] (m) \\
@@ -970,6 +1016,7 @@ z overshoot         & 0.0992 (m) \\
 \frametitle{Brute-Force Results}
 
 \textit{The Optimal Run}
+\vspace{-6mm}
 \begin{figure}[htbp]
 	\centering
 		\includegraphics[width=\textwidth]{Figures/optimal_run_3D_path.png}
@@ -980,6 +1027,21 @@ z overshoot         & 0.0992 (m) \\
 
 \end{frame}
 
+
+
+%--------------------------------------------------
+\begin{frame}
+
+\frametitle{Brute-Force Results}
+
+\textit{A general look-up table }
+\begin{itemize}
+\item Only need to account for a small number of set points , (0,0,1),(0,1,0),(0,1,1)...
+\item Arbitrary optimal paths can be composed of granular optimal paths (further work)
+\item This approach comes closer to a real time optimization
+\end{itemize}
+
+\end{frame}
 
 
 
@@ -1009,30 +1071,12 @@ z overshoot         & 0.0992 (m) \\
 \end{itemize}
 \end{frame}
 
-%--------------------------------------------------------------------REFERENCES
 
-
-% Beamer does not support BibTeX,
-% so references must be inserted manually as below
-
-
-\begin{frame}
-
-\frametitle{References ({\color{red}DO I NEED REFERENCES IN THE PRESENTATION?})}
-
-\footnotesize{
-\begin{thebibliography}{99}
-\bibitem[Smith, 2012]{p1} John Smith (2012)
-\newblock Title of the publication
-\newblock \emph{Journal Name} 12(3), 45 -- 678.
-\end{thebibliography}
-}
-\end{frame}
 
 %------------------------------------------------------------------------------
 
 \begin{frame}
-\Huge{\centerline{The End}}
+\Huge{\centerline{Questions?}}
 \end{frame}
 
 %------------------------------------------------------------------------------
