@@ -1,0 +1,198 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 219.0,
+		"selected_items":
+		[
+			[
+				"ja",
+				"Set Syntax: JavaScript"
+			]
+		],
+		"width": 579.0
+	},
+	"console":
+	{
+		"height": 187.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/ek/Dropbox/gore2014_res/ekemper_coverletter_wlgore_2014.tex",
+		"/home/ek/Dropbox/gore2014_res/ekemper_gore_resume_2014.tex",
+		"/home/ek/Dropbox/2014resume/ekemper_resume.tex",
+		"/home/ek/thesis/presentation/ekemper_defense_presentation.tex",
+		"/home/ek/dev/whale-o-matic/config/routes.rb",
+		"/home/ek/dev/whale-o-matic/app/controllers/phone_number_controller.rb",
+		"/home/ek/dev/whale-o-matic/app/controllers/listings_controller.rb",
+		"/home/ek/dev/whale-o-matic/app/views/listings/_listing.html.haml",
+		"/home/ek/dev/whale-o-matic/app/views/listings/index.html.haml",
+		"/home/ek/dev/whale-o-matic/app/views/phone_number/_phone_number.html.haml",
+		"/home/ek/dev/whale-o-matic/app/views/phone_number/index.html.haml",
+		"/home/ek/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/ek/dev/whale-o-matic/app/models/listing.rb",
+		"/home/ek/dev/whale-o-matic/app/models/phone_number.rb",
+		"/home/ek/dev/main-app/app/controllers/admin/graphs/bulk_sellers_controller.rb",
+		"/home/ek/dev/main-app/config/boot.rb",
+		"/home/ek/dev/main-app/app/views/admin/users/bulk_graphs.html.haml",
+		"/home/ek/dev/main-app/app/assets/javascripts/bulk.js",
+		"/home/ek/dev/main-app/app/views/home/bulk_sellers.html.haml",
+		"/home/ek/dev/main-app/config/initializers/bullet.rb",
+		"/home/ek/dev/main-app/app/views/admin/purchases/bulk_unpaid.csv.erb"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"quad",
+			"uav",
+			"air",
+			"{\\footnotesize",
+			"small"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"{\\tiny"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "Chapter1_introduction.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/thesis/tex_files/main.tex"
+			],
+			[
+				"bulkgra",
+				"app/views/admin/users/bulk_graphs.html.haml"
+			],
+			[
+				"bulkcon",
+				"app/controllers/admin/graphs/bulk_sellers_controller.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 247.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

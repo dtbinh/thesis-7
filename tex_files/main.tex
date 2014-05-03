@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Masters/Doctoral Thesis 
+% Masters/Doctoral Thesis
 % LaTeX Template
 % Version 1.41 (9/9/13)
 %
@@ -7,7 +7,7 @@
 % http://www.latextemplates.com
 %
 % Original authors:
-% Steven Gunn 
+% Steven Gunn
 % http://users.ecs.soton.ac.uk/srg/softwaretools/document/templates/
 % and
 % Sunil Patel
@@ -79,7 +79,7 @@
 \zexternaldocument{Chapters/Chapter4_optimal_control_theory}
 
 
-\usepackage[square, numbers, comma, sort&compress]{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
+\usepackage[square, numbers, comma, sort&compress]{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers'
 \hypersetup{urlcolor=blue, colorlinks=true} % Colors hyperlinks in blue - change to black if annoying
 \title{\ttitle} % Defines the thesis title - don't touch this
 
@@ -113,7 +113,7 @@
 \begin{titlepage}
 \begin{center}
 
-QUADROTOR FLIGHT PATH ENERGY OPTIMIZATION
+QUAD-ROTOR FLIGHT PATH ENERGY OPTIMIZATION
 \vspace{15 mm}
 
 By Edward Kemper
@@ -122,7 +122,7 @@ A Thesis
 
 Submitted in Partial Fulfillment
 
-of the requirements for the degree of 
+of the requirements for the degree of
 
 Masters of Science
 
@@ -161,7 +161,7 @@ Dr. Allison Kipple, Ph.D.
 %
 %I, \authornames, declare that this thesis titled, '\ttitle' and the work presented in it are my own. I confirm that:
 %
-%\begin{itemize} 
+%\begin{itemize}
 %\item[\tiny{$\blacksquare$}] This work was done wholly or mainly while in candidature for a research degree at this University.
 %\item[\tiny{$\blacksquare$}] Where any part of this thesis has previously been submitted for a degree or any other qualification at this University or any other institution, this has been clearly stated.
 %\item[\tiny{$\blacksquare$}] Where I have consulted the published work of others, this is always clearly attributed.
@@ -169,10 +169,10 @@ Dr. Allison Kipple, Ph.D.
 %\item[\tiny{$\blacksquare$}] I have acknowledged all main sources of help.
 %\item[\tiny{$\blacksquare$}] Where the thesis is based on work done by myself jointly with others, I have made clear exactly what was done by others and what I have contributed myself.\\
 %\end{itemize}
-% 
+%
 %Signed:\\
 %\rule[1em]{25em}{0.5pt} % This prints a line for the signature
-% 
+%
 %Date:\\
 %\rule[1em]{25em}{0.5pt} % This prints a line to write the date
 %}
@@ -195,7 +195,7 @@ Dr. Allison Kipple, Ph.D.
 
 %\vfill\vfill\vfill\vfill\vfill\vfill\null % Add some space at the bottom to position the quote just right
 
-%\clearpage % Start a new page
+%\clearpage % Start a new pageds
 
 %----------------------------------------------------------------------------------------
 %	ABSTRACT PAGE
@@ -205,7 +205,7 @@ Dr. Allison Kipple, Ph.D.
 
 \abstract{\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
 
-Quad-Rotor UAVs have been a popular area of research and development in the last decade, especially with the advent of affordable microcontrollers like the MSP 430 and the Raspberry Pi. Path-Energy Optimization is an area that is well developed for linear systems. In this thesis, this idea of path-energy optimization is extended to the nonlinear model of the Quad-rotor UAV. The classical optimization techniques is adapted to the nonlinear model that is derived for the problem at hand, coming up with a set of partial differential equations and boundary value conditions to solve these equations. Then, different techniques to implement energy optimization algorithms are tested using simulations in Python. First, a purely nonlinear approach is used. This method is shown to be computationally intensive, with no practical solution available in a reasonable amount of time. Second, heuristic techniques to minimize the energy of the flight path is tested, using Ziegler-Nichols' PID tuning technique. Finally, a brute force lookup table based PID controller is used. Simulation results of the heuristic method show both reliable control of the system and path-energy optimization are achieved in a reasonable amount of time.
+Quad-Rotor unmanned areal vehicles (UAVs) have been a popular area of research and development in the last decade, especially with the advent of affordable microcontrollers like the MSP 430 and the Raspberry Pi. Path-Energy Optimization is an area that is well developed for linear systems. In this thesis, this idea of path-energy optimization is extended to the nonlinear model of the Quad-rotor UAV. The classical optimization technique is adapted to the nonlinear model that is derived for the problem at hand, coming up with a set of partial differential equations and boundary value conditions to solve these equations. Then, different techniques to implement energy optimization algorithms are tested using simulations in Python. First, a purely nonlinear approach is used. This method is shown to be computationally intensive, with no practical solution available in a reasonable amount of time. Second, heuristic techniques to minimize the energy of the flight path are tested, using Ziegler-Nichols' proportional integral derivative (PID) controller tuning technique. Finally, a brute force lookup table based PID controller is used. Simulation results of the heuristic method show that both reliable control of the system and path-energy optimization are achieved in a reasonable amount of time.
 
 %In this thesis we develop and compare two methods for the energy optimization of a quad rotor UAV flight path between two known points. First, we use classical optimal control techniques and find an approximate solution to the resulting boundary value problem. This method is shown to be too computationally intensive to %provide a solution in a reasonable amount of time. The second method that is developed is a heuristic technique which minimizes the energy of the flight path through optimal PID controller tuning. Simulation results of the heuristic method show that both reliable control of the system and energy minimization are achieved. %{\color{red}WHAT SPECIFIC CHANGES / ADDITIONS ARE NEEDED HERE}
 %}
@@ -220,7 +220,7 @@ Quad-Rotor UAVs have been a popular area of research and development in the last
 
 \acknowledgements{\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
 
-There are a great many people who need to be recognized for their contribution to the success of my academic endeavors. Thank you to my parents for their continued financial and moral support. Thank you to Terry Halmo, Dr. Monty Mola, Dr. Wes Bliven, Dr. Robert Zoellner, and the rest of the Physics and Chemistry Faculty at Humboldt State for their work in mentoring and teaching. Thank you to Dr. Allison Kipple, Dr. Sheryl Howard, Dr. Paul Flikkema, Dr. Phillip Mlsna, and the rest of the Engineering Faculty at NAU. Thank you to Emily, my partner, for taking in stride the rich insanity of math and code that sometimes dominates my being. Finally thank you to Dr. Niranjan Venkatraman for his continuous, enthusiastic involvement in the development of this thesis. 
+There are a great many people who need to be recognized for their contribution to the success of my academic endeavors. Thank you to my parents for their continued financial and moral support. Thank you to Terry Halmo, Dr. Monty Mola, Dr. Wes Bliven, Dr. Robert Zoellner, and the rest of the Physics and Chemistry Faculty at Humboldt State for their work in mentoring and teaching. Thank you to Dr. Allison Kipple, Dr. Sheryl Howard, Dr. Paul Flikkema, Dr. Phillip Mlsna, and the rest of the Engineering Faculty at NAU. Thank you to Emily, my partner, for taking in stride the rich insanity of math and code that sometimes dominates my being. Finally thank you to Dr. Niranjan Venkatraman for his continuous, enthusiastic involvement in the development of this thesis.
 }
 \clearpage % Start a new page
 
@@ -316,16 +316,16 @@ There are a great many people who need to be recognized for their contribution t
 
 \input{Chapters/Chapter1_introduction}
 \input{Chapters/Chapter2_problem_statement}
-\input{Chapters/Chapter3_qr_dynamic_model} 
+\input{Chapters/Chapter3_qr_dynamic_model}
 \input{Chapters/Chapter4_optimal_control_theory}
 \input{Chapters/Chapter5_boundary_value_problem_setup}
-\input{Chapters/Chapter6_PID_control} 
+\input{Chapters/Chapter6_PID_control}
 \input{Chapters/Chapter7_PID_optimization}
 \input{Chapters/Chapter8_conclusion}
 
-%\input{Chapters/Chapter5} 
-%\input{Chapters/Chapter6} 
-%\input{Chapters/Chapter7} 
+%\input{Chapters/Chapter5}
+%\input{Chapters/Chapter6}
+%\input{Chapters/Chapter7}
 
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - APPENDICES
@@ -363,4 +363,4 @@ There are a great many people who need to be recognized for their contribution t
 
 \bibliography{Bibliography}%,IEEEexample,IEEEabrv} % The references (bibliography) information are stored in the file named "Bibliography.bib"
 
-\end{document}  
+\end{document}

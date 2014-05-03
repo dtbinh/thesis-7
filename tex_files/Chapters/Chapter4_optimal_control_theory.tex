@@ -9,7 +9,7 @@
 In this chapter, we will define a two point boundary value problem formulation, and explore the classical optimal control formulation. The solution to this boundary value problem gives the control inputs to the system which produce optimal behavior. The set of mathematical conditions which define the boundary value problem are termed 'optimality conditions'. The content of this chapter is left generalized. It can be applied to any second order dynamic system. In chapter 5, the optimality conditions are applied to the dynamical model of the quad-rotor which was derived in Chapter 3.
 
 Note the names 'Lagrangian' and 'Hamiltonian' are used here in an optimal control context. The multiple use of these names in reference to specific types of expressions is an artifact of the pervasive work of Lagrange and Hamilton. Both optimal control theory and Hamiltonian / Lagrangian mechanics are rooted in the calculus of variations. The dynamic model of the quad-rotor and the optimal control formulation described below are both results from a form of functional optimization. We rely on a contextual and conceptual separation in our understanding. Specifically, the 'Lagrangian', which is formed as the difference of the expressions for kinetic and potential energies, is unique to the context of classical mechanics. Likewise, the 'Lagrangian' in the optimal control context is a term in the integrand of our objective function which represents a vector of performance metrics. The Hamiltonian from classical mechanics is formed as the sum of kinetic and potential energies. This is different than the Hamiltonian used here in the optimal control context.
- 
+
 
 
 \section{Derivation of the Objective Function}
@@ -24,7 +24,7 @@ The real power of the optimal control formulation is in the use of the Lagrangia
 
 \subsection{Hamiltonian}
 
-For the optimal control formulation, the Hamiltonian can be written as 
+For the optimal control formulation, the Hamiltonian can be written as
 
 \begin{equation}
     H = L(q(t),u(t),t) + \lambda^T \big( F(q(t),u(t),t) \big)
@@ -33,7 +33,7 @@ For the optimal control formulation, the Hamiltonian can be written as
 The Hamiltonian allows for a concise expression of the Lagrangian, the co-state function $\lambda$ and the constraint equations.
 
 
-\subsection{The Objective Function}       
+\subsection{Objective Function}
 
 The dynamic equations of motion are appended to the performance index as follows.
 
@@ -109,12 +109,12 @@ The first variation in J is given by\\
                  + \nu^T \frac{\p \Psi}{\p \dot q}\delta \dot q |_{t_f}
                  + \big[ \dot \lambda^T \delta q - \lambda^T  \delta \dot q\big]_{t_0}^{t_f}\\
                &+ \int_{t_0}^{t_f}  \big[ \frac{\p H}{\p q}\delta q +
-                                           \frac{\p H}{\p \dot q}\delta \dot q 
-                                           + \frac{\p H}{\p u}\delta u 
+                                           \frac{\p H}{\p \dot q}\delta \dot q
+                                           + \frac{\p H}{\p u}\delta u
                                            - \ddot \lambda^T  \delta q  \big]   \text{  } dt\\
-\end{split}    
+\end{split}
 \end{equation}
- 
+
 \begin{equation}
 \begin{split}
     \delta J &= (\nu^T\frac{\p \Psi}{\p q} + \dot \lambda^T) \delta q |_{t_f}
@@ -131,7 +131,7 @@ The optimality conditions are found by setting $\delta J = 0 $ and asserting tha
 The Co state equations are
 \begin{equation}
     \label{costate}
-    \frac{\p H}{ \p q } = \ddot \lambda 
+    \frac{\p H}{ \p q } = \ddot \lambda
 \end{equation}
 
 \begin{equation}
@@ -141,7 +141,7 @@ The Co state equations are
 The Stationarity Conditions are
 
 \begin{equation}
-    \frac{\p H}{\p u} = 0 
+    \frac{\p H}{\p u} = 0
 \end{equation}
 
 \begin{equation}
@@ -157,7 +157,7 @@ Secondary algebraic Co state condition
 \end{equation}
 
 \begin{equation}
-    (\frac{\p F}{\p \dot q})^T \lambda = 0 
+    (\frac{\p F}{\p \dot q})^T \lambda = 0
 \end{equation}
 
 
@@ -187,50 +187,50 @@ Initial Co state conditions
     \dot \lambda(t_0) = 0
 \end{equation}
 
-Together, the state equations, the co-state equations, the stationarity equations, the secondary algebraic constraints, and the boundary conditions form a complete two-point boundary value problem. 
+Together, the state equations, the co-state equations, the stationarity equations, the secondary algebraic constraints, and the boundary conditions form a complete two-point boundary value problem.
 
 
 \section{Solving the Boundary Value Problem}
 
-Boundary value problems are very common in many science and engineering fields. They can become quite complicated and require significant computation to reach a solution. Two general ways to solve two-point boundary value problems are the shooting method and the finite difference method \cite{keller1992numerical},\cite{rao2001applied}. Both have limitations. 
+Boundary value problems are very common in many science and engineering fields. They can become quite complicated and require significant computation to reach a solution. Two general ways to solve two-point boundary value problems are the shooting method and the finite difference method \cite{keller1992numerical},\cite{rao2001applied}. Both have limitations.
 
-\subsection{The Shooting Method}
+\subsection{Shooting Method}
 
-The shooting method is a relatively straightforward combination of a time marching quadrature method (Runga-Kutta or the like...) to solve a set of differential equations and an error minimization technique. The shooting method works by iteratively solving the set of differential equations as an initial value problem and then measuring the error in the final state of the system compared to the desired final state. The shooting method is subject to the stability of the differential equations in question. If the time marching algorithm does not converge, the method will not work. Unfortunately, the boundary value problem for the quad-rotor that is formulated in the next chapter falls into this category. The quad-rotor system model and the coupled optimality conditions are simply too unstable to be solved with the shooting method. 
+The shooting method is a relatively straightforward combination of a time marching quadrature method (Runga-Kutta or the like...) to solve a set of differential equations and an error minimization technique. The shooting method works by iteratively solving the set of differential equations as an initial value problem and then measuring the error in the final state of the system compared to the desired final state. The shooting method is subject to the stability of the differential equations in question. If the time marching algorithm does not converge, the method will not work. Unfortunately, the boundary value problem for the quad-rotor that is formulated in the next chapter falls into this category. The quad-rotor system model and the coupled optimality conditions are simply too unstable to be solved with the shooting method.
 
 \begin{itemize}
 \item Advantages
-    \begin{itemize} 
+    \begin{itemize}
         \item straightforward iterative quadrature method and error minimization
     \end{itemize}
 \item Disadvantages
-    \begin{itemize} 
-        \item does not always converge 
+    \begin{itemize}
+        \item does not always converge
     \end{itemize}
 \end{itemize}
 
 
 
 
-\subsection{The Finite Difference Method}
+\subsection{Finite Difference Method}
 
 The finite difference method poses another possibility \cite{rao2001applied}. It involves creating a system of algebraic equations to be solved at each instance in time where the solution is desired. For a simulation like ours, this means at least hundreds if not thousands of time steps. The derivatives in the differential equations are expressed as finite differences involving variables at adjacent time steps. The values of each state and co-state variable are defined as unknowns at each time step. This creates a system of equations involving several thousand unknowns that need to be solved for. For a linear system this is not so bad because the problem is reduced to the inversion of a sparse matrix. For this, there are efficient numerical algorithms that can be used. Since the quad-rotor boundary value problem is non linear, it must be solved with a gradient descent technique or something similar.
 
 \begin{itemize}
 \item Advantages
-    \begin{itemize} 
+    \begin{itemize}
         \item turns the BVP into a system of algebraic equations
         \item easy to solve for linear system
     \end{itemize}
 \item Disadvantages
-    \begin{itemize} 
+    \begin{itemize}
         \item hard to solve for nonlinear system
-        \item does not always converge 
+        \item does not always converge
     \end{itemize}
 \end{itemize}
 
-In the next chapter we derive the set of differential equations which form the boundary value problem defined by our goal of optimizing the energy usage of a quad-rotor.  
+In the next chapter we derive the set of differential equations which form the boundary value problem defined by our goal of optimizing the energy usage of a quad-rotor.
 
-    
+
 
 

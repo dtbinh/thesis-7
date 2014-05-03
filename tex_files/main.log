@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.3.1)  17 APR 2014 07:48
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.3.1)  3 MAY 2014 11:28
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -817,50 +817,44 @@ Chapter 2.
 ]) (./Chapters/Chapter3_qr_dynamic_model.tex [7]
 Chapter 3.
 ------------------------------------------------------------------------------
- 3 Quadrotor Dynamic Model
+ 3 Quad-Rotor Dynamic Model
 ------------------------------------------------------------------------------
 [8
 
-] <Figures/coords.pdf, id=389, 794.97pt x 614.295pt>
+]
+
+LaTeX Warning: Reference `fig: Quad-Rotor Coordinate System' on page 9 undefine
+d on input line 21.
+
+<Figures/coords.pdf, id=386, 794.97pt x 614.295pt>
 File: Figures/coords.pdf Graphic file (type pdf)
+ <use Figures/coords.pdf>
+Underfull \hbox (badness 10000) in paragraph at lines 32--35
 
-<use Figures/coords.pdf>
-Underfull \hbox (badness 10000) in paragraph at lines 38--41
+ []
+
+[9 <./Figures/coords.pdf>] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--51
-
- []
-
-[9] [10 <./Figures/coords.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 79--83
+Underfull \hbox (badness 10000) in paragraph at lines 88--92
 
  []
 
 [11] [12] [13] [14]
-LaTeX Font Info:    Try loading font information for U+euf on input line 240.
+LaTeX Font Info:    Try loading font information for U+euf on input line 251.
  (/usr/share/texmf-texlive/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2009/06/22 v3.00 Euler Fraktur
 )
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 288--289
+Underfull \hbox (badness 10000) in paragraph at lines 299--300
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 304--305
+Underfull \hbox (badness 10000) in paragraph at lines 315--316
 
  []
 
@@ -945,28 +939,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
 
-[42] [43] [44] [45] [46]
-<Figures/typical_run_time_3D_path.png, id=755, 586.8324pt x 442.2924pt>
+[42] [43] [44] [45]
+
+LaTeX Warning: Reference `fig: Typical Run 3D Path' on page 46 undefined on inp
+ut line 225.
+
+
+LaTeX Warning: Reference `fig: Large Setpoint Time Domain' on page 46 undefined
+ on input line 225.
+
+[46]
+
+LaTeX Warning: Reference `fig: Large Setpoint Time Domain' on page 47 undefined
+ on input line 229.
+
+
+LaTeX Warning: Reference `fig: Typical Run Time Domain' on page 47 undefined on
+ input line 231.
+
+
+LaTeX Warning: Reference `fig: Large Setpoint Time Domain' on page 47 undefined
+ on input line 231.
+
+
+LaTeX Warning: Reference `fig: Typical Run Time Domain' on page 47 undefined on
+ input line 231.
+
+<Figures/typical_run_time_3D_path.png, id=752, 586.8324pt x 442.2924pt>
 File: Figures/typical_run_time_3D_path.png Graphic file (type png)
 
 <use Figures/typical_run_time_3D_path.png>
-<Figures/typical_run_time_domain.png, id=757, 586.8324pt x 442.2924pt>
+<Figures/typical_run_time_domain.png, id=754, 586.8324pt x 442.2924pt>
 File: Figures/typical_run_time_domain.png Graphic file (type png)
 
 <use Figures/typical_run_time_domain.png>
-<Figures/CubeEdges3D.png, id=758, 586.8324pt x 442.2924pt>
+<Figures/CubeEdges3D.png, id=755, 586.8324pt x 442.2924pt>
 File: Figures/CubeEdges3D.png Graphic file (type png)
 
 <use Figures/CubeEdges3D.png>
-<Figures/CubeEdgesGraphs.png, id=759, 586.8324pt x 442.2924pt>
+<Figures/CubeEdgesGraphs.png, id=756, 586.8324pt x 442.2924pt>
 File: Figures/CubeEdgesGraphs.png Graphic file (type png)
 
 <use Figures/CubeEdgesGraphs.png>
-<Figures/largeSetpointDifferencesTest_3d.png, id=760, 586.8324pt x 442.2924pt>
+<Figures/largeSetpointDifferencesTest_3d.png, id=757, 586.8324pt x 442.2924pt>
 File: Figures/largeSetpointDifferencesTest_3d.png Graphic file (type png)
 
 <use Figures/largeSetpointDifferencesTest_3d.png>
-<Figures/largeSetpointDifferencesTest_timedomain.png, id=761, 586.8324pt x 442.
+<Figures/largeSetpointDifferencesTest_timedomain.png, id=758, 586.8324pt x 442.
 2924pt>
 File: Figures/largeSetpointDifferencesTest_timedomain.png Graphic file (type pn
 g)
@@ -982,15 +1001,29 @@ Chapter 7.
 ------------------------------------------------------------------------------
 [54
 
-] [55] [56] <Figures/kuvsthrust.png, id=819, 414.1071pt x 312.2064pt>
+] [55] [56]
+
+LaTeX Warning: Reference `fig:ku vs thrust' on page 57 undefined on input line 
+49.
+
+<Figures/kuvsthrust.png, id=815, 414.1071pt x 312.2064pt>
 File: Figures/kuvsthrust.png Graphic file (type png)
 
-<use Figures/kuvsthrust.png> [57 <./Figures/kuvsthrust.png>] [58]
-<Figures/optimal_run_3D_path.png, id=836, 586.8324pt x 442.2924pt>
+<use Figures/kuvsthrust.png>
+
+LaTeX Warning: Reference `fig:ku vs thrust' on page 57 undefined on input line 
+60.
+
+
+LaTeX Warning: Reference `fig:ku vs thrust' on page 57 undefined on input line 
+60.
+
+[57 <./Figures/kuvsthrust.png>] [58]
+<Figures/optimal_run_3D_path.png, id=830, 586.8324pt x 442.2924pt>
 File: Figures/optimal_run_3D_path.png Graphic file (type png)
 
 <use Figures/optimal_run_3D_path.png>
-<Figures/optimal_run_time_domain.png, id=837, 586.8324pt x 442.2924pt>
+<Figures/optimal_run_time_domain.png, id=831, 586.8324pt x 442.2924pt>
 File: Figures/optimal_run_time_domain.png Graphic file (type png)
 
 <use Figures/optimal_run_time_domain.png> [59] [60] [61 <./Figures/optimal_run_
@@ -1099,19 +1132,23 @@ Underfull \hbox (badness 2529) in paragraph at lines 49--55
 [121
 
 
-] [122]) [123] (./main.aux) )
+] [122]) [123] (./main.aux)
+
+LaTeX Warning: There were undefined references.
+
+ )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 206 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 13735 strings out of 495061
- 185031 string characters out of 1182622
+ 13744 strings out of 495061
+ 185181 string characters out of 1182622
  1298331 words of memory out of 3000000
- 13714 multiletter control sequences out of 15000+50000
+ 13721 multiletter control sequences out of 15000+50000
  15517 words of font info for 57 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 48i,21n,45p,1521b,1982s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,21n,45p,1524b,1987s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12
 .pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr
 /share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texm
@@ -1128,9 +1165,9 @@ cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pf
 b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texmf-tex
 live/fonts/type1/public/amsfonts/euler/eufm10.pfb>
-Output written on main.pdf (130 pages, 1531838 bytes).
+Output written on main.pdf (130 pages, 1531322 bytes).
 PDF statistics:
- 4355 PDF objects out of 5155 (max. 8388607)
- 2913 named destinations out of 2984 (max. 500000)
+ 4349 PDF objects out of 5155 (max. 8388607)
+ 2915 named destinations out of 2984 (max. 500000)
  419 words of extra memory for PDF output out of 10000 (max. 10000000)
 

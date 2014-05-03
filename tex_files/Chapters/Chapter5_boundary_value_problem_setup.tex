@@ -2,17 +2,17 @@
 
 \chapter{Quad-rotor Boundary Value Problem} % Main chapter title
 
-\label{Chapter5} 
+\label{Chapter5}
 
-\lhead{Chapter 5. \emph{Quad-rotor Boundary Value Problem}} 
+\lhead{Chapter 5. \emph{Quad-Rotor Boundary Value Problem}}
 
-In this chapter we use the expressions for the dynamic model of the quad-rotor (equations \ref{lineareq} and \ref{angulareq} ) and the optimal control formulation (equations \ref{costate} through \ref{initialcostateder}) to derive the optimality conditions for our specific problem. 
+In this chapter we use the expressions for the dynamic model of the quad-rotor (equations \ref{lineareq} and \ref{angulareq} ) and the optimal control formulation (equations \ref{costate} through \ref{initialcostateder}) to derive the optimality conditions for our specific problem.
 
 Recall from chapter 4 that each of the optimality conditions is a mathematical result of setting the first variation of the objective function equal to zero. To maintain algebraic continuity, each additive term must then be zero. Using this logic, each of the optimality conditions are obtained. Given the general form of the optimality conditions, we can introduce the quad-rotor dynamic model. The resulting expressions can be simplified to arrive at specific equations which form our quad-rotor boundary value problem. The optimal flight path and the optimal control input as a function of time form the solution to this boundary value problem.
 
 
 %========================================================================================================
-\section{The Co-State equations}
+\section{Co-State Equations}
 
 
 The Co-State equations are expressed as follows where $F$ is our set of system equations and $L$ is the Lagrangian defined in our performance index. Since the Lagrangian does not depend on the state, the co-state differential equation simplifies. Recall that the Lagrangian for our optimization is $ L[q(t),u(t),t] = u^T I u $ .
@@ -91,7 +91,7 @@ The simplified result is
 
 
 %========================================================================================================
-\section{Secondary Algebraic Co-state Equations}
+\section{Secondary Algebraic Co-State Equations}
 
 These algebraic conditions are a result of setting the variation of $J$ equal to zero. They are unique to the derivation in Chapter 4, which involves a second order rather than first order representation of the system equations.
 
@@ -190,7 +190,7 @@ Like with the other optimality conditions, the partials in this matrix must be c
 %========================================================================================================
 \section{Stationarity Conditions}
 
-The stationarity conditions express the relationship between the derivatives of the system equation with respect to the input $u$, the costate variable $\lambda(t)$, and the derivative of the Lagrangian with respect to the input. 
+The stationarity conditions express the relationship between the derivatives of the system equation with respect to the input $u$, the costate variable $\lambda(t)$, and the derivative of the Lagrangian with respect to the input.
 
 \begin{equation}
     (\frac{\p H}{\p u})^T = (\frac{\p F}{\p u})^T \lambda + (\frac{\p L}{\p u})^T = 0
@@ -234,7 +234,7 @@ The stationarity conditions express the relationship between the derivatives of 
     \lambda_4\\
     \lambda_5\\
     \lambda_6\\
-    \end{array}\right) + 2 
+    \end{array}\right) + 2
     \left(\begin{array}{c} u_1 \\ u_2 \\ u_3 \\ u_4\end{array}\right)
 \end{equation}
 
@@ -271,7 +271,7 @@ The continuous system equations are given as follows.
        \begin{array}{c}
         0\\
         0\\
-        g  
+        g
       \end{array}
     \right)
     +\frac{T}{m}
@@ -295,7 +295,7 @@ The continuous system equations are given as follows.
     \left[ \left(
         \begin{array}{c}
             l s (-\omega_2^2 + \omega_4^2)\\
-            l s (-\omega_1^2 + \omega_3^2)\\ 
+            l s (-\omega_1^2 + \omega_3^2)\\
             \sum \limits_{i=1}^4 b \omega_i^2\\
         \end{array}
     \right) -
@@ -310,7 +310,7 @@ The continuous system equations are given as follows.
     \right]
 \end{equation}
 
-The discrete-time system equations are 
+The discrete-time system equations are
 
 \begin{equation}
     \left(
@@ -324,7 +324,7 @@ The discrete-time system equations are
        \begin{array}{c}
         0\\
         0\\
-        g  
+        g
       \end{array}
     \right)
     +\frac{T[k]}{m}
@@ -367,11 +367,11 @@ The discrete-time system equations are
 The reason for computing all the partial derivatives numerically is now apparent. To compute the partials analytically, one would have to deal with the products between the rows of the Coriolis matrix (Equation \ref{cor}) and the columns of the inverse of the Jacobian matrix (Equation \ref{J}). This sort of computation is the very reason computers were invented in the first place.
 
 
-\section{A Finite Difference Solution to the Quad-rotor Boundary Value Problem}
+\section{A Finite Difference Solution to the Quad-Rotor Boundary Value Problem}
 
-The finite difference method for solving boundary value problems was introduced at the end of Chapter 4. This method reduces our optimal control problem to solving a system of nonlinear algebraic equations. This is a reduction in theoretical complexity but a dramatic increase in computational complexity. 
+The finite difference method for solving boundary value problems was introduced at the end of Chapter 4. This method reduces our optimal control problem to solving a system of nonlinear algebraic equations. This is a reduction in theoretical complexity but a dramatic increase in computational complexity.
 
-The script 'finiteDiffSolution.py' (Appendix \ref{AppendixF}) implements the finite difference method in an attempt to solve the quad-rotor boundary value problem. Recall that the computational problem is posed as solving a system of nonlinear algebraic equations. This system of equations is composed of the state equations, the co-state equations, the stationarity conditions, the secondary algebraic conditions, and the boundary conditions. Each of these expressions are possibly functions of the state variables, the co-state variables and the control input. Solving this system becomes a tremendous task since the state, co-state, and control variables become the unknowns for each instance in time for which a solution to the boundary value problem is desired! In order to sufficiently represent the dynamics of the quadrotor, on the order of thousands of time steps are necessary. To solve this nonlinear system, a straightforward steepest descent technique was used:  
+The script 'finiteDiffSolution.py' (Appendix \ref{AppendixF}) implements the finite difference method in an attempt to solve the quad-rotor boundary value problem. Recall that the computational problem is posed as solving a system of nonlinear algebraic equations. This system of equations is composed of the state equations, the co-state equations, the stationarity conditions, the secondary algebraic conditions, and the boundary conditions. Each of these expressions are possibly functions of the state variables, the co-state variables and the control input. Solving this system becomes a tremendous task since the state, co-state, and control variables become the unknowns for each instance in time for which a solution to the boundary value problem is desired! In order to sufficiently represent the dynamics of the quadrotor, on the order of thousands of time steps are necessary. To solve this nonlinear system, a straightforward steepest descent technique was used:
 
 
 \begin{itemize}
@@ -382,13 +382,13 @@ The script 'finiteDiffSolution.py' (Appendix \ref{AppendixF}) implements the fin
     \item{The vector of unknowns is 'moved' in the direction of the negative of the gradient.}
     \item{The new value of the objective function as well as the gradient are evaluated with the new vector of unknowns. }
     \item{The state of the minimization process is checked against appropriate convergence criteria.}
-\end{enumerate} 
+\end{enumerate}
 \end{itemize}
 
 
-Conceptually, this algorithm is relatively straightforward. Computationally, it is pretty overbearing. The debug cycle was terribly slow even with only ten defined time steps. The potential of this type of solution to provide realistic results is overshadowed by the exorbitant time requirement. There would be no realistic way to implement this algorithm in this form on an embedded system, which was loosely included as one of our research objectives. 
+Conceptually, this algorithm is relatively straightforward. Computationally, it is pretty overbearing. The debug cycle was terribly slow even with only ten defined time steps. The potential of this type of solution to provide realistic results is overshadowed by the exorbitant time requirement. There would be no realistic way to implement this algorithm in this form on an embedded system, which was loosely included as one of our research objectives.
 
-Instead, in the next chapter we turn to different methods of control and optimization. Control of the system will be achieved with PID expressions. The optimization problem will be approached by appropriately manipulating the gains of the PID control laws in order to change the system behavior.   
+Instead, in the next chapter we turn to different methods of control and optimization. Control of the system will be achieved with PID expressions. The optimization problem will be approached by appropriately manipulating the gains of the PID control laws in order to change the system behavior.
 
 
 
