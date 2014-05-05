@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.3.1)  3 MAY 2014 11:28
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.3.1)  5 MAY 2014 16:40
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -826,7 +826,7 @@ Chapter 3.
 LaTeX Warning: Reference `fig: Quad-Rotor Coordinate System' on page 9 undefine
 d on input line 21.
 
-<Figures/coords.pdf, id=386, 794.97pt x 614.295pt>
+<Figures/coords.pdf, id=381, 794.97pt x 614.295pt>
 File: Figures/coords.pdf Graphic file (type pdf)
  <use Figures/coords.pdf>
 Underfull \hbox (badness 10000) in paragraph at lines 32--35
@@ -866,40 +866,40 @@ Chapter 4.
 [18
 
 ] [19] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 51--53
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
 [21]
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
  []
 
-[22] [23] [24]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 202.
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
+
+ []
+
+[23] [24] [25]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 215.
 
  (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 202.
- [25]
-[26]) (./Chapters/Chapter5_boundary_value_problem_setup.tex [27]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 215.
+ [26])
+(./Chapters/Chapter5_boundary_value_problem_setup.tex [27]
 Chapter 5.
 ------------------------------------------------------------------------------
  5 Quad-rotor Boundary Value Problem
@@ -912,7 +912,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
  []
 
 [29] [30] [31] [32] [33] [34] [35]
-Overfull \hbox (19.84566pt too wide) detected at line 365
+Overfull \hbox (19.84566pt too wide) detected at line 370
 [] [] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 J[]\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 k
 \OT1/cmr/m/n/12 ] []
  []
@@ -925,117 +925,117 @@ Chapter 6.
 [40
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 36--39
+Underfull \hbox (badness 10000) in paragraph at lines 33--36
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--43
+Underfull \hbox (badness 10000) in paragraph at lines 37--40
 
  []
 
 [41]
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
  []
 
 [42] [43] [44] [45]
 
 LaTeX Warning: Reference `fig: Typical Run 3D Path' on page 46 undefined on inp
-ut line 225.
+ut line 202.
 
 
 LaTeX Warning: Reference `fig: Large Setpoint Time Domain' on page 46 undefined
- on input line 225.
+ on input line 202.
 
 [46]
 
 LaTeX Warning: Reference `fig: Large Setpoint Time Domain' on page 47 undefined
- on input line 229.
+ on input line 206.
 
 
 LaTeX Warning: Reference `fig: Typical Run Time Domain' on page 47 undefined on
- input line 231.
+ input line 208.
 
 
 LaTeX Warning: Reference `fig: Large Setpoint Time Domain' on page 47 undefined
- on input line 231.
+ on input line 208.
 
 
 LaTeX Warning: Reference `fig: Typical Run Time Domain' on page 47 undefined on
- input line 231.
+ input line 208.
 
-<Figures/typical_run_time_3D_path.png, id=752, 586.8324pt x 442.2924pt>
+[47] <Figures/typical_run_time_3D_path.png, id=756, 586.8324pt x 442.2924pt>
 File: Figures/typical_run_time_3D_path.png Graphic file (type png)
 
 <use Figures/typical_run_time_3D_path.png>
-<Figures/typical_run_time_domain.png, id=754, 586.8324pt x 442.2924pt>
+<Figures/typical_run_time_domain.png, id=758, 586.8324pt x 442.2924pt>
 File: Figures/typical_run_time_domain.png Graphic file (type png)
 
 <use Figures/typical_run_time_domain.png>
-<Figures/CubeEdges3D.png, id=755, 586.8324pt x 442.2924pt>
+<Figures/CubeEdges3D.png, id=759, 586.8324pt x 442.2924pt>
 File: Figures/CubeEdges3D.png Graphic file (type png)
 
 <use Figures/CubeEdges3D.png>
-<Figures/CubeEdgesGraphs.png, id=756, 586.8324pt x 442.2924pt>
+<Figures/CubeEdgesGraphs.png, id=760, 586.8324pt x 442.2924pt>
 File: Figures/CubeEdgesGraphs.png Graphic file (type png)
 
 <use Figures/CubeEdgesGraphs.png>
-<Figures/largeSetpointDifferencesTest_3d.png, id=757, 586.8324pt x 442.2924pt>
+<Figures/largeSetpointDifferencesTest_3d.png, id=761, 586.8324pt x 442.2924pt>
 File: Figures/largeSetpointDifferencesTest_3d.png Graphic file (type png)
 
 <use Figures/largeSetpointDifferencesTest_3d.png>
-<Figures/largeSetpointDifferencesTest_timedomain.png, id=758, 586.8324pt x 442.
+<Figures/largeSetpointDifferencesTest_timedomain.png, id=762, 586.8324pt x 442.
 2924pt>
 File: Figures/largeSetpointDifferencesTest_timedomain.png Graphic file (type pn
 g)
  <use Figures/largeSetpointDifferencesTest_timedomain.png>)
-(./Chapters/Chapter7_PID_optimization.tex [47] [48 <./Figures/typical_run_time_
-3D_path.png>] [49 <./Figures/typical_run_time_domain.png>] [50 <./Figures/CubeE
-dges3D.png>] [51 <./Figures/CubeEdgesGraphs.png>] [52 <./Figures/largeSetpointD
-ifferencesTest_3d.png>] [53 <./Figures/largeSetpointDifferencesTest_timedomain.
+(./Chapters/Chapter7_PID_optimization.tex [48 <./Figures/typical_run_time_3D_pa
+th.png>] [49 <./Figures/typical_run_time_domain.png>] [50] [51 <./Figures/CubeE
+dges3D.png>] [52 <./Figures/CubeEdgesGraphs.png>] [53 <./Figures/largeSetpointD
+ifferencesTest_3d.png>] [54 <./Figures/largeSetpointDifferencesTest_timedomain.
 png>]
 Chapter 7.
 ------------------------------------------------------------------------------
  7 PID Gain Optimization
 ------------------------------------------------------------------------------
-[54
+[55
 
-] [55] [56]
+] [56] [57]
 
-LaTeX Warning: Reference `fig:ku vs thrust' on page 57 undefined on input line 
+LaTeX Warning: Reference `fig:ku vs thrust' on page 58 undefined on input line 
 49.
 
-<Figures/kuvsthrust.png, id=815, 414.1071pt x 312.2064pt>
+<Figures/kuvsthrust.png, id=819, 414.1071pt x 312.2064pt>
 File: Figures/kuvsthrust.png Graphic file (type png)
 
 <use Figures/kuvsthrust.png>
 
-LaTeX Warning: Reference `fig:ku vs thrust' on page 57 undefined on input line 
+LaTeX Warning: Reference `fig:ku vs thrust' on page 58 undefined on input line 
 60.
 
 
-LaTeX Warning: Reference `fig:ku vs thrust' on page 57 undefined on input line 
+LaTeX Warning: Reference `fig:ku vs thrust' on page 58 undefined on input line 
 60.
 
-[57 <./Figures/kuvsthrust.png>] [58]
-<Figures/optimal_run_3D_path.png, id=830, 586.8324pt x 442.2924pt>
+[58 <./Figures/kuvsthrust.png>] [59]
+<Figures/optimal_run_3D_path.png, id=834, 586.8324pt x 442.2924pt>
 File: Figures/optimal_run_3D_path.png Graphic file (type png)
 
 <use Figures/optimal_run_3D_path.png>
-<Figures/optimal_run_time_domain.png, id=831, 586.8324pt x 442.2924pt>
+<Figures/optimal_run_time_domain.png, id=835, 586.8324pt x 442.2924pt>
 File: Figures/optimal_run_time_domain.png Graphic file (type png)
 
-<use Figures/optimal_run_time_domain.png> [59] [60] [61 <./Figures/optimal_run_
-3D_path.png>]) (./Chapters/Chapter8_conclusion.tex [62 <./Figures/optimal_run_t
+<use Figures/optimal_run_time_domain.png> [60] [61] [62 <./Figures/optimal_run_
+3D_path.png>]) (./Chapters/Chapter8_conclusion.tex [63 <./Figures/optimal_run_t
 ime_domain.png>]
 Chapter 8.
 ------------------------------------------------------------------------------
  8 Summary and Future Work
 ------------------------------------------------------------------------------
-[63
+[64
 
-] [64] [65]) (./Appendices/AppendixA.tex [66]
+] [65] [66]) (./Appendices/AppendixA.tex [67]
 Appendix A.
 ------------------------------------------------------------------------------
  A agentModule.py
@@ -1043,77 +1043,77 @@ Appendix A.
 (/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
-(/home/ek/Dropbox/THESIS/python_scripts/agent_module.py [67
+(/home/ek/Dropbox/THESIS/python_scripts/agent_module.py [68
 
-] [68] [69] [70]
-[71] [72] [73] [74] [75] [76] [77] [78] [79] [80] [81] [82] [83]))
-(./Appendices/AppendixB.tex [84]
+] [69] [70] [71]
+[72] [73] [74] [75] [76] [77] [78] [79] [80] [81] [82] [83] [84]))
+(./Appendices/AppendixB.tex [85]
 Appendix B.
 ------------------------------------------------------------------------------
  B waypointNavigation.py
 ------------------------------------------------------------------------------
-(/home/ek/Dropbox/THESIS/python_scripts/waypoint_navigation.py [85
+(/home/ek/Dropbox/THESIS/python_scripts/waypoint_navigation.py [86
 
-] [86]
-[87])) (./Appendices/AppendixC.tex [88]
+] [87]
+[88])) (./Appendices/AppendixC.tex [89]
 Appendix C.
 ------------------------------------------------------------------------------
  C bruteForceFunctions.py
 ------------------------------------------------------------------------------
-(/home/ek/Dropbox/THESIS/python_scripts/brute_force_functions.py [89
+(/home/ek/Dropbox/THESIS/python_scripts/brute_force_functions.py [90
 
-] [90]
-[91] [92] [93])) (./Appendices/AppendixD.tex [94]
+] [91]
+[92] [93] [94])) (./Appendices/AppendixD.tex [95]
 Appendix D.
 ------------------------------------------------------------------------------
  D runSimsBruteForce.py
 ------------------------------------------------------------------------------
-(/home/ek/Dropbox/THESIS/python_scripts/run_sims_brute_force.py [95
+(/home/ek/Dropbox/THESIS/python_scripts/run_sims_brute_force.py [96
 
-] [96]))
-(./Appendices/AppendixE.tex [97]
+] [97]))
+(./Appendices/AppendixE.tex [98]
 Appendix E.
 ------------------------------------------------------------------------------
  E parseResults.py
 ------------------------------------------------------------------------------
-(/home/ek/Dropbox/THESIS/python_scripts/parse_results.py [98
+(/home/ek/Dropbox/THESIS/python_scripts/parse_results.py [99
 
-] [99]))
-(./Appendices/AppendixF.tex [100]
+] [100]))
+(./Appendices/AppendixF.tex [101]
 Appendix F.
 ------------------------------------------------------------------------------
  F finiteDiffSolution.py
 ------------------------------------------------------------------------------
 (/home/ek/Dropbox/THESIS/quadrotor_optimal_control/finiteDiffSolution.py
-[101
+[102
 
 ]
 Overfull \hbox (46.2372pt too wide) in paragraph at lines 57--60
 [][][][] 
  []
 
-[102]
+[103]
 Overfull \hbox (30.93684pt too wide) in paragraph at lines 126--128
 [][][][] 
  []
 
-[103] [104]
+[104] [105]
 Overfull \hbox (30.93684pt too wide) in paragraph at lines 204--206
 [][][][] 
  []
 
-[105] [106]
+[106] [107]
 Overfull \hbox (30.93684pt too wide) in paragraph at lines 295--297
 [][][][] 
  []
 
-[107]
+[108]
 Overfull \hbox (30.93684pt too wide) in paragraph at lines 386--388
 [][][][] 
  []
 
-[108] [109] [110] [111] [112] [113] [114] [115] [116] [117] [118] [119]))
-[120]
+[109] [110] [111] [112] [113] [114] [115] [116] [117] [118] [119] [120]))
+[121]
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
@@ -1129,10 +1129,10 @@ Underfull \hbox (badness 2529) in paragraph at lines 49--55
  3:2451--
  []
 
-[121
+[122
 
 
-] [122]) [123] (./main.aux)
+] [123]) [124] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1142,10 +1142,10 @@ LaTeX Warning: There were undefined references.
 ### simple group (level 1) entered at line 206 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 13744 strings out of 495061
- 185181 string characters out of 1182622
+ 13749 strings out of 495061
+ 185234 string characters out of 1182622
  1298331 words of memory out of 3000000
- 13721 multiletter control sequences out of 15000+50000
+ 13720 multiletter control sequences out of 15000+50000
  15517 words of font info for 57 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  48i,21n,45p,1524b,1987s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1165,9 +1165,9 @@ cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pf
 b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texmf-tex
 live/fonts/type1/public/amsfonts/euler/eufm10.pfb>
-Output written on main.pdf (130 pages, 1531322 bytes).
+Output written on main.pdf (131 pages, 1535023 bytes).
 PDF statistics:
- 4349 PDF objects out of 5155 (max. 8388607)
- 2915 named destinations out of 2984 (max. 500000)
- 419 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4356 PDF objects out of 5155 (max. 8388607)
+ 2921 named destinations out of 2984 (max. 500000)
+ 411 words of extra memory for PDF output out of 10000 (max. 10000000)
 

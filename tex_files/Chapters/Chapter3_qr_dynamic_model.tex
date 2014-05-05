@@ -106,7 +106,7 @@ I = \left(
 \right)
 \end{equation}
 
-\noindent In the inertial frame, the kinetic and potential energy of the system are given by
+In this section, we will use Newton's notation for time derivatives. For instance, $\dot \eta = \frac{\partial \eta}{\partial t} $.  In the inertial frame, the kinetic (( translational and rotational )and potential energy of the system are given by
 
 %translational kinetic energy
 \begin{equation}
@@ -129,17 +129,17 @@ I = \left(
 The Lagrangian is formed as the difference between kinetic and potential energy:
 
 \begin{equation}
-    L = \frac{1}{2}m\dot{\xi }^T\dot{\xi }+\frac{1}{2}\dot{\eta }^T   J   \dot{\eta }\text{  }- m g z
-\end{equation}.
+    L = \frac{1}{2}m\dot{\xi }^T\dot{\xi }+\frac{1}{2}\dot{\eta }^T   J   \dot{\eta }\text{  }- m g z .
+\end{equation}
 
 The Jacobian $J$ is given by
 
 \begin{equation}
   \label{j}
-    J = W_{\eta}^T I W_{\eta}
+    J = W_{\eta}^T I W_{\eta} ,
 \end{equation}
 
-Where
+where
 
 \begin{equation}
 \label{w}
@@ -187,7 +187,7 @@ $\tau $ is the vector of torques acting on the system due to the rotors.
 
 General derivations of the Euler-Lagrange equations of motion can be found in \cite{marion1995classical} and  \cite{cornelius1970variational}.
 
-The coordinates  $ q_i=\{x,y,z,\psi ,\theta ,\phi \} $  are in reference to a ground based inertial coordinate system. The system states and control inputs must be mapped from the quad-rotor frame of reference to the inertial frame in order to express the dynamics of the system. The matrix below represents an arbitrary rotation transformation from the body frame to the inertial frame:
+The coordinates  $ q_i=\{x,y,z,\psi ,\theta ,\phi \} $  are in reference to a ground-based inertial coordinate system. The system states and control inputs must be mapped from the quad-rotor frame of reference to the inertial frame in order to express the dynamics of the system. The matrix R below represents an arbitrary rotation transformation from the body frame to the inertial frame:
 
 \begin{equation}
 \boldsymbol R = \left[ \begin{array}{ccc}
@@ -370,7 +370,7 @@ A complete mathematical representation of the quad-rotor is as follows:\\
 
 Even in this form there are many important aspects of quad-rotor flight dynamics and environmental variables which are omitted. The general problem of designing a system that is able to understand and adapt to varying goals and circumstances is a large one.
 
-Despite the apparent shortcomings of this model, it is very useful as a core component to this thesis. Although the assumed mathematical environment is somewhat of a departure from really, it allows for a firm theoretical basis which validates the development of the control system and optimization scheme.
+Despite the apparent shortcomings of this model, it is very useful as a core component to this thesis. Although the assumed mathematical environment is somewhat of a departure from reality, it allows for a firm theoretical basis which validates the development of the control system and optimization scheme.
 
 
 

@@ -23,3 +23,27 @@ Dr Kipple: page 13, "stopping comments , redo this section in a more readable fo
 need greek letters to go with roll pitch and yaw in 'quadrotor coodinate system ' plot
 
 need another T for transpose , mostly because of equation 3.1
+
+Dr Howard : page 13, is the derivative in eulers equation really with respect to q dot?, same question for equation 3.18...
+
+Need more descriptive text on the optimallity conditions
+
+Dr Kipple: page 29 section 5.1 'similar to parts of chapter 3,  this is becoming non standard and poorly described'
+
+Dr Kipple: page 31 section 5.2 : 'So people have to flip back and fourth to see what variables these are?'
+
+Dr Kipple: page 34 section 5.3 :'nice equation formatting , poor text describing it...'
+
+how to change derivation in section 6.1 to be more readable?
+
+be more descriptive on all figure lables
+
+need description of figures and the typical run table closer to the figures themselves...
+
+fix internet reference : \cite{znwiki} , section 7.1
+
+more desctiption of optimal run table in section 7.2
+
+confused about exact notation for 'arg min' in section 7.1
+
+referencing appendicies in text??
