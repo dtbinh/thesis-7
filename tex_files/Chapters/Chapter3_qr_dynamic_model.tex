@@ -70,14 +70,14 @@ In the quad-rotor frame of reference, the motors produce the following torques o
 
 In the above expression the parameters $l$ and $k$ refer to the length of the quad-rotor arm and an aerodynamic thrust coefficient respectively. The combined thrust of the rotors in the direction of the quad-rotor frame $z$ axis is\\
 \begin{equation}
-\boldsymbol T_B = [0, 0, T]^T
+\boldsymbol{\mathcal{T}_B} = [0, 0, \mathcal{T}]^T
 \end{equation}
 
 where,
 
 \begin{equation}
     \label{totalThrust}
-    T =  \displaystyle \sum \limits_{i=1}^4 f_i
+    \mathcal{T}=  \displaystyle \sum \limits_{i=1}^4 f_i
 \end{equation}.
 
 
@@ -330,7 +330,7 @@ A complete mathematical representation of the quad-rotor is as follows:\\
         g
       \end{array}
     \right)
-    +\frac{T}{m}
+    +\frac{\mathcal{T}}{m}
      \left(
         \begin{array}{c}
              C_{\psi}S_{\theta}C_{\phi} + S_{\psi}S_{\phi} \\
@@ -370,7 +370,7 @@ A complete mathematical representation of the quad-rotor is as follows:\\
 
 Even in this form there are many important aspects of quad-rotor flight dynamics and environmental variables which are omitted. The general problem of designing a system that is able to understand and adapt to varying goals and circumstances is a large one.
 
-Despite the apparent shortcomings of this model, it is very useful as a core component to this thesis. Although the assumed mathematical environment is somewhat of a departure from reality, it allows for a firm theoretical basis which validates the development of the control system and optimization scheme.
+Despite the apparent shortcomings of this model, it is very useful as a core component to this thesis.  Appendix \ref{AppendixA} shows the python implementation of the system model. Although the assumed mathematical environment is somewhat of a departure from reality, it allows for a firm theoretical basis which validates the development of the control system and optimization scheme.
 
 
 

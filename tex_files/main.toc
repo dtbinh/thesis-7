@@ -3,7 +3,7 @@
 \contentsline {chapter}{Acknowledgements}{ii}{dummy.2}
 \vspace {1em}
 \contentsline {chapter}{Contents}{iii}{dummy.3}
-\contentsline {chapter}{List of Figures}{v}{dummy.5}
+\contentsline {chapter}{List of Figures}{iv}{dummy.5}
 \vspace {2em}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.7}
 \contentsline {section}{\numberline {1.1}Motivation}{2}{section.8}
@@ -34,17 +34,16 @@
 \contentsline {section}{\numberline {6.1}Deriving the Control Expressions}{40}{section.113}
 \contentsline {section}{\numberline {6.2}Testing the Control Scheme}{46}{section.142}
 \contentsline {chapter}{\numberline {7}PID Gain Optimization}{55}{chapter.150}
-\contentsline {section}{\numberline {7.1}Initial Simulation Results}{56}{section.151}
-\contentsline {section}{\numberline {7.2}Brute Force Simulation Results}{59}{section.158}
-\contentsline {chapter}{\numberline {8}Summary and Future Work}{64}{chapter.162}
-\contentsline {section}{\numberline {8.1}Summary}{64}{section.163}
-\contentsline {section}{\numberline {8.2}Further Work}{65}{section.164}
+\contentsline {section}{\numberline {7.1}Initial Simulation Results}{56}{section.152}
+\contentsline {section}{\numberline {7.2}Brute Force Simulation Results}{59}{section.159}
+\contentsline {chapter}{\numberline {8}Summary and Future Work}{65}{chapter.164}
+\contentsline {section}{\numberline {8.1}Summary}{65}{section.165}
+\contentsline {section}{\numberline {8.2}Further Work}{66}{section.166}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}agentModule.py}{68}{appendix.165}
-\contentsline {chapter}{\numberline {B}waypointNavigation.py}{86}{appendix.1079}
-\contentsline {chapter}{\numberline {C}bruteForceFunctions.py}{90}{appendix.1252}
-\contentsline {chapter}{\numberline {D}runSimsBruteForce.py}{96}{appendix.1544}
-\contentsline {chapter}{\numberline {E}parseResults.py}{99}{appendix.1682}
-\contentsline {chapter}{\numberline {F}finiteDiffSolution.py}{102}{appendix.1801}
+\contentsline {chapter}{\numberline {A}Dynamic system model and PID control - agentModule.py}{69}{appendix.167}
+\contentsline {chapter}{\numberline {B}A module for updating the PID set point - waypointNavigation.py}{87}{appendix.1081}
+\contentsline {chapter}{\numberline {C}A class of functions that are used in the brute force method - bruteForceFunctions.py}{91}{appendix.1254}
+\contentsline {chapter}{\numberline {D}The brute force implementation - runSimsBruteForce.py}{97}{appendix.1546}
+\contentsline {chapter}{\numberline {E}A module to sort the results of the brute force method - parseResults.py}{100}{appendix.1684}
+\contentsline {chapter}{\numberline {F}The finite difference method applied to the optimal control BVP - finiteDiffSolution.py}{104}{appendix.1846}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{122}{dummy.2788}

@@ -1,81 +1,46 @@
 This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: main.aux
-The style file: unsrtnat.bst
-Database file #1: Bibliography.bib
-Warning--entry type for "znw:2014:Online" isn't style-file defined
---line 334 of file Bibliography.bib
-Warning--string name "april" is undefined
---line 337 of file Bibliography.bib
-Warning--entry type for "airware:2014:Online" isn't style-file defined
---line 342 of file Bibliography.bib
-Warning--string name "april" is undefined
---line 345 of file Bibliography.bib
-Warning--entry type for "diydrones:2014:Online" isn't style-file defined
---line 350 of file Bibliography.bib
-Warning--string name "april" is undefined
---line 353 of file Bibliography.bib
-Warning--entry type for "faa:2014:Online" isn't style-file defined
---line 358 of file Bibliography.bib
-Warning--string name "april" is undefined
---line 361 of file Bibliography.bib
-Name 1 in "Ang, K.H., Chong, G.C.Y., and Li, Y." has a comma at the end for entry AngChong
-while executing---line 1233 of file unsrtnat.bst
-Too many commas in name 1 of "Ang, K.H., Chong, G.C.Y., and Li, Y." for entry AngChong
-while executing---line 1233 of file unsrtnat.bst
-Warning--empty journal in erginer2007modeling
-Warning--empty journal in bouabdallah2004pid
-Warning--empty publisher in JBernoulli
-Warning--empty publisher in LEuler
-Name 1 in "Ang, K.H., Chong, G.C.Y., and Li, Y." has a comma at the end for entry AngChong
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Ang, K.H., Chong, G.C.Y., and Li, Y." for entry AngChong
-while executing---line 1315 of file unsrtnat.bst
-Name 1 in "Ang, K.H., Chong, G.C.Y., and Li, Y." has a comma at the end for entry AngChong
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Ang, K.H., Chong, G.C.Y., and Li, Y." for entry AngChong
-while executing---line 1315 of file unsrtnat.bst
-Warning--empty journal in AngChong
-Warning--empty journal in Bennett
-Warning--empty journal in Coriolis
+I found no \bibdata command---while reading file main.aux
+I found no \bibstyle command---while reading file main.aux
 You've used 31 entries,
-            2481 wiz_defined-function locations,
-            718 strings with 8649 characters,
-and the built_in function-call counts, 9405 in all, are:
-= -- 778
-> -- 333
-< -- 33
-+ -- 154
-- -- 92
-* -- 507
-:= -- 1462
-add.period$ -- 94
-call.type$ -- 31
-change.case$ -- 47
-chr.to.int$ -- 31
-cite$ -- 38
-duplicate$ -- 593
-empty$ -- 997
-format.name$ -- 145
-if$ -- 2056
-int.to.chr$ -- 1
-int.to.str$ -- 32
-missing$ -- 41
-newline$ -- 163
-num.names$ -- 93
-pop$ -- 354
-preamble$ -- 1
-purify$ -- 31
+            0 wiz_defined-function locations,
+            127 strings with 1085 characters,
+and the built_in function-call counts, 0 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 0
+:= -- 0
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 0
+format.name$ -- 0
+if$ -- 0
+int.to.chr$ -- 0
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 0
+num.names$ -- 0
+pop$ -- 0
+preamble$ -- 0
+purify$ -- 0
 quote$ -- 0
-skip$ -- 374
+skip$ -- 0
 stack$ -- 0
-substring$ -- 200
-swap$ -- 87
-text.length$ -- 4
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 172
-warning$ -- 7
-while$ -- 73
+type$ -- 0
+warning$ -- 0
+while$ -- 0
 width$ -- 0
-write$ -- 381
-(There were 6 error messages)
+write$ -- 0
+(There were 2 error messages)

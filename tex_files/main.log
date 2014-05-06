@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.3.1)  5 MAY 2014 17:48
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.3.1)  5 MAY 2014 22:03
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -765,23 +765,14 @@ LaTeX Info: Redefining \pageref on input line 86.
 ------------------------------------------------------------------------------
  Table of Contents
 ------------------------------------------------------------------------------
-(./main.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 9.
- (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2009/06/22 v3.00 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 9.
-
-(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-) [3
-
-
-])
+(./main.toc)
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [4]
+ [3
+
+
+]
 ------------------------------------------------------------------------------
  List of Figures
 ------------------------------------------------------------------------------
@@ -789,14 +780,14 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
- [5
+ [4
 
 
 ]
 ------------------------------------------------------------------------------
  Dedicatory
 ------------------------------------------------------------------------------
-[6
+[5
 
 ] (./Chapters/Chapter1_introduction.tex
 Chapter 1.
@@ -973,9 +964,19 @@ Chapter 3.
 LaTeX Warning: Reference `fig: Quad-Rotor Coordinate System' on page 9 undefine
 d on input line 21.
 
-<Figures/coords.png, id=314, 794.2473pt x 613.5723pt>
+<Figures/coords.png, id=209, 794.2473pt x 613.5723pt>
 File: Figures/coords.png Graphic file (type png)
  <use Figures/coords.png>
+LaTeX Font Info:    Try loading font information for U+msa on input line 32.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 32.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
 Underfull \hbox (badness 10000) in paragraph at lines 32--35
 
  []
@@ -1031,7 +1032,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 315--316
 
  []
 
-[16]) (./Chapters/Chapter4_optimal_control_theory.tex [17]
+[16]
+
+LaTeX Warning: Reference `AppendixA' on page 17 undefined on input line 373.
+
+) (./Chapters/Chapter4_optimal_control_theory.tex [17]
 Chapter 4.
 ------------------------------------------------------------------------------
  4 Classical Optimal Control Formulation
@@ -1117,7 +1122,15 @@ Overfull \hbox (19.84566pt too wide) detected at line 370
 \OT1/cmr/m/n/12 ] []
  []
 
-[36] [37] [38]) (./Chapters/Chapter6_PID_control.tex [39]
+[36]
+
+LaTeX Warning: Reference `AppendixF' on page 37 undefined on input line 379.
+
+[37]
+
+LaTeX Warning: Reference `AppendixF' on page 38 undefined on input line 394.
+
+[38]) (./Chapters/Chapter6_PID_control.tex [39]
 Chapter 6.
 ------------------------------------------------------------------------------
  6 PID/PD Control
@@ -1149,6 +1162,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
 [42] [43] [44] [45]
 
+LaTeX Warning: Reference `AppendixA' on page 46 undefined on input line 195.
+
+
+LaTeX Warning: Reference `AppendixB' on page 46 undefined on input line 202.
+
+
 LaTeX Warning: Reference `fig: Typical Run 3D Path' on page 46 undefined on inp
 ut line 202.
 
@@ -1173,27 +1192,27 @@ LaTeX Warning: Reference `fig: Large Setpoint Time Domain' on page 47 undefined
 LaTeX Warning: Reference `fig: Typical Run Time Domain' on page 47 undefined on
  input line 208.
 
-[47] <Figures/typical_run_time_3D_path.png, id=619, 586.8324pt x 442.2924pt>
+[47] <Figures/typical_run_time_3D_path.png, id=519, 586.8324pt x 442.2924pt>
 File: Figures/typical_run_time_3D_path.png Graphic file (type png)
 
 <use Figures/typical_run_time_3D_path.png>
-<Figures/typical_run_time_domain.png, id=620, 586.8324pt x 442.2924pt>
+<Figures/typical_run_time_domain.png, id=520, 586.8324pt x 442.2924pt>
 File: Figures/typical_run_time_domain.png Graphic file (type png)
 
 <use Figures/typical_run_time_domain.png>
-<Figures/CubeEdges3D.png, id=621, 586.8324pt x 442.2924pt>
+<Figures/CubeEdges3D.png, id=521, 586.8324pt x 442.2924pt>
 File: Figures/CubeEdges3D.png Graphic file (type png)
 
 <use Figures/CubeEdges3D.png>
-<Figures/CubeEdgesGraphs.png, id=622, 586.8324pt x 442.2924pt>
+<Figures/CubeEdgesGraphs.png, id=522, 586.8324pt x 442.2924pt>
 File: Figures/CubeEdgesGraphs.png Graphic file (type png)
 
 <use Figures/CubeEdgesGraphs.png>
-<Figures/largeSetpointDifferencesTest_3d.png, id=623, 586.8324pt x 442.2924pt>
+<Figures/largeSetpointDifferencesTest_3d.png, id=523, 586.8324pt x 442.2924pt>
 File: Figures/largeSetpointDifferencesTest_3d.png Graphic file (type png)
 
 <use Figures/largeSetpointDifferencesTest_3d.png>
-<Figures/largeSetpointDifferencesTest_timedomain.png, id=624, 586.8324pt x 442.
+<Figures/largeSetpointDifferencesTest_timedomain.png, id=524, 586.8324pt x 442.
 2924pt>
 File: Figures/largeSetpointDifferencesTest_timedomain.png Graphic file (type pn
 g)
@@ -1212,153 +1231,165 @@ Chapter 7.
 ] [56]
 
 Package natbib Warning: Citation `ziegler1942optimum' on page 57 undefined on i
-nput line 42.
+nput line 48.
 
 
 Package natbib Warning: Citation `znw:2014:Online' on page 57 undefined on inpu
-t line 42.
+t line 48.
 
 [57]
 
 LaTeX Warning: Reference `fig:ku vs thrust' on page 58 undefined on input line 
-49.
+55.
 
-<Figures/kuvsthrust.png, id=679, 414.1071pt x 312.2064pt>
+<Figures/kuvsthrust.png, id=583, 414.1071pt x 312.2064pt>
 File: Figures/kuvsthrust.png Graphic file (type png)
 
 <use Figures/kuvsthrust.png>
 
 LaTeX Warning: Reference `fig:ku vs thrust' on page 58 undefined on input line 
-60.
+66.
 
 
 LaTeX Warning: Reference `fig:ku vs thrust' on page 58 undefined on input line 
-60.
+66.
 
-[58 <./Figures/kuvsthrust.png>] [59]
-<Figures/optimal_run_3D_path.png, id=692, 586.8324pt x 442.2924pt>
+[58 <./Figures/kuvsthrust.png>]
+
+LaTeX Warning: Reference `AppendixC' on page 59 undefined on input line 75.
+
+
+LaTeX Warning: Reference `AppendixD' on page 59 undefined on input line 75.
+
+
+LaTeX Warning: Reference `AppendixE' on page 59 undefined on input line 75.
+
+[59]
+
+LaTeX Warning: Reference `table:optimalrun' on page 60 undefined on input line 
+79.
+
+
+LaTeX Warning: Reference `fig:optimal run 3D path' on page 60 undefined on inpu
+t line 81.
+
+
+LaTeX Warning: Reference `fig:optimal run time domain' on page 60 undefined on 
+input line 81.
+
+<Figures/optimal_run_3D_path.png, id=594, 586.8324pt x 442.2924pt>
 File: Figures/optimal_run_3D_path.png Graphic file (type png)
 
 <use Figures/optimal_run_3D_path.png>
-<Figures/optimal_run_time_domain.png, id=693, 586.8324pt x 442.2924pt>
+<Figures/optimal_run_time_domain.png, id=595, 586.8324pt x 442.2924pt>
 File: Figures/optimal_run_time_domain.png Graphic file (type png)
 
-<use Figures/optimal_run_time_domain.png> [60] [61] [62 <./Figures/optimal_run_
-3D_path.png>]) (./Chapters/Chapter8_conclusion.tex [63 <./Figures/optimal_run_t
-ime_domain.png>]
+<use Figures/optimal_run_time_domain.png>
+
+LaTeX Warning: Reference `fig:optimal run 3D path' on page 60 undefined on inpu
+t line 176.
+
+
+LaTeX Warning: Reference `fig:optimal run time domain' on page 60 undefined on 
+input line 176.
+
+[60] [61] [62] [63 <./Figures/optimal_run_3D_path.png>])
+(./Chapters/Chapter8_conclusion.tex [64 <./Figures/optimal_run_time_domain.png>
+]
 Chapter 8.
 ------------------------------------------------------------------------------
  8 Summary and Future Work
 ------------------------------------------------------------------------------
-[64
+[65
 
-] [65] [66]) (./Appendices/AppendixA.tex [67]
+] [66] [67]) (./Appendices/AppendixA.tex [68]
 Appendix A.
 ------------------------------------------------------------------------------
- A agentModule.py
+ A Dynamic system model and PID control - agentModule.py
 ------------------------------------------------------------------------------
 (/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
-(/home/ek/Dropbox/THESIS/python_scripts/agent_module.py [68
+(/home/ek/Dropbox/THESIS/python_scripts/agent_module.py [69
 
-] [69] [70] [71]
-[72] [73] [74] [75] [76] [77] [78] [79] [80] [81] [82] [83] [84]))
-(./Appendices/AppendixB.tex [85]
+] [70] [71] [72]
+[73] [74] [75] [76] [77] [78] [79] [80] [81] [82] [83] [84] [85]))
+(./Appendices/AppendixB.tex [86]
 Appendix B.
 ------------------------------------------------------------------------------
- B waypointNavigation.py
+ B A module for updating the PID set point - waypointNavigation.py
 ------------------------------------------------------------------------------
-(/home/ek/Dropbox/THESIS/python_scripts/waypoint_navigation.py [86
+(/home/ek/Dropbox/THESIS/python_scripts/waypoint_navigation.py [87
 
-] [87]
-[88])) (./Appendices/AppendixC.tex [89]
+] [88]
+[89])) (./Appendices/AppendixC.tex [90]
 Appendix C.
 ------------------------------------------------------------------------------
- C bruteForceFunctions.py
+ C A class of functions that are used in the brute force method - bruteForceFun
+ctions.py
 ------------------------------------------------------------------------------
-(/home/ek/Dropbox/THESIS/python_scripts/brute_force_functions.py [90
+(/home/ek/Dropbox/THESIS/python_scripts/brute_force_functions.py [91
 
-] [91]
-[92] [93] [94])) (./Appendices/AppendixD.tex [95]
+] [92]
+[93] [94] [95])) (./Appendices/AppendixD.tex [96]
 Appendix D.
 ------------------------------------------------------------------------------
- D runSimsBruteForce.py
+ D The brute force implementation - runSimsBruteForce.py
 ------------------------------------------------------------------------------
-(/home/ek/Dropbox/THESIS/python_scripts/run_sims_brute_force.py [96
+(/home/ek/Dropbox/THESIS/python_scripts/run_sims_brute_force.py [97
 
-] [97]))
-(./Appendices/AppendixE.tex [98]
+] [98]))
+(./Appendices/AppendixE.tex [99]
 Appendix E.
 ------------------------------------------------------------------------------
- E parseResults.py
+ E A module to sort the results of the brute force method - parseResults.py
 ------------------------------------------------------------------------------
-(/home/ek/Dropbox/THESIS/python_scripts/parse_results.py [99
+(/home/ek/Dropbox/THESIS/python_scripts/parse_results.py [100
 
-] [100]))
-(./Appendices/AppendixF.tex [101]
+] [101] [102]))
+(./Appendices/AppendixF.tex [103]
 Appendix F.
 ------------------------------------------------------------------------------
- F finiteDiffSolution.py
+ F The finite difference method applied to the optimal control BVP - finiteDiff
+Solution.py
 ------------------------------------------------------------------------------
 (/home/ek/Dropbox/THESIS/quadrotor_optimal_control/finiteDiffSolution.py
-[102
+[104
 
 ]
 Overfull \hbox (46.2372pt too wide) in paragraph at lines 57--60
 [][][][] 
  []
 
-[103]
+[105] [106]
 Overfull \hbox (30.93684pt too wide) in paragraph at lines 126--128
 [][][][] 
  []
 
-[104] [105]
+[107]
 Overfull \hbox (30.93684pt too wide) in paragraph at lines 204--206
 [][][][] 
  []
 
-[106] [107]
+[108] [109]
 Overfull \hbox (30.93684pt too wide) in paragraph at lines 295--297
 [][][][] 
  []
 
-[108]
+[110] [111]
 Overfull \hbox (30.93684pt too wide) in paragraph at lines 386--388
 [][][][] 
  []
 
-[109] [110] [111] [112] [113] [114] [115] [116] [117] [118] [119] [120]))
-[121]
+[112] [113] [114] [115] [116] [117] [118] [119] [120] [121] [122])) [123]
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
-(./main.bbl
-Underfull \hbox (badness 1622) in paragraph at lines 55--61
-[]\OT1/cmr/m/n/12 Samir Bouab-dal-lah, An-dre Noth, and Roland Sieg-wart.  Pid 
-vs lq
- []
-
-
-Underfull \hbox (badness 2529) in paragraph at lines 55--61
-\OT1/cmr/m/n/12 con-trol tech-niques ap-plied to an in-door mi-cro quadro-tor. 
- 3:2451--
- []
-
-[122
-
-
-] [123] [124]) [125]
+(./main.bbl)
 
 Package natbib Warning: There were undefined citations.
 
-(./main.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
+(./main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1371,32 +1402,33 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 ### simple group (level 1) entered at line 206 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 13749 strings out of 495061
- 185320 string characters out of 1182622
- 1298331 words of memory out of 3000000
- 13719 multiletter control sequences out of 15000+50000
+ 13757 strings out of 495061
+ 185338 string characters out of 1182622
+ 1311331 words of memory out of 3000000
+ 13718 multiletter control sequences out of 15000+50000
  15517 words of font info for 57 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 48i,21n,45p,1524b,1987s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12
-.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr
-/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texm
-f-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/f
-onts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-texlive/fonts/type1/p
-ublic/amsfonts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
-ts/cm/cmmib10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr1
-0.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
-share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-t
-exlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/
-type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texmf-texlive/fonts/type1/publi
-c/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/
-cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pf
-b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texmf-tex
-live/fonts/type1/public/amsfonts/euler/eufm10.pfb>
-Output written on main.pdf (132 pages, 1539167 bytes).
+ 48i,21n,45p,1524b,1996s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbsy1
+0.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
+mf-texlive/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-texlive/
+fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-texlive/fonts/type1
+/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
+onts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi
+b10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cmextra/cmmib8.pf
+b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/shar
+e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texl
+ive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/typ
+e1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
+fonts/cm/cmsl12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></u
+sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/te
+xmf-texlive/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texmf-texlive/
+fonts/type1/public/amsfonts/euler/eufm10.pfb>
+Output written on main.pdf (129 pages, 1526060 bytes).
 PDF statistics:
- 4252 PDF objects out of 4296 (max. 8388607)
- 2922 named destinations out of 2984 (max. 500000)
- 403 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4162 PDF objects out of 4296 (max. 8388607)
+ 2931 named destinations out of 2984 (max. 500000)
+ 331 words of extra memory for PDF output out of 10000 (max. 10000000)
 
