@@ -11,11 +11,9 @@ Among the many methods available for mathematical control of the quad-rotor, a w
 
 \section{Deriving the Control Expressions}
 
-The control of the quad-rotor requires three independent PID controllers for the x, y, and z directions. In addition, the attitude stability of the aircraft is accomplished by three independent PD controllers for each of the Euler angles $(\phi,\theta,\psi)$ . It is assumed for the purpose of simulation that the input to the control expressions includes accurate knowledge of the system state. In other words, it is assumed that the process noise and the measurement noise are zero. Given the natural complexity of the system, inclusion of stochastic processes into the model is left for further work. As in \cite{bouabdallah2004pid} and \cite{Luukkonen}, the control algorithm proceeds as follows (Algorithm \ref{alg61}).
+The control of the quad-rotor requires three independent PID controllers for the x, y, and z directions. In addition, the attitude stability of the aircraft is accomplished by three independent PD controllers for each of the Euler angles $(\phi,\theta,\psi)$ . It is assumed for the purpose of simulation that the input to the control expressions includes accurate knowledge of the system state. In other words, it is assumed that the process noise and the measurement noise are zero. Given the natural complexity of the system, inclusion of stochastic processes into the model is left for further work. As in \cite{bouabdallah2004pid} and \cite{Luukkonen}, the control algorithm proceeds as follows.
 
-\begin{itemize}
-\label{alg61}
-\item Algorithm 6.1
+\begin{center}\textbf{PID Control Algorithm}\end{center}
     \begin{enumerate}
     \item The position control expressions give the 'commanded' linear accelerations that are required to drive the system to the desired state.
     \item Given the commanded linear accelerations, the necessary total thrust, pitch, and roll are determined.
@@ -24,7 +22,7 @@ The control of the quad-rotor requires three independent PID controllers for the
     \item Once the motor speeds are known, the system model can be used to obtain the updated state of the system.
     \item Go to step 1.
     \end{enumerate}
-\end{itemize}
+
 
 
 Our goal in the following derivation is to arrive at expressions for the motor speeds that are required to drive the system to the desired state. The discrete-time PID control expressions are formulated using these vectors.
@@ -199,27 +197,27 @@ In a physical implementation, after the motor speeds are updated, the state of t
 
 \section{Testing the Control Scheme}
 
-With experimentally tuned control expressions, arbitrarily shaped, sub-optimal paths can be formed by updating the desired location periodically. The code which implements this functionallity is listed in Appendix \ref{AppendixB}. Figures \ref{fig: Typical Run 3D Path} through \ref{fig: Large Setpoint Time Domain} show the utility of the control scheme. It is important to note that in our simulations, the desired velocity at each of the ordered set points is zero. In words, the control algorithm is saying to the quad-rotor: 'Go to the desired location and hover until the set point is updated'. To design a path that includes set points with a non-zero desired velocity vector would require modification of the algorithm.
+With experimentally tuned control expressions, arbitrarily shaped, sub-optimal paths can be formed by updating the desired location periodically. The code which implements this functionality is listed in Appendix \ref{AppendixB}. Figures \ref{fig:Typical Run 3D Path} through \ref{fig:Large Setpoint Time Domain} show the utility of the control scheme. It is important to note that in our simulations, the desired velocity at each of the ordered set points is zero. In words, the control algorithm is saying to the quad-rotor: 'Go to the desired location and hover until the set point is updated'. To design a path that includes set points with a non-zero desired velocity vector would require modification of the algorithm.
 
 The values of the constants that were used in the simulation are shown in Table \ref{table:params}. Figure \ref{fig:Cube Edges 3D} shows the quad-rotor traversing along the edges of a 4 meter cube. This shows that in the simulation context, we have the ability to precisely locate the quad-rotor in space. The mathematical reality here is that the state of the system is exactly known within the algorithm. For a real implementation, the system model is replaced by the actual system. In this case the validity of the control algorithm is a function of the uncertainty of the state at each instance in time. This can be quantified by the state estimation process by which physical sensor measurements are combined.
 
-Figure \ref{fig: Large Setpoint Time Domain} shows that there is an upper limit to the difference in initial and final vector positions. A single PID tuning is only usable up to a certain magnitude of desired displacement. Mathematically, the controller is still stable but the over-shoot of the desired position grows proportionately to the desired position itself. For arbitrarily shaped, long distance flights, the path would have to be composed of incremental pieces which are small enough so that a performance metric for the overshoot for each segment was satisfied.
+Figure \ref{fig:Large Setpoint Time Domain} shows that there is an upper limit to the difference in initial and final vector positions. A single PID tuning is only usable up to a certain magnitude of desired displacement. Mathematically, the controller is still stable but the over-shoot of the desired position grows proportionately to the desired position itself. For arbitrarily shaped, long distance flights, the path would have to be composed of incremental pieces which are small enough so that a performance metric for the overshoot for each segment was satisfied.
 
-The time domain plots (Figures     \ref{fig: Typical Run Time Domain},   \ref{fig:Cube Edges Time Domain}, and \ref{fig: Large Setpoint Time Domain}) offer information about the stability of the system and the controller. Small oscillations in the linear and angular positions and velocities can be seen in Figure \ref{fig: Typical Run Time Domain}. These oscillations are an artifact of the coupling between the angular and linear control laws. Intuitively, this makes sense because the control of the linear position requires that the angular state of the quad-rotor be destabilized. In general it is the natural instability of this system which allows it to be so maneuverable. Also the mathematical complexity of the system makes for a difficult optimization problem. In the next chapter we use the PID tuning as a basis for optimizing the system according to specific performance criteria.
+The time domain plots (Figures     \ref{fig:Typical Run Time Domain},   \ref{fig:Cube Edges Time Domain}, and \ref{fig:Large Setpoint Time Domain}) offer information about the stability of the system and the controller. Small oscillations in the linear and angular positions and velocities can be seen in Figure \ref{fig:Typical Run Time Domain}. These oscillations are an artifact of the coupling between the angular and linear control laws. Intuitively, this makes sense because the control of the linear position requires that the angular state of the quad-rotor be destabilized. In general it is the natural instability of this system which allows it to be so maneuverable. Also the mathematical complexity of the system makes for a difficult optimization problem. In the next chapter we use the PID tuning as a basis for optimizing the system according to specific performance criteria.
 
 \begin{figure}[htbp]
 	\centering
-		\includegraphics[width=\textwidth]{Figures/typical_run_time_3D_path.png}
+		\includegraphics[scale = 0.5]{Figures/typical_run_time_3D_path.png}
 		\rule{35em}{0.5pt}
-	\caption[Typical Run 3D Path]{A typical run - the 3D path}
+	\caption[Typical Run 3D Path]{Here the 3-D path of the quad-rotor is shown for a flight simulation between the points (0,0,0) and (1,1,1). The PID control expressions were tuned experimentally.}
 	\label{fig:Typical Run 3D Path}
 \end{figure}
 
 \begin{figure}[htbp]
 	\centering
-		\includegraphics[width=\textwidth]{Figures/typical_run_time_domain.png}
+		\includegraphics[scale = 0.5]{Figures/typical_run_time_domain.png}
 		\rule{35em}{0.5pt}
-	\caption[Typical Run Time Domain]{A typical run - time domain}
+	\caption[Typical Run Time Domain]{Here are the time domain graphs corresponding the previous 3-D path. The linear and angular state variables are shown to stabilize at the desired positions. }
 	\label{fig:Typical Run Time Domain}
 \end{figure}
 
@@ -241,40 +239,40 @@ The time domain plots (Figures     \ref{fig: Typical Run Time Domain},   \ref{fi
     $Izz = 10.0*10^{-3}   $& $ \frac{N m s^2}{Rad}    $ & \\
     \hline
 \end{tabular}
-\caption[Simulation Parameters]{Simulation Parameters}
+\caption[Simulation Parameters]{In this table, the constants that were used in the simulation are shown.}
 \end{doublespace}
 \end{table}
 
 \begin{figure}[htbp]
 	\centering
-		\includegraphics[width=\textwidth]{Figures/CubeEdges3D.png}
+		\includegraphics[scale = 0.5]{Figures/CubeEdges3D.png}
 		\rule{35em}{0.5pt}
-	\caption[Cube Edges 3D]{Tracing some of the edges of a 4m cube - the 3D path}
+	\caption[Cube Edges 3D]{By updating the set point in the PID control expressions, arbitrary paths can be created. Here the quad-rotor traces some of the edges of a cube.}
 	\label{fig:Cube Edges 3D}
 \end{figure}
 
 \begin{figure}[htbp]
 	\centering
-		\includegraphics[width=\textwidth]{Figures/CubeEdgesGraphs.png}
+		\includegraphics[scale = 0.5]{Figures/CubeEdgesGraphs.png}
 		\rule{35em}{0.5pt}
-	\caption[Cube Edges Time Domain]{Tracing some of the edges of a 4m cube - time domain plots}
+	\caption[Cube Edges Time Domain]{Here are the time domain graphs corresponding the previous 3-D path. In tracing the edges of the cube, the angular positions are shown to de-stabilize to effect the desired change in linear position and then stabilize again.}
 	\label{fig:Cube Edges Time Domain}
 \end{figure}
 
 
 \begin{figure}[htbp]
 	\centering
-		\includegraphics[width=\textwidth]{Figures/largeSetpointDifferencesTest_3d.png}
+		\includegraphics[scale = 0.5]{Figures/largeSetpointDifferencesTest_3d.png}
 		\rule{35em}{0.5pt}
-	\caption[Large Set Points 3D Path]{Testing the control with larger set points - the 3D path}
+	\caption[Large Set Points 3D Path]{In this figure, the control system is tested with a large set point. }
 	\label{fig:Large Setpoints 3D Path}
 \end{figure}
 
 \begin{figure}[htbp]
 	\centering
-		\includegraphics[width=\textwidth]{Figures/largeSetpointDifferencesTest_timedomain.png}
+		\includegraphics[scale = 0.5]{Figures/largeSetpointDifferencesTest_timedomain.png}
 		\rule{35em}{0.5pt}
-	\caption[Large Set Point Time Domain]{Testing the control with larger set points - time domain plots }
+	\caption[Large Set Point Time Domain]{In these time domain plots, it is shown that the overshoot of the set point grows proportionally to the set point itself. }
 	\label{fig:Large Setpoint Time Domain}
 \end{figure}
 

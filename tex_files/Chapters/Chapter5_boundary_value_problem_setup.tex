@@ -332,7 +332,7 @@ The discrete-time system equations are
         g
       \end{array}
     \right)
-    +\frac{\mathcal{T[k]}}{m}
+    +\frac{\mathcal{T}[k]}{m}
      \left(
         \begin{array}{c}
              C_{\psi[k]}S_{\theta[k]}C_{\phi[k]} + S_{\psi[k]}S_{\phi[k]} \\\\
@@ -379,8 +379,7 @@ The finite difference method for solving boundary value problems was introduced 
 The script 'finiteDiffSolution.py' (Appendix \ref{AppendixF}) implements the finite difference method in an attempt to solve the quad-rotor boundary value problem. Recall that the computational problem is posed as solving a system of nonlinear algebraic equations. This system of equations is composed of the state equations, the co-state equations, the stationarity conditions, the secondary algebraic conditions, and the boundary conditions. Each of these expressions is possibly a function of the state variables, the co-state variables and the control input. Solving this system becomes a significant task since the state, co-state, and control variables become the unknowns for each instance in time for which a solution to the boundary value problem is desired! In order to sufficiently represent the dynamics of the quad-rotor, on the order of thousands of time steps are necessary. To solve this nonlinear system, a straightforward steepest descent technique was used:
 
 
-\begin{itemize}
-\item Steepest Descent Algorithm:
+\begin{center}\textbf{Steepest Descent Algorithm:}\end{center}
 \begin{enumerate}
     \item{An objective function is formed out of the sum of the squared residuals of each equation in the system.}
     \item{The gradient is computed as the list of partial derivatives of the objective function with respect to every unknown (every variable defined at each time instance). These partials are approximated as finite differences.}
@@ -388,7 +387,7 @@ The script 'finiteDiffSolution.py' (Appendix \ref{AppendixF}) implements the fin
     \item{The new value of the objective function as well as the gradient are evaluated with the new vector of unknowns. }
     \item{The state of the minimization process is checked against appropriate convergence criteria.}
 \end{enumerate}
-\end{itemize}
+
 
 
 Conceptually, this algorithm is relatively straightforward but it poses a significant computational challenge. With ten defined time steps, the algorithm ran for several hours before terminating. Additionally, with only ten time steps defined, the dynamics of the system over a period of several seconds of flight are not well represented. In a physical implementation, the motor speeds need to be updated at a rate on the order of 50 Hz at a minimum. Given  these constraints, there would be no realistic way to implement the algorithm in this form on an embedded system, which was loosely included as one of our research objectives. The Python Implementation of the finite difference method is shown Appendix \ref{AppendixF}.

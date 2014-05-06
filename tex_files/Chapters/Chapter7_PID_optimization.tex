@@ -34,7 +34,7 @@ In any realistic application of UAV technology, the energy budget is only one im
 
 In the context of the optimization process described in the previous section, there is evidence for the lack of robustness of the PID control. This can be shown by analyzing the relationship between the measured total thrust and the PID gains. Ideally, a gradient descent method would be used to minimize the thrust as a function of the control gains. The basic flow of the algorithm that we would really like to implement is as follows.
 
-
+\begin{center}\textbf{PID Gain Optimization:}\end{center}
 \begin{enumerate}
 \item Choose a set of proportional and derivative gains for each vector direction (x, y, and z);
 \item Perform a simulation that controls the quad-rotor from an initial vector position to a desired vector position;
@@ -52,7 +52,7 @@ The Ziegler-Nichols method specifies simple algebraic relationships between the 
 
 
 
- The results of these simulations are shown in Figure \ref{fig:ku vs thrust}.
+ The results of these simulations are shown in Figure \ref{fig:Ku vs Thrust}.
 
 
 \begin{figure}[htbp]
@@ -63,7 +63,7 @@ The Ziegler-Nichols method specifies simple algebraic relationships between the 
 	\label{fig:Ku vs Thrust}
 \end{figure}
 
-The relationship between $Ku$ and the total measured thrust depicted in Figure \ref{fig:ku vs thrust} is rather disappointing to say the least. The values of zero total thrust are the result of simulations that failed to converge to the set point. Without an objective function that is at least marginally well behaved we have no hope to employ a gradient descent minimization technique. The relationship shown in Figure \ref{fig:ku vs thrust} is indeed a product of a deterministic system but displays little to no continuity.
+The relationship between $Ku$ and the total measured thrust depicted in Figure \ref{fig:Ku vs Thrust} is rather disappointing to say the least. The values of zero total thrust are the result of simulations that failed to converge to the set point. Without an objective function that is at least marginally well behaved we have no hope to employ a gradient descent minimization technique. The relationship shown in Figure \ref{fig:Ku vs Thrust} is indeed a product of a deterministic system but displays little to no continuity.
 
 Another detail which cannot be ignored is that the total thrust alone is not sufficient as a performance criteria. Additionally, for appropriate control of the UAV,  the overshoot and oscillations which show up in improperly tuned PID controllers must be accounted for. Specifically, as the proportional gain is increased to drive the system to the desired location more quickly, the total thrust for the simulation will decrease but eventually the overshoot and oscillations grow to unacceptable levels. In the opposite fashion, if the differential gain is increased, the overshoot and oscillations will be suppressed but the time required to reach the set point will increase along with the total thrust. The competitive nature of these three (necessary) performance criteria further complicate the relationship between the PID gain vectors and the objective function making a gradient descent minimization technique even less viable.
 
@@ -133,12 +133,12 @@ minimum thrust &  4607(Newton seconds)\\
 average total thrust &  8075(Newton seconds)\\
 number of runs with satisfactory oscillations &   86\\
 number of runs with satisfactory overshoot & 91\\
-ave x crossings &  3\\
-ave y crossings &  3\\
-ave z crossings &  1\\
-ave x overshoot &  0.088(m)\\
-ave y overshoot &  0.112(m)\\
-ave z overshoot &  0.309(m)\\
+average x crossings &  3\\
+average y crossings &  3\\
+average z crossings &  1\\
+average x overshoot &  0.088(m)\\
+average y overshoot &  0.112(m)\\
+average z overshoot &  0.309(m)\\
 
 \hline
 \end{tabular}
