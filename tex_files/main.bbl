@@ -5,14 +5,20 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[diy()]{diydrones}
-URL \url{http://diydrones.com/}.
+\bibitem[diydrones(2014)]{diydrones:2014:Online}
+diydrones.
+\newblock diydrones{@ONLINE}, 2014.
+\newblock URL \url{http://diydrones.com/}.
 
-\bibitem[air()]{airware}
-URL \url{http://www.airware.com/}.
+\bibitem[Airware(2014)]{Airware:2014:Online}
+Airware.
+\newblock Airware{@ONLINE}, 2014.
+\newblock URL \url{http://www.airware.com/}.
 
-\bibitem[faa()]{faa}
-URL \url{http://www.faa.gov/about/initiatives/uas/}.
+\bibitem[faa(2014)]{faa:2014:Online}
+faa.
+\newblock faa{@ONLINE}, 2014.
+\newblock URL \url{http://www.faa.gov/about/initiatives/uas/}.
 
 \bibitem[Bone and Bolkcom(2004)]{bone2004unmanned}
 Elizabeth Bone and Christopher~C Bolkcom.
@@ -164,7 +170,9 @@ JG~Ziegler and NB~Nichols.
 \newblock Optimum settings for automatic controllers.
 \newblock \emph{trans. ASME}, 64\penalty0 (11), 1942.
 
-\bibitem[znw()]{znwiki}
-URL \url{{http://en.wikipedia.org/wiki/Ziegler-Nichols_method}}.
+\bibitem[wikipedia(2014)]{znw:2014:Online}
+wikipedia.
+\newblock Ziegler-nichols-method {@ONLINE}, 2014.
+\newblock URL \url{http://en.wikipedia.org/wiki/Ziegler-Nichols_method}.
 
 \end{thebibliography}

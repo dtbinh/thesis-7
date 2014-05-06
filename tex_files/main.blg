@@ -2,23 +2,26 @@ This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: main.aux
 The style file: unsrtnat.bst
 Database file #1: Bibliography.bib
-I was expecting a `,' or a `}'---line 63 of file Bibliography.bib
- : 
- : @book{bone2004unmanned,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 249 of file Bibliography.bib
- : 
- : @book{locatelli2001optimal,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
+Warning--entry type for "znw:2014:Online" isn't style-file defined
+--line 334 of file Bibliography.bib
+Warning--string name "april" is undefined
+--line 337 of file Bibliography.bib
+Warning--entry type for "airware:2014:Online" isn't style-file defined
+--line 342 of file Bibliography.bib
+Warning--string name "april" is undefined
+--line 345 of file Bibliography.bib
+Warning--entry type for "diydrones:2014:Online" isn't style-file defined
+--line 350 of file Bibliography.bib
+Warning--string name "april" is undefined
+--line 353 of file Bibliography.bib
+Warning--entry type for "faa:2014:Online" isn't style-file defined
+--line 358 of file Bibliography.bib
+Warning--string name "april" is undefined
+--line 361 of file Bibliography.bib
 Name 1 in "Ang, K.H., Chong, G.C.Y., and Li, Y." has a comma at the end for entry AngChong
 while executing---line 1233 of file unsrtnat.bst
 Too many commas in name 1 of "Ang, K.H., Chong, G.C.Y., and Li, Y." for entry AngChong
 while executing---line 1233 of file unsrtnat.bst
-Warning--empty year in diydrones
-Warning--empty year in airware
-Warning--empty year in faa
 Warning--empty journal in erginer2007modeling
 Warning--empty journal in bouabdallah2004pid
 Warning--empty publisher in JBernoulli
@@ -34,50 +37,45 @@ while executing---line 1315 of file unsrtnat.bst
 Warning--empty journal in AngChong
 Warning--empty journal in Bennett
 Warning--empty journal in Coriolis
-Warning--empty author in znwiki
-Warning--empty title in znwiki
-Warning--empty journal in znwiki
-Warning--empty year in znwiki
-Warning--empty year in znwiki
 You've used 31 entries,
             2481 wiz_defined-function locations,
-            705 strings with 8426 characters,
-and the built_in function-call counts, 9211 in all, are:
-= -- 756
-> -- 305
-< -- 29
-+ -- 146
-- -- 84
-* -- 523
-:= -- 1378
-add.period$ -- 86
+            718 strings with 8649 characters,
+and the built_in function-call counts, 9405 in all, are:
+= -- 778
+> -- 333
+< -- 33
++ -- 154
+- -- 92
+* -- 507
+:= -- 1462
+add.period$ -- 94
 call.type$ -- 31
-change.case$ -- 43
+change.case$ -- 47
 chr.to.int$ -- 31
-cite$ -- 50
-duplicate$ -- 597
-empty$ -- 1003
-format.name$ -- 133
-if$ -- 2024
+cite$ -- 38
+duplicate$ -- 593
+empty$ -- 997
+format.name$ -- 145
+if$ -- 2056
 int.to.chr$ -- 1
 int.to.str$ -- 32
-missing$ -- 42
-newline$ -- 155
-num.names$ -- 81
-pop$ -- 357
+missing$ -- 41
+newline$ -- 163
+num.names$ -- 93
+pop$ -- 354
 preamble$ -- 1
 purify$ -- 31
 quote$ -- 0
-skip$ -- 385
+skip$ -- 374
 stack$ -- 0
-substring$ -- 204
-swap$ -- 86
+substring$ -- 200
+swap$ -- 87
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 172
-warning$ -- 15
-while$ -- 65
+warning$ -- 7
+while$ -- 73
 width$ -- 0
-write$ -- 361
-(There were 8 error messages)
+write$ -- 381
+(There were 6 error messages)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.3.1)  5 MAY 2014 16:40
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.3.1)  5 MAY 2014 17:48
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -803,15 +803,162 @@ Chapter 1.
 ------------------------------------------------------------------------------
  1 Introduction
 ------------------------------------------------------------------------------
+
+Package natbib Warning: Citation `diydrones:2014:Online' on page 1 undefined on
+ input line 11.
+
+
+Package natbib Warning: Citation `Airware:2014:Online' on page 1 undefined on i
+nput line 11.
+
+
+Package natbib Warning: Citation `faa:2014:Online' on page 1 undefined on input
+ line 11.
+
+
+Package natbib Warning: Citation `bone2004unmanned' on page 1 undefined on inpu
+t line 13.
+
 [1
 
 
 
-] [2] [3] [4]) (./Chapters/Chapter2_problem_statement.tex [5]
+]
+
+Package natbib Warning: Citation `langelaan2007long' on page 2 undefined on inp
+ut line 23.
+
+
+Package natbib Warning: Citation `klesh2009solar' on page 2 undefined on input 
+line 23.
+
+
+Package natbib Warning: Citation `lawrance2009guidance' on page 2 undefined on 
+input line 23.
+
+[2]
+
+Package natbib Warning: Citation `erginer2007modeling' on page 3 undefined on i
+nput line 27.
+
+
+Package natbib Warning: Citation `bouabdallah2004pid' on page 3 undefined on in
+put line 27.
+
+
+Package natbib Warning: Citation `Luukkonen' on page 3 undefined on input line 
+27.
+
+
+Package natbib Warning: Citation `marion1995classical' on page 3 undefined on i
+nput line 30.
+
+
+Package natbib Warning: Citation `cornelius1970variational' on page 3 undefined
+ on input line 30.
+
+
+Package natbib Warning: Citation `cornelius1970variational' on page 3 undefined
+ on input line 30.
+
+
+Package natbib Warning: Citation `erginer2007modeling' on page 3 undefined on i
+nput line 30.
+
+
+Package natbib Warning: Citation `bouabdallah2004pid' on page 3 undefined on in
+put line 30.
+
+
+Package natbib Warning: Citation `Luukkonen' on page 3 undefined on input line 
+30.
+
+
+Package natbib Warning: Citation `JBernoulli' on page 3 undefined on input line
+ 32.
+
+
+Package natbib Warning: Citation `LEuler' on page 3 undefined on input line 32.
+
+
+
+Package natbib Warning: Citation `Pontry' on page 3 undefined on input line 32.
+
+
+
+Package natbib Warning: Citation `lewis2012optimal' on page 3 undefined on inpu
+t line 32.
+
+
+Package natbib Warning: Citation `BrysonHo69' on page 3 undefined on input line
+ 32.
+
+
+Package natbib Warning: Citation `locatelli2001optimal' on page 3 undefined on 
+input line 32.
+
+
+Package natbib Warning: Citation `athans2006optimal' on page 3 undefined on inp
+ut line 32.
+
+
+Package natbib Warning: Citation `richard1988douglas' on page 3 undefined on in
+put line 32.
+
+
+Package natbib Warning: Citation `rao2009engineering' on page 3 undefined on in
+put line 32.
+
+
+Package natbib Warning: Citation `keller1992numerical' on page 3 undefined on i
+nput line 32.
+
+
+Package natbib Warning: Citation `rao2009engineering' on page 3 undefined on in
+put line 32.
+
+
+Package natbib Warning: Citation `keller1992numerical' on page 3 undefined on i
+nput line 32.
+
+[3]
+
+Package natbib Warning: Citation `o2006reducing' on page 4 undefined on input l
+ine 34.
+
+
+Package natbib Warning: Citation `bequette2003process' on page 4 undefined on i
+nput line 34.
+
+
+Package natbib Warning: Citation `AngChong' on page 4 undefined on input line 3
+4.
+
+
+Package natbib Warning: Citation `Bennett' on page 4 undefined on input line 34
+.
+
+[4]) (./Chapters/Chapter2_problem_statement.tex [5]
 Chapter 2.
 ------------------------------------------------------------------------------
  2 Problem Statement
 ------------------------------------------------------------------------------
+
+Package natbib Warning: Citation `bouabdallah2004pid' on page 6 undefined on in
+put line 11.
+
+
+Package natbib Warning: Citation `Luukkonen' on page 6 undefined on input line 
+11.
+
+
+Package natbib Warning: Citation `lewis2012optimal' on page 6 undefined on inpu
+t line 15.
+
+
+Package natbib Warning: Citation `BrysonHo69' on page 6 undefined on input line
+ 15.
+
 [6
 
 ]) (./Chapters/Chapter3_qr_dynamic_model.tex [7]
@@ -826,14 +973,23 @@ Chapter 3.
 LaTeX Warning: Reference `fig: Quad-Rotor Coordinate System' on page 9 undefine
 d on input line 21.
 
-<Figures/coords.pdf, id=381, 794.97pt x 614.295pt>
-File: Figures/coords.pdf Graphic file (type pdf)
- <use Figures/coords.pdf>
+<Figures/coords.png, id=314, 794.2473pt x 613.5723pt>
+File: Figures/coords.png Graphic file (type png)
+ <use Figures/coords.png>
 Underfull \hbox (badness 10000) in paragraph at lines 32--35
 
  []
 
-[9 <./Figures/coords.pdf>] [10]
+[9 <./Figures/coords.png>]
+
+Package natbib Warning: Citation `marion1995classical' on page 10 undefined on 
+input line 44.
+
+
+Package natbib Warning: Citation `cornelius1970variational' on page 10 undefine
+d on input line 44.
+
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
@@ -843,11 +999,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--92
 
  []
 
-[11] [12] [13] [14]
+[11] [12] [13]
+
+Package natbib Warning: Citation `marion1995classical' on page 14 undefined on 
+input line 188.
+
+
+Package natbib Warning: Citation `cornelius1970variational' on page 14 undefine
+d on input line 188.
+
+[14]
 LaTeX Font Info:    Try loading font information for U+euf on input line 251.
  (/usr/share/texmf-texlive/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2009/06/22 v3.00 Euler Fraktur
 )
+
+Package natbib Warning: Citation `Coriolis' on page 15 undefined on input line 
+259.
+
+
+Package natbib Warning: Citation `Hestenes' on page 15 undefined on input line 
+259.
+
 [15]
 Underfull \hbox (badness 10000) in paragraph at lines 299--300
 
@@ -865,7 +1038,12 @@ Chapter 4.
 ------------------------------------------------------------------------------
 [18
 
-] [19] [20]
+]
+
+Package natbib Warning: Citation `BrysonHo69' on page 19 undefined on input lin
+e 17.
+
+[19] [20]
 Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
@@ -886,11 +1064,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--91
  []
 
 [22]
+
+Package natbib Warning: Citation `marion1995classical' on page 23 undefined on 
+input line 109.
+
+
+Package natbib Warning: Citation `cornelius1970variational' on page 23 undefine
+d on input line 109.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
 
-[23] [24] [25]
+[23] [24]
+
+Package natbib Warning: Citation `keller1992numerical' on page 25 undefined on 
+input line 208.
+
+
+Package natbib Warning: Citation `rao2001applied' on page 25 undefined on input
+ line 208.
+
+[25]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 215.
 
  (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
@@ -898,8 +1094,12 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 215.
- [26])
-(./Chapters/Chapter5_boundary_value_problem_setup.tex [27]
+
+
+Package natbib Warning: Citation `rao2001applied' on page 26 undefined on input
+ line 224.
+
+[26]) (./Chapters/Chapter5_boundary_value_problem_setup.tex [27]
 Chapter 5.
 ------------------------------------------------------------------------------
  5 Quad-rotor Boundary Value Problem
@@ -922,6 +1122,14 @@ Chapter 6.
 ------------------------------------------------------------------------------
  6 PID/PD Control
 ------------------------------------------------------------------------------
+
+Package natbib Warning: Citation `bouabdallah2004pid' on page 40 undefined on i
+nput line 14.
+
+
+Package natbib Warning: Citation `Luukkonen' on page 40 undefined on input line
+ 14.
+
 [40
 
 ]
@@ -965,27 +1173,27 @@ LaTeX Warning: Reference `fig: Large Setpoint Time Domain' on page 47 undefined
 LaTeX Warning: Reference `fig: Typical Run Time Domain' on page 47 undefined on
  input line 208.
 
-[47] <Figures/typical_run_time_3D_path.png, id=756, 586.8324pt x 442.2924pt>
+[47] <Figures/typical_run_time_3D_path.png, id=619, 586.8324pt x 442.2924pt>
 File: Figures/typical_run_time_3D_path.png Graphic file (type png)
 
 <use Figures/typical_run_time_3D_path.png>
-<Figures/typical_run_time_domain.png, id=758, 586.8324pt x 442.2924pt>
+<Figures/typical_run_time_domain.png, id=620, 586.8324pt x 442.2924pt>
 File: Figures/typical_run_time_domain.png Graphic file (type png)
 
 <use Figures/typical_run_time_domain.png>
-<Figures/CubeEdges3D.png, id=759, 586.8324pt x 442.2924pt>
+<Figures/CubeEdges3D.png, id=621, 586.8324pt x 442.2924pt>
 File: Figures/CubeEdges3D.png Graphic file (type png)
 
 <use Figures/CubeEdges3D.png>
-<Figures/CubeEdgesGraphs.png, id=760, 586.8324pt x 442.2924pt>
+<Figures/CubeEdgesGraphs.png, id=622, 586.8324pt x 442.2924pt>
 File: Figures/CubeEdgesGraphs.png Graphic file (type png)
 
 <use Figures/CubeEdgesGraphs.png>
-<Figures/largeSetpointDifferencesTest_3d.png, id=761, 586.8324pt x 442.2924pt>
+<Figures/largeSetpointDifferencesTest_3d.png, id=623, 586.8324pt x 442.2924pt>
 File: Figures/largeSetpointDifferencesTest_3d.png Graphic file (type png)
 
 <use Figures/largeSetpointDifferencesTest_3d.png>
-<Figures/largeSetpointDifferencesTest_timedomain.png, id=762, 586.8324pt x 442.
+<Figures/largeSetpointDifferencesTest_timedomain.png, id=624, 586.8324pt x 442.
 2924pt>
 File: Figures/largeSetpointDifferencesTest_timedomain.png Graphic file (type pn
 g)
@@ -1001,12 +1209,21 @@ Chapter 7.
 ------------------------------------------------------------------------------
 [55
 
-] [56] [57]
+] [56]
+
+Package natbib Warning: Citation `ziegler1942optimum' on page 57 undefined on i
+nput line 42.
+
+
+Package natbib Warning: Citation `znw:2014:Online' on page 57 undefined on inpu
+t line 42.
+
+[57]
 
 LaTeX Warning: Reference `fig:ku vs thrust' on page 58 undefined on input line 
 49.
 
-<Figures/kuvsthrust.png, id=819, 414.1071pt x 312.2064pt>
+<Figures/kuvsthrust.png, id=679, 414.1071pt x 312.2064pt>
 File: Figures/kuvsthrust.png Graphic file (type png)
 
 <use Figures/kuvsthrust.png>
@@ -1019,11 +1236,11 @@ LaTeX Warning: Reference `fig:ku vs thrust' on page 58 undefined on input line
 60.
 
 [58 <./Figures/kuvsthrust.png>] [59]
-<Figures/optimal_run_3D_path.png, id=834, 586.8324pt x 442.2924pt>
+<Figures/optimal_run_3D_path.png, id=692, 586.8324pt x 442.2924pt>
 File: Figures/optimal_run_3D_path.png Graphic file (type png)
 
 <use Figures/optimal_run_3D_path.png>
-<Figures/optimal_run_time_domain.png, id=835, 586.8324pt x 442.2924pt>
+<Figures/optimal_run_time_domain.png, id=693, 586.8324pt x 442.2924pt>
 File: Figures/optimal_run_time_domain.png Graphic file (type png)
 
 <use Figures/optimal_run_time_domain.png> [60] [61] [62 <./Figures/optimal_run_
@@ -1118,13 +1335,13 @@ Overfull \hbox (30.93684pt too wide) in paragraph at lines 386--388
  Bibliography
 ------------------------------------------------------------------------------
 (./main.bbl
-Underfull \hbox (badness 1622) in paragraph at lines 49--55
+Underfull \hbox (badness 1622) in paragraph at lines 55--61
 []\OT1/cmr/m/n/12 Samir Bouab-dal-lah, An-dre Noth, and Roland Sieg-wart.  Pid 
 vs lq
  []
 
 
-Underfull \hbox (badness 2529) in paragraph at lines 49--55
+Underfull \hbox (badness 2529) in paragraph at lines 55--61
 \OT1/cmr/m/n/12 con-trol tech-niques ap-plied to an in-door mi-cro quadro-tor. 
  3:2451--
  []
@@ -1132,9 +1349,21 @@ Underfull \hbox (badness 2529) in paragraph at lines 49--55
 [122
 
 
-] [123]) [124] (./main.aux)
+] [123] [124]) [125]
+
+Package natbib Warning: There were undefined citations.
+
+(./main.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  )
 (\end occurred inside a group at level 1)
@@ -1143,9 +1372,9 @@ LaTeX Warning: There were undefined references.
 ### bottom level 
 Here is how much of TeX's memory you used:
  13749 strings out of 495061
- 185234 string characters out of 1182622
+ 185320 string characters out of 1182622
  1298331 words of memory out of 3000000
- 13720 multiletter control sequences out of 15000+50000
+ 13719 multiletter control sequences out of 15000+50000
  15517 words of font info for 57 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  48i,21n,45p,1524b,1987s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1165,9 +1394,9 @@ cm/cmsy8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pf
 b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texmf-tex
 live/fonts/type1/public/amsfonts/euler/eufm10.pfb>
-Output written on main.pdf (131 pages, 1535023 bytes).
+Output written on main.pdf (132 pages, 1539167 bytes).
 PDF statistics:
- 4356 PDF objects out of 5155 (max. 8388607)
- 2921 named destinations out of 2984 (max. 500000)
- 411 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4252 PDF objects out of 4296 (max. 8388607)
+ 2922 named destinations out of 2984 (max. 500000)
+ 403 words of extra memory for PDF output out of 10000 (max. 10000000)
 
