@@ -233,15 +233,15 @@ There are a great many people who need to be recognized for their contribution t
 
 % Set the left side page header to "Contents"
 %>>>>>>> 6b4d53607584766c292ab36c0e0d7e9d5635cf05
-\begin{center}Table of Contents \end{center}
+\renewcommand{\contentsname}{\centering Table of Contents}
 \tableofcontents % Write out the Table of Contents
 
 \vspace{1em}
-\chead{List of Figures} % Set the left side page header to "List of Figures"
+\renewcommand{\contentsname}{\centering List of Figures}
 \listoffigures % Write out the List of Figures
 
 \vspace{1em}
-\chead{\emph{List of Tables}} % Set the left side page header to "List of Tables"
+\renewcommand{\contentsname}{\centering List of Tables}
 \listoftables % Write out the List of Tables
 
 %----------------------------------------------------------------------------------------
