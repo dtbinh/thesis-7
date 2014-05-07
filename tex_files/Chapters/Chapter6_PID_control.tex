@@ -167,7 +167,7 @@ With experimentally tuned control expressions, arbitrarily shaped, sub-optimal p
 \begin{figure}[htbp]
 	\centering
 		\includegraphics[scale = 0.5]{Figures/typical_run_time_domain.png}
-	\caption[Time domain graphs corresponding the 3-D path. The linear and angular state variables are shown to stabilize at the desired positions. ]{Time domain graphs corresponding the 3-D path. The linear and angular state variables are shown to stabilize at the desired positions. }
+	\caption[Time domain graphs corresponding the 3D path. The linear and angular state variables are shown to stabilize at the desired positions. ]{Time domain graphs corresponding the 3D path. The linear and angular state variables are shown to stabilize at the desired positions. }
 	\label{fig:Typical Run Time Domain}
 \end{figure}
 The values of the constants that were used in the simulation are shown in Table \ref{table:params}. Figure \ref{fig:Cube Edges 3D} shows the quad-rotor traversing along the edges of a 4 meter cube. This shows that in the simulation context, we have the ability to precisely locate the quad-rotor in space. The mathematical reality here is that the state of the system is exactly known within the algorithm. For a real implementation, the system model is replaced by the actual system. In this case the validity of the control algorithm is a function of the uncertainty of the state at each instance in time. This can be quantified by the state estimation process by which physical sensor measurements are combined.
@@ -187,9 +187,9 @@ The values of the constants that were used in the simulation are shown in Table 
     $Iyy = 5.0*10^{-3}    $& $ \frac{N m s^2}{Rad}    $ & \\
     $Izz = 10.0*10^{-3}   $& $ \frac{N m s^2}{Rad}    $ & \\
     \hline
-\caption[Simulation parameters of the quad-rotor model]{Simulation parameters of the quad-rotor model}
 \end{tabular}
 \end{doublespace}
+\caption[Simulation parameters of the quad-rotor model]{Simulation parameters of the quad-rotor model}
 \end{table}
 Figure \ref{fig:Large Setpoint Time Domain} shows that there is an upper limit to the difference in initial and final vector positions. A single PID tuning is only usable up to a certain magnitude of desired displacement. Mathematically, the controller is still stable but the over-shoot of the desired position grows proportionately to the desired position itself. For arbitrarily shaped, long distance flights, the path would have to be composed of incremental pieces which are small enough so that a performance metric for the overshoot for each segment was satisfied.
 \begin{figure}[htbp]
