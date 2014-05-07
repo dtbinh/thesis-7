@@ -170,9 +170,8 @@ JG~Ziegler and NB~Nichols.
 \newblock Optimum settings for automatic controllers.
 \newblock \emph{trans. ASME}, 64\penalty0 (11), 1942.
 
-\bibitem[wikipedia(2014)]{znw:2014:Online}
-wikipedia.
-\newblock Ziegler-nichols-method {@ONLINE}, 2014.
+\bibitem[znw(2014)]{znw:2014:Online}
+Ziegler-nichols-method {@ONLINE}, 2014.
 \newblock URL \url{http://en.wikipedia.org/wiki/Ziegler-Nichols_method}.
 
 \end{thebibliography}

@@ -13,38 +13,38 @@
 \contentsline {chapter}{\numberline {3}Quad-Rotor Dynamic Model}{8}{chapter.12}
 \contentsline {section}{\numberline {3.1}Description of a Quad-Rotor}{8}{section.13}
 \contentsline {section}{\numberline {3.2}Coordinate System Definitions}{10}{section.15}
-\contentsline {section}{\numberline {3.3}Motor Speeds, Thrust and Torque}{11}{section.17}
-\contentsline {section}{\numberline {3.4}Euler-Lagrange Equations of Motion}{12}{section.21}
-\contentsline {section}{\numberline {3.5}A Complete Model}{17}{section.41}
-\contentsline {chapter}{\numberline {4}Classical Optimal Control Formulation}{18}{chapter.44}
-\contentsline {section}{\numberline {4.1}Derivation of the Objective Function}{19}{section.45}
-\contentsline {subsection}{\numberline {4.1.1}Lagrangian}{20}{subsection.46}
-\contentsline {subsection}{\numberline {4.1.2}Objective Function}{20}{subsection.48}
-\contentsline {section}{\numberline {4.2}Derivation of the Optimality Conditions}{23}{section.59}
-\contentsline {section}{\numberline {4.3}Solving the Boundary Value Problem}{25}{section.74}
-\contentsline {subsection}{\numberline {4.3.1}Shooting Method}{26}{subsection.75}
-\contentsline {subsection}{\numberline {4.3.2}Finite Difference Method}{26}{subsection.76}
-\contentsline {chapter}{\numberline {5}Quad-rotor Boundary Value Problem}{28}{chapter.77}
-\contentsline {section}{\numberline {5.1}Co-State Equations}{29}{section.78}
-\contentsline {section}{\numberline {5.2}Secondary Algebraic Co-State Equations}{31}{section.85}
-\contentsline {section}{\numberline {5.3}Stationarity Conditions}{34}{section.93}
-\contentsline {section}{\numberline {5.4}Discretization}{35}{section.99}
-\contentsline {section}{\numberline {5.5}A Finite Difference Solution to the Quad-Rotor Boundary Value Problem}{37}{section.106}
-\contentsline {chapter}{\numberline {6}PID/PD Control}{40}{chapter.112}
-\contentsline {section}{\numberline {6.1}Deriving the Control Expressions}{40}{section.113}
-\contentsline {section}{\numberline {6.2}Testing the Control Scheme}{46}{section.142}
-\contentsline {chapter}{\numberline {7}PID Gain Optimization}{52}{chapter.150}
-\contentsline {section}{\numberline {7.1}Initial Simulation Results}{53}{section.152}
-\contentsline {section}{\numberline {7.2}Brute Force Simulation Results}{56}{section.159}
-\contentsline {chapter}{\numberline {8}Summary and Future Work}{62}{chapter.164}
-\contentsline {section}{\numberline {8.1}Summary}{62}{section.165}
-\contentsline {section}{\numberline {8.2}Further Work}{63}{section.166}
+\contentsline {section}{\numberline {3.3}Motor Speeds, Thrust and Torque}{10}{section.17}
+\contentsline {section}{\numberline {3.4}Euler-Lagrange Equations of Motion}{11}{section.21}
+\contentsline {section}{\numberline {3.5}A Complete Model}{16}{section.41}
+\contentsline {chapter}{\numberline {4}Classical Optimal Control Formulation}{17}{chapter.44}
+\contentsline {section}{\numberline {4.1}Derivation of the Objective Function}{18}{section.45}
+\contentsline {subsection}{\numberline {4.1.1}Lagrangian}{19}{subsection.46}
+\contentsline {subsection}{\numberline {4.1.2}Objective Function}{19}{subsection.48}
+\contentsline {section}{\numberline {4.2}Derivation of the Optimality Conditions}{21}{section.59}
+\contentsline {section}{\numberline {4.3}Solving the Boundary Value Problem}{23}{section.74}
+\contentsline {subsection}{\numberline {4.3.1}Shooting Method}{24}{subsection.75}
+\contentsline {subsection}{\numberline {4.3.2}Finite Difference Method}{24}{subsection.76}
+\contentsline {chapter}{\numberline {5}Quad-rotor Boundary Value Problem}{26}{chapter.77}
+\contentsline {section}{\numberline {5.1}Co-State Equations}{27}{section.78}
+\contentsline {section}{\numberline {5.2}Secondary Algebraic Co-State Equations}{28}{section.85}
+\contentsline {section}{\numberline {5.3}Stationarity Conditions}{30}{section.93}
+\contentsline {section}{\numberline {5.4}Discretization}{31}{section.99}
+\contentsline {section}{\numberline {5.5}A Finite Difference Solution to the Quad-Rotor Boundary Value Problem}{33}{section.106}
+\contentsline {chapter}{\numberline {6}PID/PD Control}{35}{chapter.112}
+\contentsline {section}{\numberline {6.1}Deriving the Control Expressions}{35}{section.113}
+\contentsline {section}{\numberline {6.2}Testing the Control Scheme}{40}{section.142}
+\contentsline {chapter}{\numberline {7}PID Gain Optimization}{45}{chapter.150}
+\contentsline {section}{\numberline {7.1}Initial Simulation Results}{46}{section.152}
+\contentsline {section}{\numberline {7.2}Brute Force Simulation Results}{49}{section.159}
+\contentsline {chapter}{\numberline {8}Summary and Future Work}{55}{chapter.164}
+\contentsline {section}{\numberline {8.1}Summary}{55}{section.165}
+\contentsline {section}{\numberline {8.2}Further Work}{56}{section.166}
 \vspace {2em}
-\contentsline {chapter}{\numberline {A}Dynamic system model and PID control - agentModule.py}{66}{appendix.167}
-\contentsline {chapter}{\numberline {B}A module for updating the PID set point - waypointNavigation.py}{84}{appendix.1081}
-\contentsline {chapter}{\numberline {C}A class of functions that are used in the brute force method - bruteForceFunctions.py}{88}{appendix.1254}
-\contentsline {chapter}{\numberline {D}The brute force implementation - runSimsBruteForce.py}{94}{appendix.1546}
-\contentsline {chapter}{\numberline {E}A module to sort the results of the brute force method - parseResults.py}{97}{appendix.1684}
-\contentsline {chapter}{\numberline {F}The finite difference method applied to the optimal control BVP - finiteDiffSolution.py}{101}{appendix.1846}
+\contentsline {chapter}{\numberline {A}Dynamic system model and PID control - agentModule.py}{59}{appendix.171}
+\contentsline {chapter}{\numberline {B}A module for updating the PID set point - waypointNavigation.py}{77}{appendix.1085}
+\contentsline {chapter}{\numberline {C}A class of functions that are used in the brute force method - bruteForceFunctions.py}{81}{appendix.1258}
+\contentsline {chapter}{\numberline {D}The brute force implementation - runSimsBruteForce.py}{87}{appendix.1550}
+\contentsline {chapter}{\numberline {E}A module to sort the results of the brute force method - parseResults.py}{90}{appendix.1688}
+\contentsline {chapter}{\numberline {F}The finite difference method applied to the optimal control BVP - finiteDiffSolution.py}{94}{appendix.1850}
 \vspace {2em}
-\contentsline {chapter}{Bibliography}{121}{dummy.2833}
+\contentsline {chapter}{Bibliography}{114}{dummy.2837}

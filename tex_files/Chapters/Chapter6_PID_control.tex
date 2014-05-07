@@ -8,12 +8,11 @@
 
 Among the many methods available for mathematical control of the quad-rotor, a well-tuned PID controller offers both relative robustness and a simple mathematical representation. In this chapter we derive and test the PID control scheme for attitude and 3D position control of a quad-rotor.
 
-
 \section{Deriving the Control Expressions}
 
 The control of the quad-rotor requires three independent PID controllers for the x, y, and z directions. In addition, the attitude stability of the aircraft is accomplished by three independent PD controllers for each of the Euler angles $(\phi,\theta,\psi)$ . It is assumed for the purpose of simulation that the input to the control expressions includes accurate knowledge of the system state. In other words, it is assumed that the process noise and the measurement noise are zero. Given the natural complexity of the system, inclusion of stochastic processes into the model is left for further work. As in \cite{bouabdallah2004pid} and \cite{Luukkonen}, the control algorithm proceeds as follows.
 
-\begin{center}\textbf{PID Control Algorithm}\end{center}
+\begin{center}\textbf{Algorithm 6.1 : PID Control Algorithm}\end{center}
     \begin{enumerate}
     \item The position control expressions give the 'commanded' linear accelerations that are required to drive the system to the desired state.
     \item Given the commanded linear accelerations, the necessary total thrust, pitch, and roll are determined.
@@ -23,10 +22,7 @@ The control of the quad-rotor requires three independent PID controllers for the
     \item Go to step 1.
     \end{enumerate}
 
-
-
 Our goal in the following derivation is to arrive at expressions for the motor speeds that are required to drive the system to the desired state. The discrete-time PID control expressions are formulated using these vectors.
-
 
 $P_c = \left( \begin{array}{c}
 x_c\\y_c\\z_c\\
@@ -37,38 +33,33 @@ x\\y\\z\\
 \end{array}\right) = actual \text{ }position\text{ }at\text{ }time\text{ }step\text{ }k$\\
 
 The vector of commanded accelerations is given by $\ddot{P_c}$:
-
 \begin{equation}
     \label{eq:acc_comm}
     \ddot{P_c} = K_p(P_c - P) + K_i \sum_k (P_c-P) + K_d(\dot{P}_c - \dot{P}),
 \end{equation}
 
 where
-
 \begin{equation}
  K_p = \left[ \begin{array}{c} k_{px} \\ k_{py} \\ k_{pz}  \end{array} \right] , K_i = \left[ \begin{array}{c} k_{ix} \\ k_{iy} \\ k_{iz}  \end{array} \right], K_d = \left[ \begin{array}{c} k_{dx} \\ k_{dy} \\ k_{dz}  \end{array} \right] .
 \end{equation}
 
-
 Recall equation \ref{linforce}:
-
 \begin{equation}
     f =  R  T_B = m \ddot{ \xi} -  G.
 \end{equation}
 
 This can be rearranged to give:
-
 \begin{equation}
     \label{eq:acc_from_model}
     \ddot{P_c} = - g e_{inz} + \left(\frac{1}{m}\right) \left(T e_{qrz}\right) R .
 \end{equation}
 
-
-$ e_{inz} = \left( \begin{array}{c}
+where,
+\mbox{ } \hspace{.5in} $ e_{inz} = \left( \begin{array}{c}
 0\\0\\1\\
 \end{array}\right) \text{  }$ (in the inertial reference frame)
 
-$ e_{qrz} = \left( \begin{array}{c}
+\mbox{ } \hspace{.5in} $ e_{qrz} = \left( \begin{array}{c}
 0\\0\\1\\
 \end{array}\right) \text{  }$  (in the quad-rotor reference frame)
 
@@ -78,150 +69,108 @@ The angles $\phi$ and $\theta$, and the total thrust $T$ can be determined algeb
     \label{eq:thrustTransformation}
     R^T \left( \ddot{P_c} + g e_{inz}\right) = \left(\frac{1}{m}\right) \left(T e_{qrz}\right)
 \end{equation}
-
-
 \begin{equation}
-\begin{split}
-    &\left( \begin{array}{ccc}
-        c(\psi) c(\theta) & s(\psi) c(\theta) & -s(\theta)\\
-        c(\psi) s(\theta) s(\phi) - s(\psi) c(\phi) & s(\psi) s(\theta) s(\phi) + c(\psi) c(\phi) & c(\theta) s(\phi)\\
-        c(\psi) s(\theta) c(\phi) + s(\psi) s(\phi) & s(\psi) s(\theta) c(\phi) - c(\psi) s(\phi) & c(\theta) c(\phi)\\
+    \left( \begin{array}{ccc}
+        C_{\psi} C_{\theta} & S_{\psi} C_{\theta} & -S_{\theta}\\
+        C_{\psi} S_{\theta} S_{\phi} - S_{\psi} C_{\phi} & S_{\psi} S_{\theta} S_{\phi} + C_{\psi} C_{\phi} & C_{\theta} S_{\phi}\\
+        C_{\psi} S_{\theta} C_{\phi} + S_{\psi} S_{\phi} & S_{\psi} S_{\theta} C_{\phi} - C_{\psi} S_{\phi} & C_{\theta} C_{\phi}\\
     \end{array} \right)\left( \begin{array}{c} a_x\\a_y\\a_z+g\\\end{array} \right)\\
-    &= \frac{1}{m} \left( \begin{array}{c} 0\\0\\T\\ \end{array} \right)
-\end{split}
+    = \frac{1}{m} \left( \begin{array}{c} 0\\0\\T\\ \end{array} \right)
 \end{equation}
 
 The matrix equation above is then written as three independent scalar expressions.
-
 \begin{equation}
     \label{eq:matrixeqline1}
-    a_x c(\psi) c(\theta) + a_y s(\psi) c(\theta) - s(\theta)( a_z + g ) = 0
+    a_x C_{\psi} C_{\theta} + a_y S_{\psi} C_{\theta} - S_{\theta}( a_z + g ) = 0
 \end{equation}
-
 \begin{equation}
     \label{eq:matrixeqline2}
-    \begin{split}
-    & a_x (c(\psi) s(\theta) s(\phi) - s(\psi) c(\phi))\\
-    &+ a_y (s(\psi) s(\theta) s(\phi) + c(\psi) c(\phi))\\
-    &+ ( a_z + g )c(\theta) s(\phi) = 0
-\end{split}
+     a_x (C_{\psi} S_{\theta} S_{\phi} - S_{\psi} C_{\phi})
+    + a_y (S_{\psi} S_{\theta} S_{\phi} + C_{\psi} C_{\phi})
+    + ( a_z + g )C_{\theta} S_{\phi} = 0
 \end{equation}
-
 \begin{equation}
     \label{eq:matrixeqline3}
-    \begin{split}
-    & a_x (c(\psi) s(\theta) c(\phi) + s(\psi) s(\phi))\\
-    &+ a_y (s(\psi) s(\theta) c(\phi) - c(\psi) s(\phi))\\
-    &+ ( a_z + g )c(\theta) c(\phi) = \left(\frac{T}{m}\right)
-\end{split}
+    a_x (C_{\psi} S_{\theta} C_{\phi} + S_{\psi}  S_{\phi})\\
+    + a_y (S_{\psi} S_{\theta} C_{\phi} - C_{\psi}  S_{\phi})\\
+    + ( a_z + g ) C_{\theta} C_{\phi} = \left(\frac{T}{m}\right)
 \end{equation}
 
-
-Next, we divide Equation \eqref{eq:matrixeqline1} by $c(\theta)$ and solve for $\theta$.
-
+Next, we divide Equation \eqref{eq:matrixeqline1} by $C_{\theta}$ and solve for $\theta$ as $\theta_c$.
 \begin{equation}
-a_x c(\psi) + a_y s(\psi) + (a_z+g)(-\tan(\theta)) = 0
+a_x C_{\psi} + a_y S_{\psi} + (a_z+g)(-\tan(\theta)) = 0
 \end{equation}
-
-
 \begin{equation}
     \label{eq:thetac}
-    \theta_c = \arctan \left( \frac{a_x c(\psi) + a_y s(\psi)}{a_z+g} \right)
+    \theta_c = \arctan \left( \frac{a_x C_{\psi} + a_y S_{\psi}}{a_z+g} \right)
 \end{equation}
 
-
-Next: Equation \eqref{eq:matrixeqline2} x $ s(\phi) $ - Equation \eqref{eq:matrixeqline3} x $ c(\phi) $. The result is
-
+Next,  Equation \eqref{eq:matrixeqline2} $\times  S_{\phi}  =$ Equation \eqref{eq:matrixeqline3} $\times C_{\phi} $. The result is
 \begin{equation}
     \label{eq:phiIntermediate}
-    \phi = \arcsin \left( \frac{a_x s(\psi) - a_y c(\psi)}{T/m} \right).
+    \phi = \arcsin \left( \frac{a_x S_{\psi} - a_y C_{\psi}}{T/m} \right).
 \end{equation}
 
 Square both sides of \eqref{eq:thrustTransformation} and note that $ R^T = R^{-1}$.
-
 \begin{equation}
 a_x^2 + a_y^2 + (a_z + g)^2 = \left(\frac{T}{m}\right)^2
 \end{equation}
-
 \begin{equation}
 \left(\frac{T}{m}\right) = \sqrt{a_x^2 + a_y^2 + (a_z + g)^2}
 \end{equation}
 
-
-This result is then substituted back in Equation \eqref{eq:phiIntermediate} to give
-
+This result is then substituted back in Equation \eqref{eq:phiIntermediate} to give $\phi_c$.
 \begin{equation}
     \label{eq:phic}
-    \phi_c = \arcsin\left( \frac{a_x s(\psi) - a_y c(\psi)}{\sqrt{a_x^2 + a_y^2 + (a_z + g)^2}} \right)
+    \phi_c = \arcsin\left( \frac{a_x S_{\psi} - a_y C_{\psi}}{\sqrt{a_x^2 + a_y^2 + (a_z + g)^2}} \right)
 \end{equation}
 
-
-Using $\theta_c$ and $\phi_c$ as set points, we can write the PD angular control laws. The subscript 'c' stands for 'commanded'.
-
+Using $\theta_c$ and $\phi_c$ as set points, we can write the PD angular control laws. The subscript `c' stands for `commanded'.
 \begin{equation}
     \tau_{\phi c} = [ k_{p\phi} (\phi_c - \phi) + k_{d\phi} (\dot{\phi_c} - \dot{\phi}) ] I_x
 \end{equation}
-
 \begin{equation}
     \tau_{\theta c} = [ k_{p\theta} (\theta_c - \theta) + k_{d\theta} (\dot{\theta_c} - \dot{\theta}) ] I_y
 \end{equation}
-
 \begin{equation}
     \tau_{\psi c} = [ k_{p\psi} (\psi_c - \psi) + k_{d\psi} (\dot{\psi_c} - \dot{\psi}) ] I_z
 \end{equation}
 
 Given the commanded torques and the commanded total thrust, the commanded motor speeds can be obtained from the expressions (\ref{taub}) and (\ref{totalThrust}) from section 3.3:
-
-
 \begin{equation}
     \omega_{1c} = \sqrt{ \frac{T_c}{4 k} - \frac{ \tau_{\theta c}}{2 k L} - \frac{ \tau_{\psi c} }{4 b } }
 \end{equation}
-
 \begin{equation}
     \omega_{2c} = \sqrt{ \frac{T_c}{4 k} - \frac{ \tau_{\phi c}}{2 k L}   + \frac{ \tau_{\psi c} }{4 b } }
 \end{equation}
-
 \begin{equation}
     \omega_{3c} = \sqrt{ \frac{T_c}{4 k} + \frac{ \tau_{\theta c}}{2 k L} - \frac{ \tau_{\psi c} }{4 b } }
 \end{equation}
-
 \begin{equation}
     \omega_{4c} = \sqrt{ \frac{T_c}{4 k} + \frac{ \tau_{\phi c}}{2 k L}   + \frac{ \tau_{\psi c} }{4 b } }
 \end{equation}
 
 
-With the above results, we can summarize the control loop. The PID control expressions prescribe linear accelerations in each direction $(x,y,z)$ which will drive the system toward the desired position. The linear accelerations and knowledge of $\psi$ are used to calculate the angles $\phi$ and $\theta$, and the total thrust $T$. Given the angles and their time derivatives, the prescribed torques about the quad-rotor center of mass are given by PD control laws. Given the torques and the total thrust, the vector of motor speeds can be calculated. The implementation of the PID control block is listed in Appendix \ref{AppendixA}
-
+With the above results, we can summarize the control loop. The PID control expressions prescribe linear accelerations in each direction $(x,y,z)$ which will drive the system toward the desired position. The linear accelerations and knowledge of $\psi$ are used to calculate the angles $\phi$ and $\theta$, and the total thrust $T$. Given the angles and their time derivatives, the prescribed torques about the quad-rotor center of mass are given by PD control laws. Given the torques and the total thrust, the vector of motor speeds can be calculated. The implementation of the PID control block is listed in Appendix \ref{AppendixA}.
 
 In a physical implementation, after the motor speeds are updated, the state of the system would be estimated from whatever sensor data is available. The environmental context would dictate which type of sensor hardware would be appropriate. In a simulation context, we use the dynamical system model from Chapter 3 to evaluate the resulting motion of the system. In a sense, this process is just the inverse of the control loop. For further work, a random process could be included here to model sensor noise. This would give a nice simulation platform for evaluating the performance of a Kalman filter for estimating the state of the quad-rotor.
 
 \section{Testing the Control Scheme}
 
 With experimentally tuned control expressions, arbitrarily shaped, sub-optimal paths can be formed by updating the desired location periodically. The code which implements this functionality is listed in Appendix \ref{AppendixB}. Figures \ref{fig:Typical Run 3D Path} through \ref{fig:Large Setpoint Time Domain} show the utility of the control scheme. It is important to note that in our simulations, the desired velocity at each of the ordered set points is zero. In words, the control algorithm is saying to the quad-rotor: 'Go to the desired location and hover until the set point is updated'. To design a path that includes set points with a non-zero desired velocity vector would require modification of the algorithm.
-
-The values of the constants that were used in the simulation are shown in Table \ref{table:params}. Figure \ref{fig:Cube Edges 3D} shows the quad-rotor traversing along the edges of a 4 meter cube. This shows that in the simulation context, we have the ability to precisely locate the quad-rotor in space. The mathematical reality here is that the state of the system is exactly known within the algorithm. For a real implementation, the system model is replaced by the actual system. In this case the validity of the control algorithm is a function of the uncertainty of the state at each instance in time. This can be quantified by the state estimation process by which physical sensor measurements are combined.
-
-Figure \ref{fig:Large Setpoint Time Domain} shows that there is an upper limit to the difference in initial and final vector positions. A single PID tuning is only usable up to a certain magnitude of desired displacement. Mathematically, the controller is still stable but the over-shoot of the desired position grows proportionately to the desired position itself. For arbitrarily shaped, long distance flights, the path would have to be composed of incremental pieces which are small enough so that a performance metric for the overshoot for each segment was satisfied.
-
-The time domain plots (Figures     \ref{fig:Typical Run Time Domain},   \ref{fig:Cube Edges Time Domain}, and \ref{fig:Large Setpoint Time Domain}) offer information about the stability of the system and the controller. Small oscillations in the linear and angular positions and velocities can be seen in Figure \ref{fig:Typical Run Time Domain}. These oscillations are an artifact of the coupling between the angular and linear control laws. Intuitively, this makes sense because the control of the linear position requires that the angular state of the quad-rotor be destabilized. In general it is the natural instability of this system which allows it to be so maneuverable. Also the mathematical complexity of the system makes for a difficult optimization problem. In the next chapter we use the PID tuning as a basis for optimizing the system according to specific performance criteria.
-
 \begin{figure}[htbp]
 	\centering
-		\includegraphics[scale = 0.5]{Figures/typical_run_time_3D_path.png}
-		\rule{35em}{0.5pt}
-	\caption[Typical Run 3D Path]{Here the 3-D path of the quad-rotor is shown for a flight simulation between the points (0,0,0) and (1,1,1). The PID control expressions were tuned experimentally.}
+		\includegraphics[scale = 0.4]{Figures/typical_run_time_3D_path.png}
+	\caption[Typical Run 3D Path]{3-D path of the quad-rotor for a flight simulation between the points (0,0,0) and (1,1,1). The PID control expressions were tuned experimentally.}
 	\label{fig:Typical Run 3D Path}
 \end{figure}
-
 \begin{figure}[htbp]
 	\centering
 		\includegraphics[scale = 0.5]{Figures/typical_run_time_domain.png}
-		\rule{35em}{0.5pt}
-	\caption[Typical Run Time Domain]{Here are the time domain graphs corresponding the previous 3-D path. The linear and angular state variables are shown to stabilize at the desired positions. }
+	\caption[Typical Run Time Domain]{Time domain graphs corresponding the 3-D path. The linear and angular state variables are shown to stabilize at the desired positions. }
 	\label{fig:Typical Run Time Domain}
 \end{figure}
-
-
+The values of the constants that were used in the simulation are shown in Table \ref{table:params}. Figure \ref{fig:Cube Edges 3D} shows the quad-rotor traversing along the edges of a 4 meter cube. This shows that in the simulation context, we have the ability to precisely locate the quad-rotor in space. The mathematical reality here is that the state of the system is exactly known within the algorithm. For a real implementation, the system model is replaced by the actual system. In this case the validity of the control algorithm is a function of the uncertainty of the state at each instance in time. This can be quantified by the state estimation process by which physical sensor measurements are combined.
 \begin{table}
 \label{table:params}
 \begin{doublespace}
@@ -239,40 +188,33 @@ The time domain plots (Figures     \ref{fig:Typical Run Time Domain},   \ref{fig
     $Izz = 10.0*10^{-3}   $& $ \frac{N m s^2}{Rad}    $ & \\
     \hline
 \end{tabular}
-\caption[Simulation Parameters]{In this table, the constants that were used in the simulation are shown.}
+\caption[Simulation Parameters]{Simulation parameters of the quad-rotor model}
 \end{doublespace}
 \end{table}
-
+Figure \ref{fig:Large Setpoint Time Domain} shows that there is an upper limit to the difference in initial and final vector positions. A single PID tuning is only usable up to a certain magnitude of desired displacement. Mathematically, the controller is still stable but the over-shoot of the desired position grows proportionately to the desired position itself. For arbitrarily shaped, long distance flights, the path would have to be composed of incremental pieces which are small enough so that a performance metric for the overshoot for each segment was satisfied.
 \begin{figure}[htbp]
 	\centering
-		\includegraphics[scale = 0.5]{Figures/CubeEdges3D.png}
-		\rule{35em}{0.5pt}
-	\caption[Cube Edges 3D]{By updating the set point in the PID control expressions, arbitrary paths can be created. Here the quad-rotor traces some of the edges of a cube.}
+		\includegraphics[scale = 0.4]{Figures/CubeEdges3D.png}
+	\caption[Cube Edges 3D]{3D path of the quad-rotor for an arbitrary path, tracing the edges of a cube.}
 	\label{fig:Cube Edges 3D}
 \end{figure}
-
 \begin{figure}[htbp]
 	\centering
 		\includegraphics[scale = 0.5]{Figures/CubeEdgesGraphs.png}
-		\rule{35em}{0.5pt}
-	\caption[Cube Edges Time Domain]{Here are the time domain graphs corresponding the previous 3-D path. In tracing the edges of the cube, the angular positions are shown to de-stabilize to effect the desired change in linear position and then stabilize again.}
+	\caption[Cube Edges Time Domain]{Dynamics of the rotor during the arbitrary path. The angular positions are shown to change and effect the desired change in linear position.}
 	\label{fig:Cube Edges Time Domain}
 \end{figure}
-
-
+The time domain plots (Figures     \ref{fig:Typical Run Time Domain},   \ref{fig:Cube Edges Time Domain}, and \ref{fig:Large Setpoint Time Domain}) offer information about the stability of the system and the controller. Small oscillations in the linear and angular positions and velocities can be seen in Figure \ref{fig:Typical Run Time Domain}. These oscillations are an artifact of the coupling between the angular and linear control laws. Intuitively, this makes sense because the control of the linear position requires that the angular state of the quad-rotor be destabilized. In general it is the natural instability of this system which allows it to be so maneuverable. Also the mathematical complexity of the system makes for a difficult optimization problem. In the next chapter we use the PID tuning as a basis for optimizing the system according to specific performance criteria.
 \begin{figure}[htbp]
 	\centering
-		\includegraphics[scale = 0.5]{Figures/largeSetpointDifferencesTest_3d.png}
-		\rule{35em}{0.5pt}
-	\caption[Large Set Points 3D Path]{In this figure, the control system is tested with a large set point. }
+		\includegraphics[scale = 0.4]{Figures/largeSetpointDifferencesTest_3d.png}
+	\caption[Large Set Points 3D Path]{3D path of the quad-rotor for a large set point.}
 	\label{fig:Large Setpoints 3D Path}
 \end{figure}
-
 \begin{figure}[htbp]
 	\centering
 		\includegraphics[scale = 0.5]{Figures/largeSetpointDifferencesTest_timedomain.png}
-		\rule{35em}{0.5pt}
-	\caption[Large Set Point Time Domain]{In these time domain plots, it is shown that the overshoot of the set point grows proportionally to the set point itself. }
+	\caption[Large Set Point Time Domain]{Dynamics of the quad-rotor for a large set point. The overshoot grows proportionally to the set point itself. }
 	\label{fig:Large Setpoint Time Domain}
 \end{figure}
 

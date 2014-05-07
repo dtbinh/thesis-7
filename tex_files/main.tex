@@ -94,7 +94,7 @@
 \rhead{\thepage} % Sets the right side header to show the page number
 \lhead{} % Clears the left side page header
 
-\pagestyle{fancy} % Finally, use the "fancy" page style to implement the FancyHdr headers
+\pagestyle{plain} % Finally, use the "fancy" page style to implement the FancyHdr headers
 
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % New command to make the lines in the title page
 \newcommand{\p}{\partial}
@@ -233,6 +233,7 @@ There are a great many people who need to be recognized for their contribution t
 \lhead{Contents} % Set the left side page header to "Contents"
 \tableofcontents % Write out the Table of Contents
 
+\vspace{1em}
 \lhead{List of Figures} % Set the left side page header to "List of Figures"
 \listoffigures % Write out the List of Figures
 
@@ -309,7 +310,7 @@ There are a great many people who need to be recognized for their contribution t
 
 \mainmatter % Begin numeric (1,2,3...) page numbering
 
-\pagestyle{fancy} % Return the page headers back to the "fancy" style
+\pagestyle{plain} % Return the page headers back to the "fancy" style
 
 % Include the chapters of the thesis as separate files from the Chapters folder
 % Uncomment the lines as you write the chapters
@@ -322,10 +323,6 @@ There are a great many people who need to be recognized for their contribution t
 \input{Chapters/Chapter6_PID_control}
 \input{Chapters/Chapter7_PID_optimization}
 \input{Chapters/Chapter8_conclusion}
-
-%\input{Chapters/Chapter5}
-%\input{Chapters/Chapter6}
-%\input{Chapters/Chapter7}
 
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - APPENDICES

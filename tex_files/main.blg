@@ -39,43 +39,43 @@ Warning--empty journal in Bennett
 Warning--empty journal in Coriolis
 You've used 31 entries,
             2481 wiz_defined-function locations,
-            718 strings with 8649 characters,
-and the built_in function-call counts, 9405 in all, are:
-= -- 778
-> -- 333
-< -- 33
-+ -- 154
-- -- 92
-* -- 507
-:= -- 1462
-add.period$ -- 94
+            717 strings with 8640 characters,
+and the built_in function-call counts, 9363 in all, are:
+= -- 776
+> -- 326
+< -- 32
++ -- 152
+- -- 90
+* -- 508
+:= -- 1444
+add.period$ -- 93
 call.type$ -- 31
 change.case$ -- 47
 chr.to.int$ -- 31
-cite$ -- 38
+cite$ -- 39
 duplicate$ -- 593
-empty$ -- 997
-format.name$ -- 145
-if$ -- 2056
+empty$ -- 999
+format.name$ -- 142
+if$ -- 2052
 int.to.chr$ -- 1
 int.to.str$ -- 32
 missing$ -- 41
-newline$ -- 163
-num.names$ -- 93
-pop$ -- 354
+newline$ -- 162
+num.names$ -- 90
+pop$ -- 355
 preamble$ -- 1
 purify$ -- 31
 quote$ -- 0
 skip$ -- 374
 stack$ -- 0
-substring$ -- 200
+substring$ -- 201
 swap$ -- 87
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 172
 warning$ -- 7
-while$ -- 73
+while$ -- 71
 width$ -- 0
-write$ -- 381
+write$ -- 379
 (There were 6 error messages)

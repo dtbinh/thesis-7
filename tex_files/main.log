@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.3.1)  6 MAY 2014 09:16
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.3.1)  6 MAY 2014 17:20
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -821,177 +821,157 @@ Chapter 3.
 ------------------------------------------------------------------------------
 [8
 
-] <Figures/coords.png, id=386, 794.2473pt x 613.5723pt>
+] <Figures/coords.png, id=385, 794.2473pt x 613.5723pt>
 File: Figures/coords.png Graphic file (type png)
 
-<use Figures/coords.png>
-Underfull \hbox (badness 10000) in paragraph at lines 32--35
+<use Figures/coords.png> [9 <./Figures/coords.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
  []
 
-[9 <./Figures/coords.png>] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--92
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
-[11] [12] [13] [14]
-LaTeX Font Info:    Try loading font information for U+euf on input line 251.
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--81
+
+ []
+
+[11] [12] [13]
+LaTeX Font Info:    Try loading font information for U+euf on input line 219.
  (/usr/share/texmf-texlive/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2009/06/22 v3.00 Euler Fraktur
-)
+) [14]
+Underfull \hbox (badness 10000) in paragraph at lines 265--266
+
+ []
+
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 299--300
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 315--316
-
- []
-
-[16]) (./Chapters/Chapter4_optimal_control_theory.tex [17]
+) (./Chapters/Chapter4_optimal_control_theory.tex [16]
 Chapter 4.
 ------------------------------------------------------------------------------
  4 Classical Optimal Control Formulation
 ------------------------------------------------------------------------------
-[18
+[17
 
-] [19] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
-
- []
-
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
-
- []
+] [18] [19] [20] [21] [22] [23]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 168.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
-
- []
-
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
-
- []
-
-[23] [24] [25]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 215.
-
- (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 215.
- [26])
-(./Chapters/Chapter5_boundary_value_problem_setup.tex [27]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 168.
+ [24])
+(./Chapters/Chapter5_boundary_value_problem_setup.tex [25]
 Chapter 5.
 ------------------------------------------------------------------------------
  5 Quad-rotor Boundary Value Problem
 ------------------------------------------------------------------------------
-[28
+[26
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
-
- []
-
-[29] [30] [31] [32] [33] [34] [35]
-Overfull \hbox (19.84566pt too wide) detected at line 370
+] [27] [28] [29] [30] [31]
+Overfull \hbox (19.84566pt too wide) detected at line 303
 [] [] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 J[]\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 k
 \OT1/cmr/m/n/12 ] []
  []
 
-[36] [37] [38]) (./Chapters/Chapter6_PID_control.tex [39]
+[32] [33]) (./Chapters/Chapter6_PID_control.tex [34]
 Chapter 6.
 ------------------------------------------------------------------------------
  6 PID/PD Control
 ------------------------------------------------------------------------------
-[40
+[35
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 27--30
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 31--34
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 35--38
-
- []
-
-[41]
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
-[42] [43] [44] [45] [46] [47]
-<Figures/typical_run_time_3D_path.png, id=719, 586.8324pt x 442.2924pt>
+[37] [38] [39]
+<Figures/typical_run_time_3D_path.png, id=678, 586.8324pt x 442.2924pt>
 File: Figures/typical_run_time_3D_path.png Graphic file (type png)
 
 <use Figures/typical_run_time_3D_path.png>
-<Figures/typical_run_time_domain.png, id=720, 586.8324pt x 442.2924pt>
+<Figures/typical_run_time_domain.png, id=679, 586.8324pt x 442.2924pt>
 File: Figures/typical_run_time_domain.png Graphic file (type png)
 
 <use Figures/typical_run_time_domain.png>
-<Figures/CubeEdges3D.png, id=721, 586.8324pt x 442.2924pt>
+<Figures/CubeEdges3D.png, id=683, 586.8324pt x 442.2924pt>
 File: Figures/CubeEdges3D.png Graphic file (type png)
 
 <use Figures/CubeEdges3D.png>
-<Figures/CubeEdgesGraphs.png, id=722, 586.8324pt x 442.2924pt>
+<Figures/CubeEdgesGraphs.png, id=684, 586.8324pt x 442.2924pt>
 File: Figures/CubeEdgesGraphs.png Graphic file (type png)
 
 <use Figures/CubeEdgesGraphs.png>
-<Figures/largeSetpointDifferencesTest_3d.png, id=723, 586.8324pt x 442.2924pt>
+<Figures/largeSetpointDifferencesTest_3d.png, id=689, 586.8324pt x 442.2924pt>
 File: Figures/largeSetpointDifferencesTest_3d.png Graphic file (type png)
 
 <use Figures/largeSetpointDifferencesTest_3d.png>
-<Figures/largeSetpointDifferencesTest_timedomain.png, id=724, 586.8324pt x 442.
+<Figures/largeSetpointDifferencesTest_timedomain.png, id=690, 586.8324pt x 442.
 2924pt>
 File: Figures/largeSetpointDifferencesTest_timedomain.png Graphic file (type pn
 g)
- <use Figures/largeSetpointDifferencesTest_timedomain.png>)
-(./Chapters/Chapter7_PID_optimization.tex [48 <./Figures/typical_run_time_3D_pa
-th.png>] [49 <./Figures/typical_run_time_domain.png>] [50 <./Figures/CubeEdges3
-D.png> <./Figures/CubeEdgesGraphs.png>] [51 <./Figures/largeSetpointDifferences
-Test_3d.png> <./Figures/largeSetpointDifferencesTest_timedomain.png>]
+ <use Figures/largeSetpointDifferencesTest_timedomain.png> [40] [41 <./Figures/
+typical_run_time_3D_path.png> <./Figures/typical_run_time_domain.png>]
+[42] [43 <./Figures/CubeEdges3D.png> <./Figures/CubeEdgesGraphs.png>])
+(./Chapters/Chapter7_PID_optimization.tex [44 <./Figures/largeSetpointDifferenc
+esTest_3d.png> <./Figures/largeSetpointDifferencesTest_timedomain.png>]
 Chapter 7.
 ------------------------------------------------------------------------------
  7 PID Gain Optimization
 ------------------------------------------------------------------------------
-[52
+[45
 
-] [53] [54] <Figures/kuvsthrust.png, id=771, 414.1071pt x 312.2064pt>
+] [46] [47] <Figures/kuvsthrust.png, id=740, 414.1071pt x 312.2064pt>
 File: Figures/kuvsthrust.png Graphic file (type png)
 
-<use Figures/kuvsthrust.png> [55 <./Figures/kuvsthrust.png>] [56]
-<Figures/optimal_run_3D_path.png, id=792, 586.8324pt x 442.2924pt>
+<use Figures/kuvsthrust.png> [48 <./Figures/kuvsthrust.png>] [49]
+<Figures/optimal_run_3D_path.png, id=762, 586.8324pt x 442.2924pt>
 File: Figures/optimal_run_3D_path.png Graphic file (type png)
 
 <use Figures/optimal_run_3D_path.png>
-<Figures/optimal_run_time_domain.png, id=793, 586.8324pt x 442.2924pt>
+<Figures/optimal_run_time_domain.png, id=763, 586.8324pt x 442.2924pt>
 File: Figures/optimal_run_time_domain.png Graphic file (type png)
 
-<use Figures/optimal_run_time_domain.png> [57] [58] [59] [60 <./Figures/optimal
-_run_3D_path.png>]) (./Chapters/Chapter8_conclusion.tex [61 <./Figures/optimal_
+<use Figures/optimal_run_time_domain.png> [50] [51] [52] [53 <./Figures/optimal
+_run_3D_path.png>]) (./Chapters/Chapter8_conclusion.tex [54 <./Figures/optimal_
 run_time_domain.png>]
 Chapter 8.
 ------------------------------------------------------------------------------
  8 Summary and Future Work
 ------------------------------------------------------------------------------
-[62
+[55
 
-] [63] [64]) (./Appendices/AppendixA.tex [65]
+] [56] [57]) (./Appendices/AppendixA.tex [58]
 Appendix A.
 ------------------------------------------------------------------------------
  A Dynamic system model and PID control - agentModule.py
@@ -999,78 +979,78 @@ Appendix A.
 (/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
-(/home/ek/Dropbox/THESIS/python_scripts/agent_module.py [66
+(/home/ek/Dropbox/THESIS/python_scripts/agent_module.py [59
 
-] [67] [68] [69]
-[70] [71] [72] [73] [74] [75] [76] [77] [78] [79] [80] [81] [82]))
-(./Appendices/AppendixB.tex [83]
+] [60] [61] [62]
+[63] [64] [65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75]))
+(./Appendices/AppendixB.tex [76]
 Appendix B.
 ------------------------------------------------------------------------------
  B A module for updating the PID set point - waypointNavigation.py
 ------------------------------------------------------------------------------
-(/home/ek/Dropbox/THESIS/python_scripts/waypoint_navigation.py [84
+(/home/ek/Dropbox/THESIS/python_scripts/waypoint_navigation.py [77
 
-] [85]
-[86])) (./Appendices/AppendixC.tex [87]
+] [78]
+[79])) (./Appendices/AppendixC.tex [80]
 Appendix C.
 ------------------------------------------------------------------------------
  C A class of functions that are used in the brute force method - bruteForceFun
 ctions.py
 ------------------------------------------------------------------------------
-(/home/ek/Dropbox/THESIS/python_scripts/brute_force_functions.py [88
+(/home/ek/Dropbox/THESIS/python_scripts/brute_force_functions.py [81
 
-] [89]
-[90] [91] [92])) (./Appendices/AppendixD.tex [93]
+] [82]
+[83] [84] [85])) (./Appendices/AppendixD.tex [86]
 Appendix D.
 ------------------------------------------------------------------------------
  D The brute force implementation - runSimsBruteForce.py
 ------------------------------------------------------------------------------
-(/home/ek/Dropbox/THESIS/python_scripts/run_sims_brute_force.py [94
+(/home/ek/Dropbox/THESIS/python_scripts/run_sims_brute_force.py [87
 
-] [95]))
-(./Appendices/AppendixE.tex [96]
+] [88]))
+(./Appendices/AppendixE.tex [89]
 Appendix E.
 ------------------------------------------------------------------------------
  E A module to sort the results of the brute force method - parseResults.py
 ------------------------------------------------------------------------------
-(/home/ek/Dropbox/THESIS/python_scripts/parse_results.py [97
+(/home/ek/Dropbox/THESIS/python_scripts/parse_results.py [90
 
-] [98] [99]))
-(./Appendices/AppendixF.tex [100]
+] [91] [92]))
+(./Appendices/AppendixF.tex [93]
 Appendix F.
 ------------------------------------------------------------------------------
  F The finite difference method applied to the optimal control BVP - finiteDiff
 Solution.py
 ------------------------------------------------------------------------------
 (/home/ek/Dropbox/THESIS/quadrotor_optimal_control/finiteDiffSolution.py
-[101
+[94
 
 ]
 Overfull \hbox (46.2372pt too wide) in paragraph at lines 57--60
 [][][][] 
  []
 
-[102] [103]
+[95] [96]
 Overfull \hbox (30.93684pt too wide) in paragraph at lines 126--128
 [][][][] 
  []
 
-[104]
+[97]
 Overfull \hbox (30.93684pt too wide) in paragraph at lines 204--206
 [][][][] 
  []
 
-[105] [106]
+[98] [99]
 Overfull \hbox (30.93684pt too wide) in paragraph at lines 295--297
 [][][][] 
  []
 
-[107] [108]
+[100] [101]
 Overfull \hbox (30.93684pt too wide) in paragraph at lines 386--388
 [][][][] 
  []
 
-[109] [110] [111] [112] [113] [114] [115] [116] [117] [118] [119])) [120]
+[102] [103] [104] [105] [106] [107] [108] [109] [110] [111] [112])) [113]
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
@@ -1086,22 +1066,27 @@ Underfull \hbox (badness 2529) in paragraph at lines 55--61
  3:2451--
  []
 
-[121
+[114
 
 
-] [122] [123]) [124] (./main.aux) )
+] [115] [116]) [117] (./main.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 206 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 13800 strings out of 495061
- 186018 string characters out of 1182622
- 1312331 words of memory out of 3000000
+ 13797 strings out of 495061
+ 185998 string characters out of 1182622
+ 1311331 words of memory out of 3000000
  13726 multiletter control sequences out of 15000+50000
  15517 words of font info for 57 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 48i,21n,45p,1524b,1982s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,19n,45p,1524b,1980s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbsy1
 0.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr
 /share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -1120,9 +1105,9 @@ sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/te
 xmf-texlive/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-texlive
 /fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texmf-texlive/fonts/type1
 /public/amsfonts/euler/eufm10.pfb>
-Output written on main.pdf (131 pages, 1583049 bytes).
+Output written on main.pdf (124 pages, 1564650 bytes).
 PDF statistics:
- 4387 PDF objects out of 5155 (max. 8388607)
- 2966 named destinations out of 2984 (max. 500000)
+ 4361 PDF objects out of 5155 (max. 8388607)
+ 2963 named destinations out of 2984 (max. 500000)
  411 words of extra memory for PDF output out of 10000 (max. 10000000)
 

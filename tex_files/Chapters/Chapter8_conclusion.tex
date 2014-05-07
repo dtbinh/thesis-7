@@ -13,13 +13,13 @@ Our first approach to the path-energy optimization problem which incorporated th
 
 The next method of optimization which was explored was a heuristic method. Control of the UAV was attained by way of a set of PID and PD controllers. Since the performance of the quad-rotor is defined by the controller tuning, the system can be optimized as a function of this tuning. Relevant criteria for evaluating the performance of the system are the total thrust integrated over the duration of the simulation, oscillations that the system experiences, overshoot of the desired location, and the total time of flight. It was determined experimentally that the relationship between these performance metrics and the controller tuning was not well-behaved mathematically. Without a clean mathematical representation of our objective function, the viability of an efficient optimization method is questioned.
 
-Next, a brute force method was used to determine the optimal controller tuning. With limited time, the true optimality of the solution is not certain. Even with limited resources we were able to determine a controller tuning which is good enough to perform simulated fights in a relatively efficient manner.
+Next, a brute force method was used to determine the optimal controller tuning.  Using this method, a controller tuning which is sufficient to perform simulated fights in a relatively efficient manner was determined.
 
 \section{Further Work}
 
 The problem of path-energy optimization as solved in this thesis can be worked on in the future to produce more robust results. Two possible mathematical modifications that could possibly allow for an efficient optimization algorithm are as follows. They both have design trade-offs.
 
-\begin{itemize}
+\begin{enumerate}
 
 \item \textit{Model Linearization} One approach would beto use a linearized model. The goal there would be to simplify the relationship between the controller tuning and the relevant performance metrics by simplifying the mathematical representation of the dynamic model. The danger in using a linear approximation is creating an over-simplified model that is divergent from reality to an extent that makes it unusable.
 
@@ -29,7 +29,7 @@ The problem of path-energy optimization as solved in this thesis can be worked o
 
 
 \item \textit{Sensor Fusion and State Estimation} Yet another area of possible further research is in the sensor fusion and state estimation problem. For a physical implementation, knowledge of the state of the system is a critical component. Given that there are a very large variety of physical sensors that could contribute to this knowledge, this is an interesting problem. An aspect of this problem that adds richness to this situation is the fact that each type of sensor will have a different rate at which physical information is available. This rate is determined by the physical nature of the quantity being measured. A good example is the integration of GPS measurements and accelerometer measurements. Values from these sensors are available perhaps at rates of 1 Hz and 100 Hz respectively. The sensor data would be integrated with a Kalman filter to develop situational awareness which allows for effective control of the system.
-\end{itemize}
+\end{enumerate}
 
 In general the control and optimization of UAVs is a rich and evolving field of research with many unsolved problems. There will be many commercial applications of this technology appearing in coming years which will be informed by future research.
 

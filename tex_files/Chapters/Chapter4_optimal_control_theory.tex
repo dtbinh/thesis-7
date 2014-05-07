@@ -10,8 +10,6 @@ In this chapter, we will define a two point boundary value problem and explore t
 
 Note the names 'Lagrangian' and 'Hamiltonian' are used here in an optimal control context. The multiple use of these names in reference to specific types of expressions is an artifact of the pervasive work of Lagrange and Hamilton. Both optimal control theory and Hamiltonian / Lagrangian mechanics are rooted in the calculus of variations. The dynamic model of the quad-rotor and the optimal control formulation described below are both results from a form of functional optimization. We rely on a contextual and conceptual separation in our understanding. Specifically, the 'Lagrangian', which is formed as the difference of the expressions for kinetic and potential energies, is unique to the context of classical mechanics. Likewise, the 'Lagrangian' in the optimal control context is a term in the integrand of our objective function which represents a vector of performance metrics. The 'Hamiltonian' from classical mechanics is formed as the sum of kinetic and potential energies. This is different than the Hamiltonian used here in the optimal control context.
 
-
-
 \section{Derivation of the Objective Function}
 
     In section 2.3 of Bryson and Ho \cite{BrysonHo69}, the conditions for the optimal control of a continuous time system are derived. There, it is presumed that the system is  presented as a set of first order differential equations. For a quad-rotor, it is more convenient to leave the system equations as a set of second order differential equations. The motivation for this is as follows. With the finite difference method for solving two point boundary value problems, there are a set of simultaneous algebraic equations that are defined for each point in time for which a solution is desired. If we were to express the system of differential equations that govern the dynamics of a quad-rotor in a first order form, the number of algebraic equations defined by the finite difference method would be effectively doubled. Here, we derive the analogous conditions for optimality for a second order system.
@@ -21,33 +19,23 @@ Note the names 'Lagrangian' and 'Hamiltonian' are used here in an optimal contro
 The real power of the optimal control formulation is in the use of the Lagrangian function (also called the performance index) $L(q(t),u(t),t)$ and the co-state $\lambda(t)$. The objective function in our context is an extension of classical constrained optimization to systems which evolve in time. In our case, the Lagrangian is the function which we wish to minimize, the system model (as derived in chapter 3) $F$ plays the role of the constraint relationship, and the function $\lambda(t)$ plays the same role here as a lagrange muliplier in the context of static optimization. Since our optimization procedure accounts for the time variation of the performance index and the system equations, $\lambda(t)$ is likewise a function of time. The variable  $\lambda(t)$  is allowed to vary in time along with the state of the system and is therefore given the name "co-state". In other words it allows for an expression of the criteria for optimallity at every instance in time.
 
 The Lagrangian for our problem is defined as
-
 \begin{equation}
     L[q(t),u(t),t] = u^T I u ,
 \end{equation}
 
  where $u$ is the control input vector and $I$ is the $4\times4$ identity.
 
-
-
-
-
-
 \subsection{Objective Function}
 
 The dynamic equations of motion are appended to the performance index as follows. By definition:
-
 \begin{equation}
      F = \ddot{q}
 \end{equation}
-
 \begin{equation}
     0 = F - \ddot{q}
 \end{equation}
 
 Note that F is the vector function representation of the quad-rotor system equations. The components' physical units are linear and angular acceleration, not force. The variable $q$ is a vector of generalized spatial coordinates. F is generally a function of the generalized coordinates, the input to the system $u(t)$, and time. The full objective function can be written as
-
-
 \begin{equation}
     \mathcal{  J  } = \nu \Psi ( q(t_f),t_f ) + \int_{t_0}^{t_f}  \big[ L(q(t),u(t),t) + \lambda^T \big( F(q(t),u(t),t) - \ddot q \big)  \big] dt .
 \end{equation}
@@ -55,67 +43,50 @@ Note that F is the vector function representation of the quad-rotor system equat
 The function $\Psi ( q(t_f),t_f )$ represents the effect that the final state has on the objective function. In general, $\Psi( q(t_f),t_f )$ is a vector quantity and is scaled by the vector $\nu$.
 
 For the optimal control formulation, the Hamiltonian is defined as a measure of optimallity as a function of time. In the next section we'll see that the full objective function invloves a time-integration of the Hamiltonian. It is written as:
-
 \begin{equation}
     H = L(q(t),u(t),t) + \lambda^T \big( F(q(t),u(t),t) - \ddot q\big).
 \end{equation}
 
 The Hamiltonian allows for a concise expression of the Lagrangian, the co-state function $\lambda$ and the constraint equations.
 
-The objective function is simplified as:\\
-
+The objective function is simplified as:
 \begin{equation}
     \mathcal{  J  } = \nu \Psi ( q(t_f),t_f ) + \int_{t_0}^{t_f}  H(q(t),u(t),t) - \lambda^T \ddot q  dt
 \end{equation}
 
-The second term in the integrand is integrated by parts.\\
-
+The second term in the integrand is integrated by parts.
 \begin{equation}
     \mathcal{  J  } = \nu \Psi ( q(t_f),t_f ) + \int_{t_0}^{t_f}  H(q(t),u(t),t) \text{  } dt - \int_{t_0}^{t_f} \lambda^T \ddot q \text{  } dt
 \end{equation}
 
-In general:  $\int u \text{  }dv =  (uv)|_{t_0}^{t_f} - \int v \text{  }du $. Using this, the second term is expanded.\\
-
+In general:  $\int u \text{  }dv =  (uv)|_{t_0}^{t_f} - \int v \text{  }du $. Using this, the second term is expanded.
 \begin{equation}
     \int_{t_0}^{t_f} \lambda^T \ddot q \text{  } dt  =  (\lambda^T \dot q) |_{t_0}^{t_f} - \int_{t_0}^{t_f} \dot \lambda^T  \dot q\text{  } dt
 \end{equation}
 
 The result is:
-
 \begin{equation}
     \mathcal{  J  } = \nu \Psi ( q(t_f),t_f ) + \int_{t_0}^{t_f}  H(q(t),u(t),t) \text{  } dt -(\lambda^T \dot q) |_{t_0}^{t_f} + \int_{t_0}^{t_f} \dot \lambda^T  \dot q\text{  } dt
-\end{equation}.
+\end{equation}
 
-
-The last term is integrated by parts again.\\
-
+The last term is integrated by parts again.
 \begin{equation}
     \mathcal{  J  }= \nu \Psi ( q(t_f),t_f ) - (\lambda^T \dot q)|_{t_0}^{t_f} + (\dot \lambda^T  q)|_{t_0}^{t_f} + \int_{t_0}^{t_f}  H(q(t),u(t),t) - \ddot \lambda^T q \text{  }dt
 \end{equation}
-
 \begin{equation}
    \mathcal{  J  } = \nu \Psi ( q(t_f),t_f )  + \big[ \dot \lambda^T q - \lambda^T \dot q\big]_{t_0}^{t_f} + \int_{t_0}^{t_f}  \big( H(q(t),u(t),t) - \ddot \lambda^T q \big) \text{  } dt
 \end{equation}
 
-
-
-
 This result is the objective function which we wish to minimize.
-
 
 \section{Derivation of the Optimality Conditions}
 
-
  To find the mathematical conditions necessary for a minimum in $\mathcal{  J  }$, the first variation is computed and set equal to 0. In this context, the variation of a function is essentially the same as the total derivative. Further reading on this is found in \cite{marion1995classical} and  \cite{cornelius1970variational}.
 
-
-The first variation in $\mathcal{  J  }$ is given by\\
-
+The first variation in $\mathcal{  J  }$ is given by
 \begin{equation}
     \delta  \mathcal{  J  } = \frac{\p \mathcal{  J  }}{\p q} \delta q + \frac{\p \mathcal{  J  }}{\p \dot q} \delta \dot q   +  \frac{\p \mathcal{  J  }}{\p u} \delta u.
 \end{equation}
-
-
 \begin{equation}
 \begin{split}
     \delta \mathcal{  J  } &= \nu^T \frac{\p \Psi}{\p q}\delta q |_{t_f}
@@ -127,7 +98,6 @@ The first variation in $\mathcal{  J  }$ is given by\\
                                            - \ddot \lambda^T  \delta q  \right]   \text{  } dt\\
 \end{split}
 \end{equation}
-
 \begin{equation}
 \begin{split}
     \delta \mathcal{  J  } &= (\nu^T\frac{\p \Psi}{\p q} + \dot \lambda^T) \delta q |_{t_f}
@@ -138,7 +108,6 @@ The first variation in $\mathcal{  J  }$ is given by\\
 \end{split}
 \end{equation}
 
-
 The optimality conditions are found by setting $\delta \mathcal{  J  } = 0 $ and asserting that each of the added terms must therefore go to 0. The results are summarized as follows.
 
 The Co-State equations are
@@ -146,62 +115,47 @@ The Co-State equations are
     \label{costate}
     \frac{\p H}{ \p q } = \ddot \lambda
 \end{equation}
-
 \begin{equation}
     \ddot \lambda = \left( \frac{\p L}{\p q}  \right)^T + \left( \frac{\p F}{\p q} \right)^T \lambda .
 \end{equation}
 
 The Stationarity Conditions are
-
 \begin{equation}
     \frac{\p H}{\p u} = 0
 \end{equation}
-
 \begin{equation}
     \frac{\p L}{\p u} + \left( \frac{\p F}{\p u} \right)^T \lambda = 0
 \end{equation}
 
-
-
 Secondary algebraic Co state condition
-
 \begin{equation}
     \frac{\p H}{\p \dot q} = 0
 \end{equation}
-
 \begin{equation}
     \left(\frac{\p F}{\p \dot q}\right)^T \lambda = 0
 \end{equation}
 
-
 Terminal Boundary conditions:
-
 \begin{equation}
     \nu^T \frac{\p \Psi}{\p q}|_{t_f} + \dot \lambda(t_f)^T = 0
 \end{equation}
-
 \begin{equation}
     \nu^T \frac{\p \Psi}{\p \dot q}|_{t_f} - \lambda(t_f)^T = 0
 \end{equation}
 
-
 Initial Co state conditions
-
 \begin{equation}
     ( \lambda^T \delta \dot q - \dot \lambda^T \delta q )|_{t_0} = 0
 \end{equation}
-
 \begin{equation}
     \lambda(t_0) = 0
 \end{equation}
-
 \begin{equation}
     \label{initialcostateder}
     \dot \lambda(t_0) = 0
 \end{equation}
 
 Together, the state equations, co-state equations, stationarity equations, secondary algebraic constraints, and boundary conditions form a complete two-point boundary value problem.
-
 
 \section{Solving the Boundary Value Problem}
 
@@ -210,19 +164,14 @@ Boundary value problems are very common in many science and engineering fields. 
 \subsection{Shooting Method}
 
 The shooting method is a relatively straightforward combination of a time marching quadrature method (Runga-Kutta or the like) to solve a set of differential equations and an error minimization technique. The shooting method works by iteratively solving the set of differential equations as an initial value problem and then measuring the error in the final state of the system compared to the desired final state. The shooting method is subject to the stability of the differential equations in question. If the time marching algorithm does not converge, the method will not work. Unfortunately, the boundary value problem for the quad-rotor that is formulated in the next chapter falls into this category. The quad-rotor system model and the coupled optimality conditions are simply too unstable to be solved with the shooting method.
-
 \begin{itemize}
 \item Advantages : straightforward iterative quadrature method and error minimization,
 \item Disadvantages : does not always converge
 \end{itemize}
 
-
-
-
 \subsection{Finite Difference Method}
 
 The finite difference method poses another possibility \cite{rao2001applied}. It involves creating a system of algebraic equations to be solved at each instance in time where the solution is desired. For a simulation like ours, this means at least hundreds if not thousands of time steps. The derivatives in the differential equations are expressed as finite differences involving variables at adjacent time steps. The values of each state and co-state variable are defined as unknowns at each time step. This creates a system of equations involving several thousand unknowns that need to be solved for. For a linear system this is not so bad because the problem is reduced to the inversion of a sparse matrix. For this, there are efficient numerical algorithms that can be used. Since the quad-rotor boundary value problem is nonlinear, it must be solved with a gradient descent technique or something similar.
-
 \begin{itemize}
 \item Advantages : turns the BVP into a system of algebraic equations, easy to solve for linear systems,
 \item Disadvantages : hard to solve for nonlinear systems, does not always converge
