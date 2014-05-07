@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.3.1)  6 MAY 2014 17:20
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.3.1)  6 MAY 2014 18:18
 entering extended mode
  %&-line parsing enabled.
 **main.tex
@@ -763,7 +763,7 @@ LaTeX Info: Redefining \pageref on input line 86.
 
 ]
 ------------------------------------------------------------------------------
- Table of Contents
+ Table of Contepppppnts
 ------------------------------------------------------------------------------
 (./main.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 9.
@@ -821,7 +821,7 @@ Chapter 3.
 ------------------------------------------------------------------------------
 [8
 
-] <Figures/coords.png, id=385, 794.2473pt x 613.5723pt>
+] <Figures/coords.png, id=386, 794.2473pt x 613.5723pt>
 File: Figures/coords.png Graphic file (type png)
 
 <use Figures/coords.png> [9 <./Figures/coords.png>]
@@ -845,21 +845,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--67
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--81
+Underfull \hbox (badness 10000) in paragraph at lines 76--79
 
  []
 
 [11] [12] [13]
-LaTeX Font Info:    Try loading font information for U+euf on input line 219.
+LaTeX Font Info:    Try loading font information for U+euf on input line 217.
  (/usr/share/texmf-texlive/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2009/06/22 v3.00 Euler Fraktur
 ) [14]
-Underfull \hbox (badness 10000) in paragraph at lines 265--266
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 281--282
+Underfull \hbox (badness 10000) in paragraph at lines 279--280
 
  []
 
@@ -916,27 +916,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--67
  []
 
 [37] [38] [39]
-<Figures/typical_run_time_3D_path.png, id=678, 586.8324pt x 442.2924pt>
+<Figures/typical_run_time_3D_path.png, id=679, 586.8324pt x 442.2924pt>
 File: Figures/typical_run_time_3D_path.png Graphic file (type png)
 
 <use Figures/typical_run_time_3D_path.png>
-<Figures/typical_run_time_domain.png, id=679, 586.8324pt x 442.2924pt>
+<Figures/typical_run_time_domain.png, id=680, 586.8324pt x 442.2924pt>
 File: Figures/typical_run_time_domain.png Graphic file (type png)
 
 <use Figures/typical_run_time_domain.png>
-<Figures/CubeEdges3D.png, id=683, 586.8324pt x 442.2924pt>
+<Figures/CubeEdges3D.png, id=684, 586.8324pt x 442.2924pt>
 File: Figures/CubeEdges3D.png Graphic file (type png)
 
 <use Figures/CubeEdges3D.png>
-<Figures/CubeEdgesGraphs.png, id=684, 586.8324pt x 442.2924pt>
+<Figures/CubeEdgesGraphs.png, id=685, 586.8324pt x 442.2924pt>
 File: Figures/CubeEdgesGraphs.png Graphic file (type png)
 
 <use Figures/CubeEdgesGraphs.png>
-<Figures/largeSetpointDifferencesTest_3d.png, id=689, 586.8324pt x 442.2924pt>
+<Figures/largeSetpointDifferencesTest_3d.png, id=690, 586.8324pt x 442.2924pt>
 File: Figures/largeSetpointDifferencesTest_3d.png Graphic file (type png)
 
 <use Figures/largeSetpointDifferencesTest_3d.png>
-<Figures/largeSetpointDifferencesTest_timedomain.png, id=690, 586.8324pt x 442.
+<Figures/largeSetpointDifferencesTest_timedomain.png, id=691, 586.8324pt x 442.
 2924pt>
 File: Figures/largeSetpointDifferencesTest_timedomain.png Graphic file (type pn
 g)
@@ -951,15 +951,15 @@ Chapter 7.
 ------------------------------------------------------------------------------
 [45
 
-] [46] [47] <Figures/kuvsthrust.png, id=740, 414.1071pt x 312.2064pt>
+] [46] [47] <Figures/kuvsthrust.png, id=741, 414.1071pt x 312.2064pt>
 File: Figures/kuvsthrust.png Graphic file (type png)
 
 <use Figures/kuvsthrust.png> [48 <./Figures/kuvsthrust.png>] [49]
-<Figures/optimal_run_3D_path.png, id=762, 586.8324pt x 442.2924pt>
+<Figures/optimal_run_3D_path.png, id=763, 586.8324pt x 442.2924pt>
 File: Figures/optimal_run_3D_path.png Graphic file (type png)
 
 <use Figures/optimal_run_3D_path.png>
-<Figures/optimal_run_time_domain.png, id=763, 586.8324pt x 442.2924pt>
+<Figures/optimal_run_time_domain.png, id=764, 586.8324pt x 442.2924pt>
 File: Figures/optimal_run_time_domain.png Graphic file (type png)
 
 <use Figures/optimal_run_time_domain.png> [50] [51] [52] [53 <./Figures/optimal
@@ -1069,12 +1069,7 @@ Underfull \hbox (badness 2529) in paragraph at lines 55--61
 [114
 
 
-] [115] [116]) [117] (./main.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-) )
+] [115] [116]) [117] (./main.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 206 ({)
@@ -1082,11 +1077,11 @@ Package natbib Warning: Citation(s) may have changed.
 Here is how much of TeX's memory you used:
  13797 strings out of 495061
  185998 string characters out of 1182622
- 1311331 words of memory out of 3000000
+ 1311336 words of memory out of 3000000
  13726 multiletter control sequences out of 15000+50000
  15517 words of font info for 57 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 48i,19n,45p,1524b,1980s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,19n,45p,1524b,1974s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbsy1
 0.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr
 /share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -1097,17 +1092,18 @@ onts/cm/cmmi8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi
 b10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cmextra/cmmib8.pf
 b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/shar
 e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texl
-ive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/typ
-e1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/ams
-fonts/cm/cmsl12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></u
-sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/te
-xmf-texlive/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-texlive
-/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texmf-texlive/fonts/type1
-/public/amsfonts/euler/eufm10.pfb>
-Output written on main.pdf (124 pages, 1564650 bytes).
+ive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/public/am
+sfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cms
+l12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/tex
+mf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-texlive/
+fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1
+/public/amsfonts/cm/cmtt8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
+onts/euler/eufm10.pfb>
+Output written on main.pdf (124 pages, 1574114 bytes).
 PDF statistics:
- 4361 PDF objects out of 5155 (max. 8388607)
+ 4365 PDF objects out of 5155 (max. 8388607)
  2963 named destinations out of 2984 (max. 500000)
  411 words of extra memory for PDF output out of 10000 (max. 10000000)
 
