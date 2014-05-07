@@ -1,20 +1,20 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Quad-Rotor Coordinate System}}{9}{figure.14}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Angular and linear coordinate systems in the quad-rotor dynamical model.}}{9}{figure.16}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Typical Run 3D Path}}{41}{figure.143}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Typical Run Time Domain}}{41}{figure.144}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Cube Edges 3D}}{43}{figure.146}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Cube Edges Time Domain}}{43}{figure.147}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Large Set Points 3D Path}}{44}{figure.148}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Large Set Point Time Domain}}{44}{figure.149}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces 3D path of the quad-rotor for a flight simulation between the points (0,0,0) and (1,1,1). The PID control expressions were tuned experimentally.}}{42}{figure.145}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Time domain graphs corresponding the 3D path. The linear and angular state variables are shown to stabilize at the desired positions. }}{42}{figure.146}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces 3D path of the quad-rotor for an arbitrary path, tracing the edges of a cube.}}{44}{figure.148}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Dynamics of the rotor during the arbitrary path. The angular positions are shown to change and effect the desired change in linear position}}{44}{figure.149}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces 3D path of the quad-rotor for a large set point.}}{45}{figure.150}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Dynamics of the quad-rotor for a large set point. The overshoot grows proportionally to the set point itself.}}{45}{figure.151}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Ku vs Thrust}}{48}{figure.158}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Optimal Run 3D Path}}{53}{figure.162}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Optimal Run Time Domain}}{54}{figure.163}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces The relationship between Ku and the measured total thrust.}}{49}{figure.160}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces 3D path simulation of the Quadcopter using the optimal run parameters specified.}}{54}{figure.164}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Quadcopter dynamics using the optimal run parameters.}}{55}{figure.165}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

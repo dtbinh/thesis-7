@@ -1,27 +1,16 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.12.13)  6 MAY 2014 18:03
-=======
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.3.1)  6 MAY 2014 18:18
->>>>>>> 6b4d53607584766c292ab36c0e0d7e9d5635cf05
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.11.2)  6 MAY 2014 21:09
 entering extended mode
-**C:/Users/Ninja/Documents/GitHub/thesis/tex_files/main.tex
-(C:/Users/Ninja/Documents/GitHub/thesis/tex_files/main.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
-vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
-an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
-romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
-sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
-senglishmax, welsh, loaded.
-(C:\Users\Ninja\Documents\GitHub\thesis\tex_files\Thesis.cls
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(./Thesis.cls
 Document Class: Thesis 2007/22/02 v1.0 LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\book.cls"
+(/usr/share/texmf-texlive/tex/latex/base/book.cls
 Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\bk12.clo"
+(/usr/share/texmf-texlive/tex/latex/base/bk12.clo
 File: bk12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -37,28 +26,29 @@ File: bk12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
-Package: setspace 2011/12/19 v6.7a set line spacing
-)
-(C:\Users\Ninja\Documents\GitHub\thesis\tex_files\vmargin.sty
+(/usr/share/texmf-texlive/tex/latex/setspace/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) (./vmargin.sty
 Package: vmargin 1999/06/01
 
 Package `vmargin', V2.2, <1999/06/01>
 \PaperWidth=\dimen103
 \PaperHeight=\dimen104
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+) (/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+(/usr/share/texmf-texlive/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+(/usr/share/texmf-texlive/tex/latex/base/t1enc.dfu
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -208,7 +198,7 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+(/usr/share/texmf-texlive/tex/latex/base/ot1enc.dfu
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -239,7 +229,7 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+(/usr/share/texmf-texlive/tex/latex/base/omsenc.dfu
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -262,8 +252,7 @@ Now handling font encoding U ...
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
-))
-(C:\Users\Ninja\Documents\GitHub\thesis\tex_files\fancyhdr.sty
+)) (./fancyhdr.sty
 \fancy@headwidth=\skip43
 \f@ncyO@elh=\skip44
 \f@ncyO@erh=\skip45
@@ -274,41 +263,41 @@ Now handling font encoding U ...
 \f@ncyO@olf=\skip50
 \f@ncyO@orf=\skip51
 )
-(C:\Users\Ninja\AppData\Roaming\MiKTeX\2.9\tex\latex\amsmath\amsmath.sty
-Package: amsmath 2013/01/14 v2.14 AMS math features
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip52
 
 For additional information on amsmath, use the `?' option.
-(C:\Users\Ninja\AppData\Roaming\MiKTeX\2.9\tex\latex\amsmath\amstext.sty
+(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(C:\Users\Ninja\AppData\Roaming\MiKTeX\2.9\tex\latex\amsmath\amsgen.sty
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks16
 \ex@=\dimen105
 ))
-(C:\Users\Ninja\AppData\Roaming\MiKTeX\2.9\tex\latex\amsmath\amsbsy.sty
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen106
 )
-(C:\Users\Ninja\AppData\Roaming\MiKTeX\2.9\tex\latex\amsmath\amsopn.sty
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count88
-LaTeX Info: Redefining \frac on input line 210.
+LaTeX Info: Redefining \frac on input line 211.
 \uproot@=\count89
 \leftroot@=\count90
-LaTeX Info: Redefining \overline on input line 306.
+LaTeX Info: Redefining \overline on input line 307.
 \classnum@=\count91
 \DOTSCASE@=\count92
-LaTeX Info: Redefining \ldots on input line 378.
-LaTeX Info: Redefining \dots on input line 381.
-LaTeX Info: Redefining \cdots on input line 466.
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
 \big@size=\dimen107
-LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \macc@depth=\count93
 \c@MaxMatrixCols=\count94
 \dotsspace@=\muskip10
@@ -329,27 +318,27 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \multlinegap=\skip53
 \multlinetaggap=\skip54
 \mathdisplay@stack=\toks20
-LaTeX Info: Redefining \[ on input line 2665.
-LaTeX Info: Redefining \] on input line 2666.
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2009/06/22 v3.00
 )
-(C:\Users\Ninja\AppData\Roaming\MiKTeX\2.9\tex\latex\amsmath\amscd.sty
-Package: amscd 1999/11/29 v2.0
+(/usr/share/texmf-texlive/tex/latex/amsmath/amscd.sty
+Package: amscd 1999/11/29 v1.2d
 \athelp@=\toks21
 \minaw@=\dimen114
 \bigaw@=\dimen115
 \minCDarrowwidth=\dimen116
 )
-(C:\Users\Ninja\AppData\Roaming\MiKTeX\2.9\tex\latex\amscls\amsthm.sty
+(/usr/share/texmf-texlive/tex/latex/amscls/amsthm.sty
 Package: amsthm 2004/08/06 v2.20
 \thm@style=\toks22
 \thm@bodyfont=\toks23
@@ -361,13 +350,12 @@ Package: amsthm 2004/08/06 v2.20
 \thm@headsep=\skip57
 \dth@everypar=\toks27
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\xspace.sty"
-Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
+(/usr/share/texmf-texlive/tex/latex/tools/xspace.sty
+Package: xspace 2006/05/08 v1.12 Space after command names (DPC,MH)
 )
 \c@example=\count100
 \c@theorem=\count101
-
-(C:\Users\Ninja\Documents\GitHub\thesis\tex_files\caption.sty
+ (./caption.sty
 Package: caption 2004/05/16 v3.0b Customising captions (AS)
 \captionmargin=\dimen117
 \captionwidth=\dimen118
@@ -375,87 +363,84 @@ Package: caption 2004/05/16 v3.0b Customising captions (AS)
 \captionparindent=\dimen120
 \captionhangindent=\dimen121
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks28
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
 \Gread@gobject=\count102
 ))
 \Gin@req@height=\dimen122
 \Gin@req@width=\dimen123
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.sty"
-Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/epstopdf.sty
+Package: epstopdf 2009/10/17 v2.4 Conversion with epstopdf on the fly (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+(/usr/share/texmf-texlive/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2009/10/17 v2.4 Base part for package epstopdf
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-))
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
+(/usr/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
 )
+(/usr/share/texmf-texlive/tex/latex/oberdiek/grfext.sty
+Package: grfext 2007/09/30 v1.0 Managing graphics extensions (HO)
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
+t (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
-)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
+ (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
+)
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
 )
+
+Package epstopdf Warning: Shell escape feature is not enabled.
+
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-))
-(C:\Users\Ninja\Documents\GitHub\thesis\tex_files\subfigure.sty
+(grfext)             \AppendGraphicsExtensions on input line 433.
+(/usr/share/texmf-texlive/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2009/10/26 v1.1 Configuration of epstopdf for TeX Live
+)))
+(./subfigure.sty
 Package: subfigure 1995/03/06 v2.0 subfigure package
 
 Package: subfigure 1995/03/06 v2.0
@@ -463,7 +448,7 @@ Package: subfigure 1995/03/06 v2.0
 \c@lofdepth=\count104
 \c@subtable=\count105
 \c@lotdepth=\count106
-) (C:\Users\Ninja\Documents\GitHub\thesis\tex_files\booktabs.sty
+) (./booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen124
 \lightrulewidth=\dimen125
@@ -482,17 +467,15 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@thisruleclass=\count109
 \@lastruleclass=\count110
 \@thisrulewidth=\dimen136
-)
-(C:\Users\Ninja\Documents\GitHub\thesis\tex_files\rotating.sty
+) (./rotating.sty
 Package: rotating 1995/08/22 2.10 Rotation package
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \r@tfl@t=\count111
 \rot@float@box=\box28
-)
-(C:\Users\Ninja\Documents\GitHub\thesis\tex_files\listings.sty
+) (./listings.sty
 \lst@mode=\count112
 \lst@gtempboxa=\box29
 \lst@token=\toks29
@@ -506,19 +489,25 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \lst@lineno=\count117
 \lst@maxwidth=\dimen140
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
-File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
-
+(/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count118
+\lst@skipnumbers=\count119
+\lst@framebox=\box30
+)
+(/usr/share/texmf-texlive/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+ (./lstpatch.sty
 
 ***
-*** This file requires `listings.sty' version 1.5c.
-*** You have a serious problem, so I'm exiting ...
+*** This is a patch for listings 1.3, but you're using
+*** version 1.4.
+***
+ *** Patch file not loaded.
 ***
 
-<<<<<<< HEAD
-
- ) ) ) )
-=======
 ) (/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
 
@@ -766,33 +755,42 @@ LaTeX Info: Redefining \pageref on input line 86.
 ------------------------------------------------------------------------------
  Abstract Page
 ------------------------------------------------------------------------------
-[1]
+[2
+
+]
 ------------------------------------------------------------------------------
  Acknowledgements
 ------------------------------------------------------------------------------
-[2
+[3
 
 ]
 ------------------------------------------------------------------------------
  Table of Contepppppnts
 ------------------------------------------------------------------------------
-(./main.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 9.
+[4
+
+] (./main.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 10.
  (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 9.
+LaTeX Font Info:    Try loading font information for U+msb on input line 10.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-) [3
+) [5
 
+]
+Overfull \hbox (7.05876pt too wide) in paragraph at lines 46--46
+ [] [][][]\OT1/cmr/bx/n/12 Functions used in the brute force method - brute-For
+ce-Func-tions.py[][] []  
+ []
 
-])
+)
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [4]
+ [6]
 ------------------------------------------------------------------------------
  List of Figures
 ------------------------------------------------------------------------------
@@ -800,14 +798,25 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
- [5
+ [7
+
+
+]
+------------------------------------------------------------------------------
+ List of Tables
+------------------------------------------------------------------------------
+(./main.lot)
+\tf@lot=\write6
+\openout6 = `main.lot'.
+
+ [8
 
 
 ]
 ------------------------------------------------------------------------------
  Dedicatory
 ------------------------------------------------------------------------------
-[6
+[9
 
 ] (./Chapters/Chapter1_introduction.tex
 Chapter 1.
@@ -832,45 +841,45 @@ Chapter 3.
 ------------------------------------------------------------------------------
 [8
 
-] <Figures/coords.png, id=386, 794.2473pt x 613.5723pt>
+] <Figures/coords.png, id=414, 794.2473pt x 613.5723pt>
 File: Figures/coords.png Graphic file (type png)
 
 <use Figures/coords.png> [9 <./Figures/coords.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 55--56
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--79
+Underfull \hbox (badness 10000) in paragraph at lines 74--77
 
  []
 
 [11] [12] [13]
-LaTeX Font Info:    Try loading font information for U+euf on input line 217.
+LaTeX Font Info:    Try loading font information for U+euf on input line 215.
  (/usr/share/texmf-texlive/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2009/06/22 v3.00 Euler Fraktur
 ) [14]
-Underfull \hbox (badness 10000) in paragraph at lines 263--264
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 279--280
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
 
@@ -904,12 +913,12 @@ Overfull \hbox (19.84566pt too wide) detected at line 303
 \OT1/cmr/m/n/12 ] []
  []
 
-[32] [33]) (./Chapters/Chapter6_PID_control.tex [34]
+[32] [33]) (./Chapters/Chapter6_PID_control.tex [34] [35]
 Chapter 6.
 ------------------------------------------------------------------------------
  6 PID/PD Control
 ------------------------------------------------------------------------------
-[35
+[36
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 27--30
@@ -921,68 +930,68 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--34
 
  []
 
-[36]
+[37]
 Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
-[37] [38] [39]
-<Figures/typical_run_time_3D_path.png, id=679, 586.8324pt x 442.2924pt>
+[38] [39] [40]
+<Figures/typical_run_time_3D_path.png, id=712, 586.8324pt x 442.2924pt>
 File: Figures/typical_run_time_3D_path.png Graphic file (type png)
 
 <use Figures/typical_run_time_3D_path.png>
-<Figures/typical_run_time_domain.png, id=680, 586.8324pt x 442.2924pt>
+<Figures/typical_run_time_domain.png, id=713, 586.8324pt x 442.2924pt>
 File: Figures/typical_run_time_domain.png Graphic file (type png)
 
 <use Figures/typical_run_time_domain.png>
-<Figures/CubeEdges3D.png, id=684, 586.8324pt x 442.2924pt>
+<Figures/CubeEdges3D.png, id=717, 586.8324pt x 442.2924pt>
 File: Figures/CubeEdges3D.png Graphic file (type png)
 
 <use Figures/CubeEdges3D.png>
-<Figures/CubeEdgesGraphs.png, id=685, 586.8324pt x 442.2924pt>
+<Figures/CubeEdgesGraphs.png, id=718, 586.8324pt x 442.2924pt>
 File: Figures/CubeEdgesGraphs.png Graphic file (type png)
 
 <use Figures/CubeEdgesGraphs.png>
-<Figures/largeSetpointDifferencesTest_3d.png, id=690, 586.8324pt x 442.2924pt>
+<Figures/largeSetpointDifferencesTest_3d.png, id=723, 586.8324pt x 442.2924pt>
 File: Figures/largeSetpointDifferencesTest_3d.png Graphic file (type png)
 
 <use Figures/largeSetpointDifferencesTest_3d.png>
-<Figures/largeSetpointDifferencesTest_timedomain.png, id=691, 586.8324pt x 442.
+<Figures/largeSetpointDifferencesTest_timedomain.png, id=724, 586.8324pt x 442.
 2924pt>
 File: Figures/largeSetpointDifferencesTest_timedomain.png Graphic file (type pn
 g)
- <use Figures/largeSetpointDifferencesTest_timedomain.png> [40] [41 <./Figures/
+ <use Figures/largeSetpointDifferencesTest_timedomain.png> [41] [42 <./Figures/
 typical_run_time_3D_path.png> <./Figures/typical_run_time_domain.png>]
-[42] [43 <./Figures/CubeEdges3D.png> <./Figures/CubeEdgesGraphs.png>])
-(./Chapters/Chapter7_PID_optimization.tex [44 <./Figures/largeSetpointDifferenc
+[43] [44 <./Figures/CubeEdges3D.png> <./Figures/CubeEdgesGraphs.png>])
+(./Chapters/Chapter7_PID_optimization.tex [45 <./Figures/largeSetpointDifferenc
 esTest_3d.png> <./Figures/largeSetpointDifferencesTest_timedomain.png>]
 Chapter 7.
 ------------------------------------------------------------------------------
  7 PID Gain Optimization
 ------------------------------------------------------------------------------
-[45
+[46
 
-] [46] [47] <Figures/kuvsthrust.png, id=741, 414.1071pt x 312.2064pt>
+] [47] [48] <Figures/kuvsthrust.png, id=773, 414.1071pt x 312.2064pt>
 File: Figures/kuvsthrust.png Graphic file (type png)
 
-<use Figures/kuvsthrust.png> [48 <./Figures/kuvsthrust.png>] [49]
-<Figures/optimal_run_3D_path.png, id=763, 586.8324pt x 442.2924pt>
+<use Figures/kuvsthrust.png> [49 <./Figures/kuvsthrust.png>] [50]
+<Figures/optimal_run_3D_path.png, id=794, 586.8324pt x 442.2924pt>
 File: Figures/optimal_run_3D_path.png Graphic file (type png)
 
 <use Figures/optimal_run_3D_path.png>
-<Figures/optimal_run_time_domain.png, id=764, 586.8324pt x 442.2924pt>
+<Figures/optimal_run_time_domain.png, id=795, 586.8324pt x 442.2924pt>
 File: Figures/optimal_run_time_domain.png Graphic file (type png)
 
-<use Figures/optimal_run_time_domain.png> [50] [51] [52] [53 <./Figures/optimal
-_run_3D_path.png>]) (./Chapters/Chapter8_conclusion.tex [54 <./Figures/optimal_
+<use Figures/optimal_run_time_domain.png> [51] [52] [53] [54 <./Figures/optimal
+_run_3D_path.png>]) (./Chapters/Chapter8_conclusion.tex [55 <./Figures/optimal_
 run_time_domain.png>]
 Chapter 8.
 ------------------------------------------------------------------------------
  8 Summary and Future Work
 ------------------------------------------------------------------------------
-[55
+[56
 
-] [56] [57]) (./Appendices/AppendixA.tex [58]
+] [57] [58]) (./Appendices/AppendixA.tex [59]
 Appendix A.
 ------------------------------------------------------------------------------
  A Dynamic system model and PID control - agentModule.py
@@ -990,78 +999,77 @@ Appendix A.
 (/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
-(/home/ek/Dropbox/THESIS/python_scripts/agent_module.py [59
+(/home/ek/Dropbox/THESIS/python_scripts/agent_module.py [60
 
-] [60] [61] [62]
-[63] [64] [65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75]))
-(./Appendices/AppendixB.tex [76]
+] [61] [62] [63]
+[64] [65] [66] [67] [68] [69] [70] [71] [72] [73] [74] [75] [76]))
+(./Appendices/AppendixB.tex [77]
 Appendix B.
 ------------------------------------------------------------------------------
- B A module for updating the PID set point - waypointNavigation.py
+ B Module for updating the PID set point - waypointNavigation.py
 ------------------------------------------------------------------------------
-(/home/ek/Dropbox/THESIS/python_scripts/waypoint_navigation.py [77
+(/home/ek/Dropbox/THESIS/python_scripts/waypoint_navigation.py [78
 
-] [78]
-[79])) (./Appendices/AppendixC.tex [80]
+] [79]
+[80])) (./Appendices/AppendixC.tex [81]
 Appendix C.
 ------------------------------------------------------------------------------
- C A class of functions that are used in the brute force method - bruteForceFun
-ctions.py
+ C Functions used in the brute force method - bruteForceFunctions.py
 ------------------------------------------------------------------------------
-(/home/ek/Dropbox/THESIS/python_scripts/brute_force_functions.py [81
+(/home/ek/Dropbox/THESIS/python_scripts/brute_force_functions.py [82
 
-] [82]
-[83] [84] [85])) (./Appendices/AppendixD.tex [86]
+] [83]
+[84] [85] [86])) (./Appendices/AppendixD.tex [87]
 Appendix D.
 ------------------------------------------------------------------------------
- D The brute force implementation - runSimsBruteForce.py
+ D Brute force implementation - runSimsBruteForce.py
 ------------------------------------------------------------------------------
-(/home/ek/Dropbox/THESIS/python_scripts/run_sims_brute_force.py [87
+(/home/ek/Dropbox/THESIS/python_scripts/run_sims_brute_force.py [88
 
-] [88]))
-(./Appendices/AppendixE.tex [89]
+] [89]))
+(./Appendices/AppendixE.tex [90]
 Appendix E.
 ------------------------------------------------------------------------------
- E A module to sort the results of the brute force method - parseResults.py
+ E Module to sort the results of the brute force method - parseResults.py
 ------------------------------------------------------------------------------
-(/home/ek/Dropbox/THESIS/python_scripts/parse_results.py [90
+(/home/ek/Dropbox/THESIS/python_scripts/parse_results.py [91
 
-] [91] [92]))
-(./Appendices/AppendixF.tex [93]
+] [92] [93]))
+(./Appendices/AppendixF.tex [94]
 Appendix F.
 ------------------------------------------------------------------------------
- F The finite difference method applied to the optimal control BVP - finiteDiff
-Solution.py
+ F Finite difference method applied to the optimal control BVP - finiteDiffSolu
+tion.py
 ------------------------------------------------------------------------------
 (/home/ek/Dropbox/THESIS/quadrotor_optimal_control/finiteDiffSolution.py
-[94
+[95
 
 ]
 Overfull \hbox (46.2372pt too wide) in paragraph at lines 57--60
 [][][][] 
  []
 
-[95] [96]
+[96] [97]
 Overfull \hbox (30.93684pt too wide) in paragraph at lines 126--128
 [][][][] 
  []
 
-[97]
+[98]
 Overfull \hbox (30.93684pt too wide) in paragraph at lines 204--206
 [][][][] 
  []
 
-[98] [99]
+[99] [100]
 Overfull \hbox (30.93684pt too wide) in paragraph at lines 295--297
 [][][][] 
  []
 
-[100] [101]
+[101] [102]
 Overfull \hbox (30.93684pt too wide) in paragraph at lines 386--388
 [][][][] 
  []
 
-[102] [103] [104] [105] [106] [107] [108] [109] [110] [111] [112])) [113]
+[103] [104] [105] [106] [107] [108] [109] [110] [111] [112] [113])) [114]
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
@@ -1077,40 +1085,19 @@ Underfull \hbox (badness 2529) in paragraph at lines 55--61
  3:2451--
  []
 
-[114
+[115
 
 
-] [115] [116]) [117] (./main.aux) )
->>>>>>> 6b4d53607584766c292ab36c0e0d7e9d5635cf05
+] [116] [117]) [118] (./main.aux) )
 (\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 2229 (\begingroup)
-### bottom level
-(\end occurred when \ifx on line 2229 was incomplete)
-(\end occurred when \ifx on line 2229 was incomplete)
-(\end occurred when \ifx on line 2229 was incomplete)
-(\end occurred when \ifx on line 2229 was incomplete)
-(\end occurred when \ifx on line 2229 was incomplete) 
+### simple group (level 1) entered at line 207 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 3861 strings out of 494045
- 51855 string characters out of 3148386
- 111539 words of memory out of 3000000
- 7101 multiletter control sequences out of 15000+200000
- 3938 words of font info for 15 fonts, out of 3000000 for 9000
- 715 hyphenation exceptions out of 8191
- 49i,1n,45p,403b,60s stack positions out of 5000i,500n,10000p,200000b,50000s
-
-No pages of output.
-PDF statistics:
- 0 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
-=======
- 13797 strings out of 495061
- 185998 string characters out of 1182622
- 1311336 words of memory out of 3000000
- 13726 multiletter control sequences out of 15000+50000
+ 13806 strings out of 495061
+ 186079 string characters out of 1182621
+ 1312336 words of memory out of 3000000
+ 13727 multiletter control sequences out of 15000+50000
  15517 words of font info for 57 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  48i,19n,45p,1524b,1974s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1133,10 +1120,9 @@ mf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-texlive/
 fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf-texlive/fonts/type1
 /public/amsfonts/cm/cmtt8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
 onts/euler/eufm10.pfb>
-Output written on main.pdf (124 pages, 1574114 bytes).
+Output written on main.pdf (127 pages, 1579041 bytes).
 PDF statistics:
- 4365 PDF objects out of 5155 (max. 8388607)
- 2963 named destinations out of 2984 (max. 500000)
- 411 words of extra memory for PDF output out of 10000 (max. 10000000)
->>>>>>> 6b4d53607584766c292ab36c0e0d7e9d5635cf05
+ 4396 PDF objects out of 5155 (max. 8388607)
+ 2968 named destinations out of 2984 (max. 500000)
+ 419 words of extra memory for PDF output out of 10000 (max. 10000000)
 
