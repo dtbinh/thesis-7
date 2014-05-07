@@ -3,8 +3,8 @@
 \contentsline {chapter}{Acknowledgements}{iii}{dummy.2}
 \vspace {1em}
 \contentsline {chapter}{Contents}{iv}{dummy.3}
-\contentsline {chapter}{List of Figures}{vii}{dummy.5}
-\contentsline {chapter}{List of Tables}{viii}{dummy.7}
+\contentsline {chapter}{List of Figures}{vi}{dummy.5}
+\contentsline {chapter}{List of Tables}{vii}{dummy.7}
 \vspace {2em}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.9}
 \contentsline {section}{\numberline {1.1}Motivation}{2}{section.10}
