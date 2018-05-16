@@ -1,0 +1,220 @@
+        '''
+        if abs(tao_phi_temp) > max_torque: 
+
+            tao_phi.append( max_torque * sign(tao_phi_temp) )           
+
+        else:
+            tao_phi.append( tao_phi_temp )          
+            
+
+
+        if abs(tao_theta_temp) > max_torque: 
+
+            tao_theta.append( max_torque * sign(tao_theta_temp) )           
+
+        else:
+            tao_theta.append( tao_theta_temp )
+            
+
+
+        if abs(tao_psi_temp) > max_torque: 
+
+            tao_psi.append( max_torque * sign(tao_psi_temp) )           
+
+        else:
+            tao_psi.append( tao_psi_temp )
+        
+        '''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        max_torque = 5
+
+        g = self.g 
+        m = self.m  
+        L = self.L  
+        b = self.b  
+        k = self.k 
+        
+        Ixx = self.Ixx  
+        Iyy = self.Iyy  
+        Izz = self.Izz  
+        
+        Ax = self.Ax  
+        Ay = self.Ay 
+        Az = self.Az  
+
+
+        x = self.x
+        y = self.y
+        z = self.z
+
+        xdot = self.xdot
+        ydot = self.ydot
+        zdot = self.zdot
+
+        xddot = self.xddot
+        yddot = self.yddot
+        zddot = self.zddot
+
+        phi = self.phi
+        theta = self.theta
+        psi = self.psi
+
+        phidot = self.phidot
+        thetadot = self.thetadot
+        psidot = self.psidot
+
+        phiddot = self.phiddot
+        thetaddot = self.thetaddot
+        psiddot = self.psiddot
+
+
+
+        kpx = self.kpx          # PID proportional gain values
+        kpy = self.kpy
+        kpz = self.kpz
+
+        kdx = self.kdx         # PID derivative gain values
+        kdy = self.kdy
+        kdz = self.kdz
+
+        kix = self.kix           # PID integral gain values
+        kiy = self.kiy
+        kiz = self.kiz
+
+
+        phi_comm = self.phi_comm
+        theta_comm = self.theta_comm
+        T_comm = self.T_comm
+
+
+        x_integral_error = self.x_integral_error
+        y_integral_error = self.y_integral_error
+        z_integral_error = self.z_integral_error
+
+        # force, torque, and motor speed list initializations
+
+        T = self.T
+        tao_phi = self.tao_phi
+        tao_theta = self.tao_theta
+        tao_psi = self.tao_psi
+
+        w1 = self.w1
+        w2 = self.w2
+        w3 = self.w3
+        w4 = self.w4
+
+        etaddot = self.etaddot
+        #----------------------------------
+
+        h = self.h  
+
+        #wind_x = self.wind_x
+        #wind_y = self.wind_y
+        #wind_z = self.wind_z
+
+
+        #----------------------------------------------------------------------
+
+ 
+
+        max_total_thrust = self.max_total_thrust
+        min_total_thrust = self.min_total_thrust
+
+        x_des = self.x_des
+        y_des = self.y_des
+        z_des = self.z_des
+
+        xdot_des = self.xdot_des
+        ydot_des = self.ydot_des
+        zdot_des = self.zdot_des
+
+        kpphi = self.kpphi  # gains for the angular pid control laws
+        kptheta = self.kptheta
+        kppsi = self.kppsi
+
+
+        kdphi = self.kdphi
+        kdtheta = self.kdtheta
+        kdpsi = self.kdpsi
+
+
+        # angular set points ( ONLY USED FOR ANGULAR PID CONTROL EXPRESSIONS...)
+        phi_des = self.phi_des
+        theta_des = self.theta_des
+        psi_des = self.psi_des
+
+        psidot_des = 0
+        #phidot_des = 0
+        #thetadot_des = 0
+
+
+
+
+
+
+
+       '''
+        #--------------------------------nonlinear roll/pitch control law gains
+        sPh1 = 3
+        sPh2 = 3                       
+        sPh3 = 2
+        sPh4 = .1
+        sTh1 = 3
+        sTh2 = 3
+        sTh3 = 2
+        sTh4 = .1
+        '''
+
+        '''
+        if self.w1[-1] > 2000 : 
+            self.w1 = self.w1[:-1]
+            self.w1.append(2000)
+
+        if self.w2[-1] > 2000 : 
+            self.w2 = self.w2[:-1]
+            self.w2.append(2000)
+
+        if self.w3[-1] > 2000 : 
+            self.w3 = self.w3[:-1]
+            self.w3.append(2000)
+
+        if self.w4[-1] > 2000 : 
+            self.w4 = self.w4[:-1]
+            self.w4.append(2000)
+        '''
+
+
+
+
+
+        '''
+        if self.w1[-1] > 2000 : 
+            self.w1 = self.w1[:-1]
+            self.w1.append(2000)
+
+        if self.w2[-1] > 2000 : 
+            self.w2 = self.w2[:-1]
+            self.w2.append(2000)
+
+        if self.w3[-1] > 2000 : 
+            self.w3 = self.w3[:-1]
+            self.w3.append(2000)
+
+        if self.w4[-1] > 2000 : 
+            self.w4 = self.w4[:-1]
+            self.w4.append(2000)
+        '''
+

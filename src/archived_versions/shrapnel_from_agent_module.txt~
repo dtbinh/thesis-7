@@ -1,0 +1,121 @@
+
+        #--------------------------------control expressions  eq 23
+
+        # the following two expressions for total thrust and torque about z axis are from 'teppo_luukkenon'
+
+        T_k = (g + kdz*( zdot_des - zdot[-1] ) + kpz*( z_des - z[-1] ) + kiz*zError )* m/float( c(phi[-1]) * c(theta[-1]))
+
+        if T_k <= min_total_thrust:
+            T.append( min_total_thrust ) 
+
+        elif T_k >= max_total_thrust:
+            T.append( max_total_thrust )
+            
+        elif T_k > 0 and T_k <= max_total_thrust :    
+            T.append( T_k )
+
+
+
+        tao_psi.append( ( kdpsi*( psidot_des - psidot[-1] ) + kppsi*( psi_des - psi[-1] ) ) * Izz )
+
+        '''
+        #equation 61 in 'real-time stabilization and tracking'
+        tao_phi.append( - sPh1 * (phidot[-1] + sPh2 * (phi[-1] + phidot[-1] + 
+
+                            sPh3 * ( 2 * phi[-1] + phidot[-1] + ( ydot[-1]/g ) + 
+
+                            sPh4 * (phidot[-1] + 3 * phi[-1] + 3 * ( ydot[-1]/(g) ) + y[-1]/(g) )))) * Ixx 
+
+                     )
+
+
+        #equation 66 in 'real-time stabilization and tracking'
+        tao_theta.append( - sTh1 * ( thetadot[-1] + sTh2 * ( theta[-1] + thetadot[-1] + 
+
+                        sTh3 * ( 2 * theta[-1] + thetadot[-1] - ( xdot[-1]/(g) ) + 
+
+                        sTh4 * ( thetadot[-1] + 3 * theta[-1] - 3 * ( thetadot[-1]/(g) ) - x[-1]/(g) )))) * Iyy
+                    )
+        '''
+
+        # original pd control expressions for roll and pitch
+
+        tao_phi.append(   ( kdphi*(   phidot_des - phidot[-1]     ) + kpphi*(   phi_des - phi[-1]     ) ) * Ixx )
+        tao_theta.append( ( kdtheta*( thetadot_des - thetadot[-1] ) + kptheta*( theta_des - theta[-1] ) )*Iyy)
+
+
+        #--------------------------------solve for motor speeds, eq 24
+
+        w1.append( sqrt( (T[-1] / (4.0*k)) - ( tao_theta[-1] / (2.0*k*L) )  - ( tao_psi[-1] / (4.0*b) ) )  )
+        w2.append( sqrt( (T[-1] / (4.0*k)) - ( tao_phi[-1]   / (2.0*k*L) )  + ( tao_psi[-1] / (4.0*b) ) )  )
+        w3.append( sqrt( (T[-1] / (4.0*k)) + ( tao_theta[-1] / (2.0*k*L) )  - ( tao_psi[-1] / (4.0*b) ) )  )
+        w4.append( sqrt( (T[-1] / (4.0*k)) + ( tao_phi[-1]   / (2.0*k*L) )  + ( tao_psi[-1] / (4.0*b) ) )  )
+
+        #---------------------------------calculate new linear accelerations
+
+        #note the "wind" is introduced as an acceleration which imparts exogenous forces in the position control law expressions 
+
+
+
+        xddot.append(    (T[-1]/m)  * ( c(psi[-1]) * s(theta[-1]) * c(phi[-1]) + s(psi[-1]) * s(phi[-1]) ) 
+                        - (Ax * xdot[-1]/m )  
+                        + (-kdx * xdot[-1] - kpx * ( x[-1] - x_des ) + kix * xError )
+                        + wind_x[i] * Ax / m
+                    )
+
+
+
+        yddot.append(   ( T[-1] / m ) * ( s(psi[-1]) * s(theta[-1]) * c(phi[-1]) - c(psi[-1]) * s(phi[-1]) )
+                        - ( Ay * ydot[-1] / m )  
+                        + (-kdy * ydot[-1] - kpy * ( y[-1] - y_des ) + kiy * yError )
+                        + wind_y[i] * Ay / m
+                    )
+
+
+        # the following calculations of the linear acceleration components do not apply a control to position, 
+        # they simply calculate x_acc and y_acc from the angular states and total thrust        
+
+        #xddot.append(   ( T[-1] / m ) * ( c(psi[-1]) * s(theta[-1]) * c(phi[-1]) + s(psi[-1]) * s(phi[-1]) ) - Ax * xdot[-1] / m   )
+
+        #yddot.append(   ( T[-1] / m ) * ( s(psi[-1]) * s(theta[-1]) * c(phi[-1]) - c(psi[-1]) * s(phi[-1]) ) - Ay * ydot[-1] / m   )
+
+
+        zddot.append(   -g + ( T[-1] / m ) * ( c(theta[-1]) * c(phi[-1]) ) - Az * ( zdot[-1] / m ) + wind_z[i] * Az /m)
+ 
+        #-------------------------------- calculate new angular accelerations
+
+        # must build vectors of kth time step quantities for the matrix math evaluations
+        tao = array( [tao_phi[-1], tao_theta[-1], tao_psi[-1] ] )  
+
+        etadot = array( [phidot[-1], thetadot[-1], psidot[-1] ] )
+
+        etaddot =  dot(inv( self.J() ), tao  -  dot(self.coriolis_matrix() , etadot) ) 
+
+        # parse the etaddot vector of the new accelerations into the appropriate time series'
+        phiddot.append(etaddot[0])       
+
+        thetaddot.append(etaddot[1])
+
+        psiddot.append(etaddot[2])
+
+        #------------------------------ integrate new acceleration values to obtain velocity values
+
+        xdot.append(  xdot[-1] + xddot[-1] * h  )
+        ydot.append(  ydot[-1] + yddot[-1] * h  )
+        zdot.append(  zdot[-1] + zddot[-1] * h  )
+
+        phidot.append(  phidot[-1] + phiddot[-1] * h  )
+        thetadot.append(  thetadot[-1] + thetaddot[-1] * h  )
+        psidot.append(  psidot[-1] + psiddot[-1] * h  )
+
+       
+        #------------------------------ integrate new velocity values to obtain position / angle values
+
+        x.append(  x[-1] + xdot[-1] * h  )
+        y.append(  y[-1] + ydot[-1] * h  )
+        z.append(  z[-1] + zdot[-1] * h  )
+
+        phi.append(  phi[-1] + phidot[-1] * h  )
+        theta.append(  theta[-1] + thetadot[-1] * h  )
+        psi.append(  psi[-1] + psidot[-1] * h  )
+    
