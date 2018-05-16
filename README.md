@@ -1,8 +1,8 @@
-thesis
+Edward Kemper - Master's Thesis
 ======
 
-mongo thesis blob
+h2 Flight Path Energy Optimization for a Quad-Rotor Drone
+* source code
+* paper
+* presentation
 
-paper and presentation.
-
-more than you ever wanted to know about path - energy optimization of a quad-rotor...
